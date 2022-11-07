@@ -1,0 +1,39 @@
+.caja {
+  display: flex;
+  margin: 50px;
+  /* margin-top: 50px; */
+  /* margin-bottom: 50px; */
+  /* width: 400px; */
+  height: 600px;
+  color: black;
+  background-color: rgb(226, 226, 226);
+  justify-content: center;
+  flex-direction: row;
+}
+
+.title {
+  font-size: 100px;
+}
+
+.titleSecondary {
+  font-size: 50px;
+}
+
+.carrucel {
+  display: flex;
+  flex-direction: row;
+  background-color: green;
+}
+
+.card {
+  margin: 20px;
+  height: 500px;
+  width: 400px;
+  border-radius: 10px;
+  background-color: #eeeeee;
+}
+
+.xd {
+  flex-direction: row;
+  background-color: red;
+}
