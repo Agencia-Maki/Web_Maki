@@ -17,8 +17,14 @@ const Index = () => {
           <text style={{color: "purple"}}>Conoce nuestros servicios</text>
         </div>
         <div className="carrucel">
-          <div className='card'>Web</div>
-          <div className='card'>Social Media</div>
+          <div className='card'>
+            <text className='imagen'>IMAGEN</text>
+            <text style={{fontSize: "25px"}}>Web</text>
+          </div>
+          <div className='card'>
+            <text className='imagen'>IMAGEN</text>
+            <text style={{fontSize: "25px"}}>Social Media</text>
+          </div>
         </div>
       </section>
 
@@ -37,7 +43,10 @@ const Index = () => {
           </div>
 
           <div>
-              IMAGENES
+            <text>img 1</text>
+            <text>img 2</text>
+            <text>img 3</text>
+            <text>img 4</text>
           </div>
         </div>
       </section>
