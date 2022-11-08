@@ -1,10 +1,13 @@
 import React from 'react'
 
+import BurgerMenu from '../../components/menu/burger'
+
+
 const Index = () => {
   return (
-    <div>
-      estas en index de contactanos
-    </div>
+    <>
+      <BurgerMenu />
+    </>
   )
 }
  export default Index
