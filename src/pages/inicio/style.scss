@@ -1,12 +1,10 @@
-/* .caja {
-  display: flex;
-  margin: 50px;
-  height: 600px;
-  color: black;
-  background-color: rgb(226, 226, 226);
-  justify-content: center;
-  flex-direction: row;
-} */
+$primary: red;
+$secondary: green;
+
+// .colors {
+//   "primary": $primary,
+//   "sencondary": $secondary,
+// }
 
 .caja {
   display: flex;
@@ -34,13 +32,18 @@
 .parrafo {
   margin: 20px;
   display: flex;
-
 }
 
 .carrucel {
   display: flex;
   flex-direction: row;
-  /* background-color: green; */
+  background-color: green;
+}
+
+.grilla {
+  display: flex;
+  flex-direction: row;
+  background-color: red;
 }
 
 .card {
@@ -63,14 +66,9 @@
   color: #eeeeee
 }
 
-.xd {
-  flex-direction: row;
-  background-color: red;
-}
-
-.color {
-  /* --primary: #5523dd; */
-  /* color: red; */
-  --primary: red;
-  /* --secondary: #ffffff;  */
+.logos {
+  margin: 20px;
+  height: 200px;
+  width: 200px;
+  background-color: lightblue;
 }
