@@ -84,7 +84,6 @@ const BurgerMenu = () => {
 
       </header>
 
-
       <div id="menu">
         <div className="menu-container">
           <ul className="menu-nav">
@@ -149,14 +148,12 @@ const BurgerMenu = () => {
 
       </div>
 
-
       <div className="borders">
         <div className="top"></div>
         <div className="bottom"></div>
         <div className="left"></div>
         <div className="right"></div>
       </div>
-
 
       <div className="menuColor" onClick={() => setShowMenu(false)}></div>
     </div>
