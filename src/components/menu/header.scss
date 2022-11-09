@@ -13,6 +13,8 @@ $colorProjects: #d8d8d8;
 $colorPhilo: #f3c130;
 $pageBackground: #f8f8f8;
 
+$purppleMaki: #6500FE;
+
 $transitionDuration : 500ms;
 $ease : cubic-bezier(0.7, 0, 0.3, 1);
 $ease2 : cubic-bezier(0.560, 0.000, 0.265, 1.000);
@@ -24,6 +26,12 @@ $medium: 992px;
 $large: 1200px;
 $vlarge: 1600px;
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;900&display=swap');
+
+
+body {
+  background-color: #ccc;
+}
 
 
 header.header {
@@ -314,11 +322,13 @@ header.header {
       line-height: 25px;
       display: block;
       text-align: center;
+      margin: 20px 0px;
+      color: $purppleMaki;
+      // background-color: #414a6b;
 
       .icon {
         display: inline-block;
         vertical-align: middle;
-
         img {
           // @include transition(fill 150ms linear 0ms);
           -webkit-transition: -webkit-fill 150ms linear 0ms;
@@ -332,11 +342,35 @@ header.header {
 
 }
 
-.switch-lang {
+.contact-button-top {
 
   list-style: none;
   margin: 0px;
   padding: 0px;
+
+  a {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid 1px $purppleMaki;
+    // border-color: $purppleMaki;
+    border-radius: 25px;
+    // border-style: solid 1px;
+    background: none;
+    color: $purppleMaki !important;
+    font-family: 'Outfit', sans-serif !important;
+    font-size: 13px !important;
+    transition: ease 0.4s;
+    text-transform: capitalize !important;
+    font-weight: 600 !important;
+    cursor: pointer;
+    // margin: -55px 70px -0px 0px;
+    &:hover {
+      background-color: $purppleMaki;
+      color: white !important;
+    }
+  }
 
   header.header & {
 
@@ -358,27 +392,31 @@ header.header {
 
     @media (min-width: $vlarge) {
       top: $borderSizeLarge * 0.5;
-      right: $borderSizeLarge;
+      right: $borderSizeLarge * 1.40;
     }
 
     .menuOpen & {
 
       // @include transform(translate(-$borderSizeMedium, $borderSizeMedium));
-      -webkit-transform: translate(-$borderSizeMedium, $borderSizeMedium);
-      -moz-transform: translate(-$borderSizeMedium, $borderSizeMedium);
-      -ms-transform: translate(-$borderSizeMedium, $borderSizeMedium);
-      -o-transform: translate(-$borderSizeMedium, $borderSizeMedium);
-      transform: translate(-$borderSizeMedium, $borderSizeMedium);
+      -webkit-transform: translate(-$borderSizeMedium * 0.7, $borderSizeMedium * 0.1);
+      -moz-transform: translate(-$borderSizeMedium * 0.7, $borderSizeMedium * 0.1);
+      -ms-transform: translate(-$borderSizeMedium * 0.7, $borderSizeMedium * 0.1);
+      -o-transform: translate(-$borderSizeMedium * 0.7, $borderSizeMedium * 0.1);
+      transform: translate(-$borderSizeMedium * 0.7, $borderSizeMedium * 0.1);
 
 
       @media (min-width: $vlarge) {
         // @include transform(translate(-$borderSizeLarge, $borderSizeLarge));
-        -webkit-transform: translate(-$borderSizeLarge, $borderSizeLarge);
-        -moz-transform: translate(-$borderSizeLarge, $borderSizeLarge);
-        -ms-transform: translate(-$borderSizeLarge, $borderSizeLarge);
-        -o-transform: translate(-$borderSizeLarge, $borderSizeLarge);
-        transform: translate(-$borderSizeLarge, $borderSizeLarge);
+        -webkit-transform: translate(-$borderSizeLarge, $borderSizeLarge * 0.5);
+        -moz-transform: translate(-$borderSizeLarge, $borderSizeLarge * 0.5);
+        -ms-transform: translate(-$borderSizeLarge, $borderSizeLarge * 0.5);
+        -o-transform: translate(-$borderSizeLarge, $borderSizeLarge * 0.5);
+        transform: translate(-$borderSizeLarge, $borderSizeLarge * 0.5);
       }
+
+      // button {
+      //   margin-top: -190px !important;
+      // }
 
     }
 
@@ -530,6 +568,7 @@ header.header {
   &:hover {
     @media (min-width: $small) {
       .line {
+        background-color: $purppleMaki;
         &:nth-child(1) {
           width: 20px;
         }
@@ -550,6 +589,7 @@ header.header {
         -ms-transform: rotate(-90deg) translateY(-8px);
         -o-transform: rotate(-90deg) translateY(-8px);
         transform: rotate(-90deg) translateY(-8px);
+        color: $purppleMaki;
 
         span:nth-child(1) {
           // @include transform(translateY(-5px));
@@ -580,11 +620,11 @@ header.header {
 
         span:nth-child(4) {
           // @include transform(translateY(3px));
-          -webkit-transform: translateY(3px);
-          -moz-transform: translateY(3px);
-          -ms-transform: translateY(3px);
-          -o-transform: translateY(3px);
-          transform: translateY(3px);
+          -webkit-transform: translateY(5px);
+          -moz-transform: translateY(5px);
+          -ms-transform: translateY(5px);
+          -o-transform: translateY(5px);
+          transform: translateY(5px);
         }
       }
     }
