@@ -1,8 +1,14 @@
 import React from 'react'
 
+import './scss/footer.scss'
+
 const Index = () => {
   return (
-    <div>Footer</div>
+    <footer>
+      <h1>
+        Footer con feeeeeeeeeeeeeee
+      </h1>
+    </footer>
   )
 }
 
