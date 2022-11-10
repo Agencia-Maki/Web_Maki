@@ -1,5 +1,13 @@
-footer {
-  width: 100%;
-  position: relative;
-  z-index: 400;
+.footer {
+  width: 100% !important;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center !important;
+  margin: 0 !important;
+  div {
+    display: grid;
+    grid-template-columns:  8fr 10fr;
+    column-gap: 3em;
+  }
 }

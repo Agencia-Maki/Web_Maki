@@ -1,0 +1,74 @@
+$primary: #6500FE;
+$secondary: #1D1D1B;
+$background: #F8F8F8;
+
+
+// .colors {
+//   "primary": $primary,
+//   "sencondary": $secondary,
+// }
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.gris {
+  background-color: $background;
+}
+
+.caja {
+  display: flex;
+  margin: 10px 50px 10px 100px;
+  height: 20%;
+  width: 90%;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.title {
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+}
+
+.titleSecondary {
+  margin: 20px;
+  font-size: 40px;
+}
+
+.parrafo {
+  margin: 20px;
+  display: flex;
+}
+
+.carrucel {
+  display: flex;
+  flex-direction: row;
+  // background-color: green;
+}
+
+.grilla {
+  display: flex;
+  flex-wrap: wrap;
+  // background-color: red;
+}
+
+.imagen {
+  margin-bottom: 50px;
+  height: 100%;
+  width: 100%;
+}
+
+.imagenCard {
+  margin: 15px;
+  height: 400px;
+  width: 300px;
+}
+
+.logos {
+  margin: 5px;
+  height: 100px;
+  width: 150px;
+  background-color: lightblue;
+}
