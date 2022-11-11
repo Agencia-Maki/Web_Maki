@@ -10,12 +10,12 @@ import '../../styles/inicio/style.scss'
 const Index = () => {
   return (
     <>
-
+    <body className='gris'>
     <div className='caja'>
       <img className='imagen' src={font} alt="No Cargo Imagen" />
     </div>
 
-    <div className='caja gris'>
+    <div className='caja'>
       <Card>
         <text className='title' style={{color: '#1D1D1B'}}><strong>ESTILO MAKI<text style={{color: "#6500FE"}} >.</text></strong></text><br/>
         <text><strong>Dualismo entre la inovación y lo <br/>tradicional</strong></text><br/>
@@ -57,9 +57,8 @@ const Index = () => {
           </div>
       </Card>
 
-
-
     </div>
+    </body>
 
     </>
   )
