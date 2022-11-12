@@ -1,9 +1,20 @@
 import React from 'react'
 import Card from '../../components/Card/Card'
 
-import font from '../../assets/images/font.png'
-import web from '../../assets/images/web.png'
-import socialMedia from '../../assets/images/socialMedia.png'
+import { Container, Row, Col } from 'react-bootstrap';
+
+import font from '../../assets/images/inicio/font.png'
+import web from '../../assets/images/inicio/web.png'
+import socialMedia from '../../assets/images/inicio/socialMedia.png'
+import cato from '../../assets/images/inicio/Grupo 513.png'
+import aural from '../../assets/images/inicio/Grupo 498.png'
+import magna from '../../assets/images/inicio/Grupo 506.png'
+import puertoInca from '../../assets/images/inicio/Grupo 98.png'
+import gpr from '../../assets/images/inicio/Grupo 499.png'
+import altoImpacto from '../../assets/images/inicio/Grupo 507.png'
+import anan from '../../assets/images/inicio/Grupo 483.png'
+import vapreh from '../../assets/images/inicio/Grupo 502.png'
+import parisinos from '../../assets/images/inicio/Grupo 95.png'
 
 import '../../styles/style.scss'
 
@@ -45,14 +56,17 @@ const Index = () => {
 
     <div className='gris caja' 
     >
-      <Card>
-        <text className='title' style={{color: '#1D1D1B'}}>
-          <strong>ESTILO MAKI<text style={{color: "#6500FE"}} >.</text></strong>
-        </text><br/>
-        <text><strong>Dualismo entre la inovación y lo <br/>tradicional</strong></text><br/>
-        <text className='parrafo'>Entendemos lo que tu empresa necesita y optimizamos la manera de obtener<br/> resultados</text><br/>
-        <text style={{color: "#6500FE"}}>Conoce nuestros servicios</text>
-      </Card>
+      <div>
+        <text style={{color: '#1D1D1B'}}>
+          <p className='title' style={{lineHeight: "1"}}><strong>ESTILO MAKI<text style={{color: "#6500FE"}} >.</text></strong></p>
+          <p><strong>Dualismo entre la inovación y lo<br/>tradicional</strong></p>
+          <p className='parrafo'>
+            Entendemos lo que tu empresa necesita y optimizamos la manera de obtener<br/> resultados
+          </p>
+          <p style={{color: "#6500FE"}}>Conoce nuestros servicios</p>
+        </text>
+      </div>
+
       <Card color="white">
         <img className='imagenCard' src={web} alt="No Cargo Imagen" />
         <text><strong>Web</strong></text>
@@ -75,9 +89,10 @@ const Index = () => {
                 <li 
                   className='content'
                   key={index}
-                ><text>
-                  {item}
-                </text>
+                >
+                  <text>
+                    {item}
+                  </text>
                 </li>
               ))}
             </ul>
@@ -86,29 +101,42 @@ const Index = () => {
       </div>
 
     <div className='caja'>
-      <Card>
+      <div style={{}}>
         <text className="titleSecondary">
-          <strong>Ayudamos a empresas a llegar <br/><text style={{color: "#6500FE"}} >al siguiente nivel.</text></strong>
-        </text><br/>
+          <strong>
+            <p style={{lineHeight: "1"}}>Ayudamos a </p>
+            <p style={{lineHeight: "1"}}>empresas a llegar </p>
+            <p style={{color: "#6500FE"}} >al siguiente nivel.</p>
+          </strong>
+        </text>
         <text className='parrafo'>
-          Algunas de las empresas que confiaron en nosotros
-          para empujarlos a seguir.
-        </text><br/>
-        <text style={{color: "#6500FE"}}>Conoce más</text>
-      </Card>
-      <Card>
-        <div className='grilla'>
-            <text className='logos'>img 1</text>
-            <text className='logos'>img 2</text>
-            <text className='logos'>img 3</text>
-            <text className='logos'>img 4</text>
-            <text className='logos'>img 5</text>
-            <text className='logos'>img 6</text>
-            <text className='logos'>img 7</text>
-            <text className='logos'>img 8</text>
-            <text className='logos'>img 9</text>
-          </div>
-      </Card>
+          <p>
+            Algunas de las empresas que confiaron<br/> 
+            en nosotros para empujarlos a seguir.
+          </p>
+          <p style={{color: "#6500FE"}}>Conoce más</p>
+        </text>
+      </div>
+        
+        <Container>
+          <Row>
+            <Col>
+              <img className='logos' src={cato} alt="No Cargo Imagen" />
+              <img className='logos' src={aural} alt="No Cargo Imagen" />
+              <img className='logos' src={magna} alt="No Cargo Imagen" />
+            </Col>
+            <Col>
+              <img className='logos' src={puertoInca} alt="No Cargo Imagen" />
+              <img className='logos' src={gpr} alt="No Cargo Imagen" />
+              <img className='logos' src={altoImpacto} alt="No Cargo Imagen" />
+            </Col>
+            <Col>
+              <img className='logos' src={anan} alt="No Cargo Imagen" />
+              <img className='logos' src={vapreh} alt="No Cargo Imagen" />
+              <img className='logos' src={parisinos} alt="No Cargo Imagen" />
+            </Col>
+          </Row>
+        </Container>
     </div>
 
   </body>

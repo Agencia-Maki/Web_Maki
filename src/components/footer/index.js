@@ -5,8 +5,8 @@ import './scss/footer.scss'
 const Footer = () => {
   return (
     <>
-    <Container
-      // className='footer'
+    <Container fluid
+      className='footer'
       // className="web-content"
       style={{ 
       color: "#eeeeee",
