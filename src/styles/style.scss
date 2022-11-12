@@ -8,8 +8,15 @@ $background: #F8F8F8;
 //   "sencondary": $secondary,
 // }
 body {
-  margin: 0;
-  padding: 0;
+  // margin: 0px 0px 0px 0px ;
+  // margin-left: 5000px;
+  // padding-left: 800px;
+  // display: block;
+  // padding: 0;
+  // right: 0px;
+  position: relative;
+  background-color: lightcoral;
+  // width: 90%;
 }
 
 .gris {
@@ -78,4 +85,13 @@ body {
   height: 100px;
   width: 150px;
   background-color: lightblue;
+}
+
+li{
+  color: $primary;
+}
+li {
+  text{
+    color: black;
+  }
 }

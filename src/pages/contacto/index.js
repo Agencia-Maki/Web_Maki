@@ -6,61 +6,11 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
-import '../../styles/inicio/style.scss'
+import '../../styles/style.scss'
 
 const Index = () => {
   return (
     <>
-      <body className='gris'>
-      <div>
-      <Container>
-
-      <Row>
-        <Col><text>1 of 2</text></Col>
-        <Col><text>2 of 2</text></Col>
-      </Row>
-          
-      </Container>
-      </div>
-
-      </body>
-    </>
-  )
-}
- export default Index
-
-
- /*
-
-
-          <Card color={"lightblue"}
-          style={{
-          width: "300px",
-          height: "300px",
-          margin: "100px"}} >1</Card>
-        
-          <Card color={"lightblue"}
-          style={{
-          width: "300px",
-          margin: "300px",
-          height: "100px",}} >2</Card>
-
-        <text style={{
-          width: "500px",
-          margin: "200px",
-          height: "500px",
-          backgroundColor: "lightblue"}} >3</text>
-        <text style={{
-          width: "500px",
-          margin: "200px",
-          height: "500px",
-          backgroundColor: "lightblue"}} >4</text>
-
-
-
-
-
- 
        <Col>
         <Row>
 
@@ -108,5 +58,7 @@ const Index = () => {
         </Row>
 
       </Col>
- 
- */
+    </>
+  )
+}
+ export default Index

@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from '../../components/Card/Card'
 
-import '../../styles/inicio/style.scss'
+import '../../styles/style.scss'
 
 const Index = () => {
   return (
