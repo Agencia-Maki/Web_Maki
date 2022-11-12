@@ -4,13 +4,14 @@ import Footer from '../components/footer'
 
 import './scss/layout.scss'
 
+
 const Layout = (props) => {
   return (
     <>
       <Header />
-        <div className="web-content">
-          {props.children}
-        </div>        
+          <div className="web-content">
+            {props.children}
+          </div>   
       <Footer />
     </>
   )

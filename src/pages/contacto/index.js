@@ -1,64 +1,81 @@
 import React from 'react'
 import Card from '../../components/Card/Card'
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
+import { Button, Container, Row, Col } from 'react-bootstrap';
 
 import '../../styles/style.scss'
 
 const Index = () => {
   return (
     <>
-       <Col>
-        <Row>
+    <Container fluid style={{backgroundColor: "red"}}>
+      <Row className="justify-content-md-center">
+        <Col xs={6}>
+          <div className='titleSecondary' style={{padding: "0"}}>
+            <strong>
+              <p style={{color: "#6500FE",lineHeight: "1"}}>Agenda una<br/> consulta gratuita
+              </p>
+              <p style={{lineHeight: "1", marginTop: "-15px"}}>
+                con uno de nuestros <br/>colaboradores
+              </p>
+            </strong>
+          </div>
 
-            <Card>
-              <text className='titleSecondary'>
-                <strong>
-                  <text style={{color: "#6500FE"}}>Agenda una <br/>consulta gratuita<br/></text>
-                  con uno de nuestros <br/>colaboradores
-                </strong>
-              </text>
-            </Card>
-        
-        <Row>
-            <Card>
-              <text className='content'>
-                Urb Real Felipe Mz. A Lte. 1 Cerro Colorado<br/>
-                +51 932 678 688<br/>
-                <strong>ventas@agenciamaki.com</strong>
-              </text>
-            </Card>
+          <Row className={"mt-5"}>
+            <Col>
+              <div className='content'>
+                <p>
+                  Urb Real Felipe Mz. A Lte. 1 Cerro Colorado<br/>
+                  +51 932 678 688<br/>
+                  <strong>ventas@agenciamaki.com</strong>
+                </p>
+              </div>
+            </Col>
+            <Col>
+              <div className='content'>
+                <p>
+                  <strong>Horarios de Atención</strong><br/>
+                  +51 932 678 688<br/>
+                  ventas@agenciamaki.com
+                </p>
+              </div>
+            </Col>
+          </Row>
+        </Col>
 
-
-            <Card>
-              <text>
-                <strong>Horarios de Atención</strong><br/>
-                +51 932 678 688<br/>
-                ventas@agenciamaki.com
-              </text>
-            </Card>
-        </Row>
-
-        </Row>
-
-        <Row>
+        <Col xs={4}>
           <Card>
-            <text>
+            <p>
               <strong>Déjanos un mensaje</strong>
-            </text>
+            </p>
             <input type={"text"} id={"Nombre"}/>
             <input type={"text"} id={"Teléfono"}/>
             <input type={"text"} id={"Correo"}/>
             <input type={"text"} id={"Servicio que te interesa"}/>
-            <input type="submit" value="Enviar" />
+            <Button as="a">
+              Enviar
+            </Button>
           </Card>
-        </Row>
+        </Col>
+      </Row>
 
-      </Col>
+    </Container>
+
     </>
   )
 }
- export default Index
+export default Index
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+*/

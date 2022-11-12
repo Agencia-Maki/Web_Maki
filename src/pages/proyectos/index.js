@@ -1,7 +1,6 @@
 import React,{useState} from "react"
 import Slider from 'react-slick'
 
-
 // import '../../styles/style.scss'
 
 const sliderSettings = {
@@ -65,6 +64,8 @@ const hotelCards = [
   },
 ]
 
+
+
 const Index = () => {
 
   const [sliderRef, setSliderRef] = useState(false)
@@ -72,6 +73,7 @@ const Index = () => {
   return (
 
   <>
+    <body>
     {/* <div className="caja">
       <div>
         <button onCLick={sliderRef?.slickPrev} name="prev">Prev</button>
@@ -79,7 +81,7 @@ const Index = () => {
       </div>
     </div> */}
     
-    <div className="caja">
+    <div className="caja gris">
       <div>
       <Slider  {...settings} >
           {hotelCards.map((card, index) => (
@@ -91,7 +93,9 @@ const Index = () => {
       </div>
     </div>
 
+    </body>
   </>
+
   )
 }
 export default Index
