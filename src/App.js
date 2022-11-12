@@ -1,6 +1,8 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
+import './App.scss';
+
 import Servicios from './pages/servicios/index'
 import Proyectos from './pages/proyectos/index'
 import Nosotros from './pages/nosotros/index'
