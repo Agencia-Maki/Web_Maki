@@ -56,25 +56,28 @@ const Index = () => {
 
     <div className='gris caja' 
     >
-      <div>
-        <text style={{color: '#1D1D1B'}}>
-          <p className='title' style={{lineHeight: "1"}}><strong>ESTILO MAKI<text style={{color: "#6500FE"}} >.</text></strong></p>
-          <p><strong>Dualismo entre la inovación y lo<br/>tradicional</strong></p>
-          <p className='parrafo'>
-            Entendemos lo que tu empresa necesita y optimizamos la manera de obtener<br/> resultados
-          </p>
-          <p style={{color: "#6500FE"}}>Conoce nuestros servicios</p>
-        </text>
-      </div>
-
-      <Card color="white">
-        <img className='imagenCard' src={web} alt="No Cargo Imagen" />
-        <text><strong>Web</strong></text>
-      </Card>
-      <Card color="white">
-        <img className='imagenCard' src={socialMedia} alt="No Cargo Imagen" />
-        <text><strong>Social Media</strong></text>
-      </Card>
+      <Row>
+        <Col xs={5}>
+            <text style={{color: '#1D1D1B'}}>
+              <p className='title' style={{lineHeight: "1"}}><strong>ESTILO<br/>MAKI<text style={{color: "#6500FE"}} >.</text></strong></p>
+              <p><strong>Dualismo entre la inovación y lo<br/>tradicional</strong></p>
+              <p className='parrafo'>
+                Entendemos lo que tu empresa necesita y<br/> optimizamos la manera de obtener<br/> resultados
+              </p>
+              <p style={{color: "#6500FE"}}>Conoce nuestros servicios</p>
+            </text>
+        </Col>
+        <Col xs={7}>
+          <Card color="white">
+            <img className='imagenCard' src={web} alt="No Cargo Imagen" />
+            <text><strong>Web</strong></text>
+          </Card>
+          <Card color="white">
+            <img className='imagenCard' src={socialMedia} alt="No Cargo Imagen" />
+            <text><strong>Social Media</strong></text>
+          </Card>
+        </Col>
+      </Row>
     </div>
 
     <div className='caja'>
@@ -101,23 +104,28 @@ const Index = () => {
       </div>
 
     <div className='caja'>
-      <div style={{}}>
-        <text className="titleSecondary">
-          <strong>
-            <p style={{lineHeight: "1"}}>Ayudamos a </p>
-            <p style={{lineHeight: "1"}}>empresas a llegar </p>
-            <p style={{color: "#6500FE"}} >al siguiente nivel.</p>
-          </strong>
-        </text>
-        <text className='parrafo'>
-          <p>
-            Algunas de las empresas que confiaron<br/> 
-            en nosotros para empujarlos a seguir.
-          </p>
-          <p style={{color: "#6500FE"}}>Conoce más</p>
-        </text>
-      </div>
-        
+      <Row>
+        <Col>
+          <div>
+          <text className="titleSecondary">
+            <strong>
+              <p style={{lineHeight: "0.75"}}>Ayudamos a </p>
+              <p style={{lineHeight: "0.75"}}>empresas a llegar </p>
+              <p style={{lineHeight: "0.75", color: "#6500FE"}} >al siguiente nivel.</p>
+            </strong>
+          </text>
+          <text>
+            <p>
+              Algunas de las empresas que confiaron<br/> 
+              en nosotros para empujarlos a seguir.
+            </p>
+            <p style={{color: "#6500FE"}}>Conoce más</p>
+          </text>
+          </div>
+        </Col>
+        <Col>
+
+
         <Container>
           <Row>
             <Col>
@@ -137,6 +145,11 @@ const Index = () => {
             </Col>
           </Row>
         </Container>
+
+        </Col>
+      </Row>
+
+        
     </div>
 
   </body>
