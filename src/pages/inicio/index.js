@@ -83,22 +83,34 @@ const Index = () => {
     <div className='caja'>
         {Data.map((card, index) => (
           <Card key={index} color="white">
-            <div>imagen</div>
-            <div className='content'><strong>{card.title}</strong></div>
-            {/* <img alt={card.title} src={card.imageSrc} width="100" height="100" /> */}
-            <div className='parrafo'>{card.description}</div>
-            <ul>
-              {card.arr.map((item, index) => (
-                <li 
-                  className='content'
-                  key={index}
-                >
-                  <text>
-                    {item}
-                  </text>
-                </li>
-              ))}
-            </ul>
+            <div className='flip-card'>
+            <div className='flip-card-inner'>
+              <div className='flip-card-front'>
+                <div>imagen</div>
+                <div className='content'><strong>{card.title}</strong></div>
+
+              </div>
+              {/* <img alt={card.title} src={card.imageSrc} width="100" height="100" /> */}
+            
+              <div className='flip-card-back'>
+
+              <div className='content'><strong>{card.title}</strong></div>
+              <div className='parrafo'>{card.description}</div>
+              <ul>
+                {card.arr.map((item, index) => (
+                  <li 
+                    className='content'
+                    key={index}
+                  >
+                    <text>
+                      {item}
+                    </text>
+                  </li>
+                ))}
+              </ul>
+              </div>
+            </div>
+            </div>
           </Card>
         ))}
       </div>

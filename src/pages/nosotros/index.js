@@ -6,16 +6,9 @@ import '../../styles/style.scss'
 const Index = () => {
   return (
     <>
-    <body 
-      style={{
-        backgroundColor: "#F8F8F8"
-      }}>
 
       <div className='caja'>
-        <Card 
-        // style={{
-        //   backgroundColor: "#6500FE"
-        // }}
+        <Card  backgroundColor={"#6500FE"}  
         >
           <text className='titleSecondary' style={{color: '#F8F8F8'}}>
             Comprometidos<br/> con hacer crecer<br/> a tu empresa
@@ -114,8 +107,7 @@ const Index = () => {
         </Card>
       </div>
 
-    </body>
     </>
   )
 }
- export default Index
+export default Index

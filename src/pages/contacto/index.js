@@ -5,10 +5,12 @@ import { Button, Container, Row, Col } from 'react-bootstrap';
 
 import '../../styles/style.scss'
 
+import './style.css'
+
 const Index = () => {
   return (
     <>
-    <Container fluid style={{backgroundColor: "red"}}>
+    <Container fluid style={{backgroundColor: "white"}}>
       <Row className="justify-content-md-center">
         <Col xs={6}>
           <div className='titleSecondary' style={{padding: "0"}}>
@@ -44,18 +46,35 @@ const Index = () => {
         </Col>
 
         <Col xs={4}>
-          <Card>
+          {/* <Card> */}
+          <div>
             <p>
               <strong>Déjanos un mensaje</strong>
             </p>
-            <input type={"text"} id={"Nombre"}/>
-            <input type={"text"} id={"Teléfono"}/>
-            <input type={"text"} id={"Correo"}/>
-            <input type={"text"} id={"Servicio que te interesa"}/>
-            <Button as="a">
+            <div className='form'>
+              <div className='box'> 
+                <input type={"text"} id={"Nombre"}/>
+                <label>Nombre</label>
+              </div>
+              <div className='box'>
+                <input type={"text"} id={"Teléfono"}/>
+                <label>Teléfono</label>
+              </div>
+              <div className='box'>
+                <input type={"text"} id={"Correo"}/>
+                <label>Correo</label>
+              </div>
+              <div className='box'>
+                <input type={"text"} id={"Servicio que te interesa"}/>
+                <label>Servicio</label>
+              </div>
+            </div>
+
+            <Button as="a" style={{backgroundColor: "#6500FE"}}>
               Enviar
             </Button>
-          </Card>
+          {/* </Card> */}
+          </div>
         </Col>
       </Row>
 

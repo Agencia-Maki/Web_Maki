@@ -4,15 +4,21 @@ import Card from '../../components/Card/Card'
 import '../../styles/style.scss'
 import { Container, Row, Col } from 'react-bootstrap';
 
+
+
+import socialMedia from '../../assets/images/servicios/socialMedia.png'
+import web from '../../assets/images/servicios/web.png'
+import diseñoGrafico from '../../assets/images/servicios/diseñoGrafico.png'
+import fotoMedia from '../../assets/images/servicios/fotoVideo.png'
 import './style.css'
 
 
 const Index = () => {
   return (
     <body>
-      <div className='caja gris' style={{display: "flex", flexDirection: "column", justifyContent: "center"}}>
-        <div className='title'>
-          <p style={{lineHeight: "1"}}>
+      <div className='caja gris' style={{display: "flex", flexDirection: "column", textAlign: "center"}}>
+        <div className='title' style={{ justifyContent: "center"}}>
+          <p style={{lineHeight: "1" }}>
             <strong>Lo que<br/>sabemos<br/> hacer <text style={{color: "#6500FE",lineHeight: "1"}}>bien</text></strong>
           </p>
           <p className='titleSecondary'>
@@ -34,19 +40,22 @@ const Index = () => {
             <div className='flip-card'>
               <div className='flip-card-inner'>
               <div className='flip-card-front'>
-                <div>Social Media</div>
+                <img className='imagen' src={socialMedia} alt="No Cargo Imagen" />
               </div>
               <div className='flip-card-back'>
-                <div>
+                <div style={{margin: "20px"}}>
                   <text>
-                    <p>Social Media</p>
+                    <p style={{
+                        textAlign: "center"}}>
+                      <strong>Social Media</strong>
+                    </p>
                     <p>Nos encargamos de gestionar tu marca en<br/>
                       redes sociales ayudandote a llegar a tú<br/>
                       público objetivo.</p>
-                    <li>Creación de contenido</li>
-                    <li>Diseño gráfico y audiovisual</li>
-                    <li>Facebook Ads</li>
-                    <li>Community management</li>
+                    <li><text>Creación de contenido</text></li>
+                    <li><text>Diseño gráfico y audiovisual</text></li>
+                    <li><text>Facebook Ads</text></li>
+                    <li><text>Community management</text></li>
                   </text>
                 </div>
               </div>
@@ -58,21 +67,24 @@ const Index = () => {
             <div className='flip-card'>
               <div className='flip-card-inner'>
               <div className='flip-card-front'>
-                <div>Diseño Gráfico</div>
+              <img className='imagen' src={web} alt="No Cargo Imagen" />
               </div>
               <div className='flip-card-back'>
-                <div>
+                <div style={{margin: "20px"}}>
                   <text>
-                    <p>Social Media</p>
+                    <p style={{
+                        textAlign: "center"}}>
+                      <strong>Social Media</strong>
+                    </p>
                     <p>
                       Elaboramos piezas graficas que plasmen la<br/>
                       personalidad de tu marca
                     </p>
-                    <li>Identidad de marca</li>
-                    <li>Diseño de volantes</li>
+                    <li><text>Identidad de marca</text></li>
+                    <li><text>Diseño de volantes</text></li>
                     <li>
-                      Diseno de piezas graticas para<br/>
-                      platatormas virtuales e impresas
+                      <text>Diseno de piezas graticas para<br/>
+                      platatormas virtuales e impresas</text>
                     </li>
                   </text>
                 </div>
@@ -84,51 +96,57 @@ const Index = () => {
           </Col>
           <Col>
 
-          <div className='flip-card'>
-            <div className='flip-card-inner'>
-            <div className='flip-card-front'>
-              <div>Web</div>
-            </div>
-            <div className='flip-card-back'>
-              <div>
-                <text>
-                  <p>Web</p>
-                  <p>
-                    Desarrollamos tu página web o<br/>
-                    E-Commerce bajo los estandares de web<br/>
-                    responsive.
-                  </p>
-                  <li>Diseño Web</li>
-                  <li>SEO y SEM</li>
-                </text>
+            <div className='flip-card'>
+              <div className='flip-card-inner'>
+              <div className='flip-card-front'>
+                  <img className='imagen' src={diseñoGrafico} alt="No Cargo Imagen" />
               </div>
-            </div>
-
-            </div>
-          </div>            
-            
-          <div className='flip-card'>
-            <div className='flip-card-inner'>
-            <div className='flip-card-front'>
-              <div>Foto y Video</div>
-            </div>
-            <div className='flip-card-back'>
-              <div>
-                <text>
-                  <p>Foto y Video</p>
-                  <p>
-                    Desarrollamos y producimos fotogratia y<br/>
-                    video publicitario.<br/>
-                  </p>
-                  <li>Fotogratia de producto</li>
-                  <li>Reels y Tiktok</li>
-                  <li>Spots publicitarios</li>
-                  <li>Ideos institucionales</li>
-                </text>
+              <div className='flip-card-back'>
+                <div style={{margin: "20px"}}>
+                  <text>
+                    <p style={{
+                        textAlign: "center"}}>
+                      <strong>Web</strong>
+                    </p>
+                    <p>
+                      Desarrollamos tu página web o<br/>
+                      E-Commerce bajo los estandares de web<br/>
+                      responsive.
+                    </p>
+                    <li><text>Diseño Web</text></li>
+                    <li><text>SEO y SEM</text></li>
+                  </text>
+                </div>
               </div>
-            </div>
 
-            </div>
+              </div>
+            </div>            
+              
+            <div className='flip-card'>
+              <div className='flip-card-inner'>
+              <div className='flip-card-front'>
+                  <img className='imagen' src={fotoMedia} alt="No Cargo Imagen" />
+              </div>
+              <div className='flip-card-back'>
+                <div style={{margin: "20px"}}>
+                  <text>
+                    <p style={{
+                        textAlign: "center"}}>
+                      <strong>Foto y Video</strong>
+                    </p>
+                    <p>
+                      Desarrollamos y producimos fotogratia y<br/>
+                      video publicitario.<br/>
+                    </p>
+                    <li><text>Fotogratia de producto</text></li>
+                    <li><text>Reels y Tiktok</text></li>
+                    <li><text>Spots publicitarios</text></li>
+                    <li><text>Ideos institucionales</text></li>
+                  </text>
+                </div>
+              </div>
+
+              </div>
             </div>
 
           </Col>

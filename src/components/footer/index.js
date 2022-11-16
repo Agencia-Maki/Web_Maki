@@ -2,6 +2,9 @@ import React from 'react'
 import { Row, Col, Container } from 'react-bootstrap'
 import './scss/footer.scss'
 
+
+import logo from '../../assets/images/logoWhite.png'
+
 const Footer = () => {
   return (
     <>
@@ -17,10 +20,14 @@ const Footer = () => {
     >
       <Row className="justify-content-md-center">
         <Col xs={2} className="center" style={{height: "200px"}}>
-          <text>
-            <p style={{lineHeight: "1.5"}}>@2022 MAKI<br/>
-            Todos los derechos</p>
-          </text>
+          <div>
+            <img className='logo' src={logo} alt="No Cargo Imagen" />
+            <text>
+              <p style={{lineHeight: "1.5"}}>
+                @2022 MAKI<br/>
+                Todos los derechos</p>
+            </text>
+          </div>
         </Col>
         <Col xs={4} className="center">
           <text>

@@ -1,105 +1,76 @@
-import React,{useState} from "react"
-import Slider from 'react-slick'
-
-// import '../../styles/style.scss'
-
-const sliderSettings = {
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-       slidesToShow: 2,
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-       slidesToShow: 1,
-      }
-     }
-  ],
-
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  infinite: false,
-  
-  fade: true ,
-  speed: 500, // ms
-  autoplay: false,
-  initialSlide: 2,
-  lazyLoad: true,
-  autoplaySpeed: 30,
-}
-
-const settings = { 
-  fade: true ,
-  speed: 500, // ms
-  autoplay: true,
-  initialSlide: 2,
-  lazyLoad: true,
-  autoplaySpeed: 3000,
-
-  className: "center",
-  centerMode: true,
-  infinite: true,
-  slidesToShow: 1,
-
-  // dots: true,
-  slidesToScroll: 1,
-  cssEase: "linear"
-}
-
-const hotelCards = [
-  {
-    title: 'Studio Room'
-  },
-  {
-    title: 'Deluxe Room'
-  },
-  {
-    title: 'King Deluxe Room',
-  },
-  {
-    title: 'Royal Suite',
-  },
-]
+import Carousel from 'react-bootstrap/Carousel';
+import Card from '../../components/Card/Card'
 
 
+import web from '../../assets/images/inicio/web.png'
+import socialMedia from '../../assets/images/inicio/socialMedia.png'
 
-const Index = () => {
-
-  const [sliderRef, setSliderRef] = useState(false)
-
+function index() {
   return (
+    <div className='caja'>
 
-  <>
-    <body>
-    {/* <div className="caja">
-      <div>
-        <button onCLick={sliderRef?.slickPrev} name="prev">Prev</button>
-        <button onCLick={sliderRef?.slickNext} name="next">Next</button>
-      </div>
-    </div> */}
-    
-    <div className="caja gris">
-      <div>
-      <Slider  {...settings} >
-          {hotelCards.map((card, index) => (
-            <div key={index}>
-              <h2>{card.title}</h2>              
-            </div>
-          ))}
-        </Slider>
-      </div>
+    <Carousel>
+      <Carousel.Item interval={5000}>
+        <Card 
+          style={{
+            // height: "300px",
+            // width: "300px",
+            backgroundColor: "red",
+          }}>
+          hola
+        </Card>
+
+      </Carousel.Item>
+      <Carousel.Item interval={5000}>
+        <img
+          className="d-block"
+          // src="holder.js/800x400?text=Second slide&bg=282c34"
+          alt="Second slide"
+          style={{
+            height: "300px",
+            width: "300px",
+            backgroundColor: "blue",
+          }}
+        />
+        <Carousel.Caption>
+          <h3>Social Media</h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={5000}>
+        <img
+          className="d-block"
+          // src="holder.js/800x400?text=Third slide&bg=20232a"
+          alt="Third slide"
+          style={{
+            height: "300px",
+            width: "300px",
+            backgroundColor: "green"
+          }}
+        />
+        <Carousel.Caption>
+          <h3>Diseño Grafico</h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item interval={5000}>
+        <img
+          className="d-block"
+          // src="holder.js/800x400?text=Third slide&bg=20232a"
+          alt="Third slide"
+          style={{
+            height: "300px",
+            width: "300px",
+            backgroundColor: "green"
+          }}
+        />
+        <Carousel.Caption>
+          <h3>Foto y Video</h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
     </div>
 
-    </body>
-  </>
-
-  )
+  );
 }
-export default Index
 
-/*
-  {...sliderSettings}
-*/
+export default index;

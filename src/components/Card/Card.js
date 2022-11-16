@@ -3,7 +3,7 @@ import './scss/card.scss'
 
 const Card = (props) => {
 
-  // console.log(props)
+  console.log("color: ",props)
   // console.log(props.color)
   // const {color, backgroundColor, title, img ,description} = props
 
