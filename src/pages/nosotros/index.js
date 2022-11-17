@@ -1,15 +1,17 @@
 import React from 'react'
+import Timeline from './timeline.js'
 import { Container, Row, Col } from 'react-bootstrap';
 
 import '../../styles/style.scss'
 
 const Index = () => {
+  
   return (
     <>
     <div style={{backgroundColor: "#F8F8F8"}}>
 
       <Row>
-        <Col style={{ height: "500px" , backgroundColor: "#6500FE"}}>
+        <Col style={{ height: "650px" , backgroundColor: "#6500FE"}}>
           <div style={{position: "relative"}}>
             <text style={{
               position: "absolute",
@@ -90,28 +92,35 @@ const Index = () => {
       </Row>
 
       <Row>
-        <div className='caja'>
-          <text className='titleSecondary'><strong>Nuestros Valores</strong></text>
-        </div>
-      </Row>
-
-      <Row style={{ height: "100px"}}>
-        <Col>
-          <li>Profesionalismo</li>
-          <li>Innovación</li>
-          <li>Responsabilidad</li>
-          <li>Puntualidad</li>
-          <li>Trabajo en Equipo</li>
-        </Col>
+        <text className='caja'>
+          <p className='titleSecondary'
+            style={{ 
+              display: "flex", justifyContent: "space-around"
+            }}
+          >
+            <strong>Nuestros Valores</strong>
+          </p>
+        </text>
+        <Timeline/>
       </Row>
 
       <Row style={{ height: "250px"}}>
         <Col>
-          <div>
-            <text className='titleSecondary'><strong>El Dream Team</strong></text><br/>
-          </div>
+          <text>
+            <p className='titleSecondary' 
+              style={{ 
+              display: "flex", justifyContent: "center"
+              }}
+            >
+              <strong>El Dream Team</strong>
+            </p>
+          </text>
 
-          <text className='content'>
+          <text className='content'
+            style={{ 
+              display: "flex",justifyContent: "center"
+            }}
+          >
             <p>
               Somos un equipo que trabaja mediante procesos y se capacita constantemente para obtimizar la relación<br/>
               de cada proyecto y lograr mejores trabajos en el menos tiempo posible, dejándonos tiempo para hacer lo<br/>

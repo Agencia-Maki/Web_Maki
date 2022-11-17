@@ -42,7 +42,7 @@ const flickityOptions = {
   prevNextButtons: false,
   pageDots: false,
   wrapAround: true,
-  // autoPlay: true
+  autoPlay: true
 }
 
 const Carrucel = () => {

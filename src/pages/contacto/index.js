@@ -10,9 +10,9 @@ import './style.css'
 const Index = () => {
   return (
     <>
-    <Container fluid style={{backgroundColor: "white"}}>
+    <div style={{backgroundColor: "white", height: "800px"}}>
       <Row className="justify-content-md-center">
-        <Col xs={6}>
+        <Col>
           <div className='titleSecondary' style={{padding: "0"}}>
             <strong>
               <p style={{color: "#6500FE",lineHeight: "1"}}>Agenda una<br/> consulta gratuita
@@ -23,7 +23,7 @@ const Index = () => {
             </strong>
           </div>
 
-          <Row className={"mt-5"}>
+          <Row>
             <Col>
               <div className='content'>
                 <p>
@@ -45,13 +45,12 @@ const Index = () => {
           </Row>
         </Col>
 
-        <Col xs={4}>
-          {/* <Card> */}
-          <div>
-            <p>
-              <strong>Déjanos un mensaje</strong>
-            </p>
+        <Col>
+          <Card>
             <div className='form'>
+              <label>
+                <strong>Déjanos un mensaje</strong>
+              </label>
               <div className='box'> 
                 <input type={"text"} id={"Nombre"}/>
                 <label>Nombre</label>
@@ -68,17 +67,15 @@ const Index = () => {
                 <input type={"text"} id={"Servicio que te interesa"}/>
                 <label>Servicio</label>
               </div>
+              <Button as="a" style={{backgroundColor: "#6500FE"}}>
+                Enviar
+              </Button>
             </div>
-
-            <Button as="a" style={{backgroundColor: "#6500FE"}}>
-              Enviar
-            </Button>
-          {/* </Card> */}
-          </div>
+          </Card>
         </Col>
       </Row>
 
-    </Container>
+    </div>
 
     </>
   )
