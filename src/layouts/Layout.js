@@ -9,9 +9,9 @@ const Layout = (props) => {
   return (
     <>
       <Header />
-          <div className="web-content">
-            {props.children}
-          </div>   
+        <div className="web-content">
+          {props.children}
+        </div>   
       <Footer />
     </>
   )

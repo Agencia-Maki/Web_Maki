@@ -1,11 +1,9 @@
 import React from 'react'
-import Card from '../../components/Card/Card'
 
 import { Container, Row, Col } from 'react-bootstrap';
 
 import font from '../../assets/images/inicio/font.png'
-import web from '../../assets/images/inicio/web.png'
-import socialMedia from '../../assets/images/inicio/socialMedia.png'
+
 import cato from '../../assets/images/inicio/Grupo 513.png'
 import aural from '../../assets/images/inicio/Grupo 498.png'
 import magna from '../../assets/images/inicio/Grupo 506.png'
@@ -17,126 +15,72 @@ import vapreh from '../../assets/images/inicio/Grupo 502.png'
 import parisinos from '../../assets/images/inicio/Grupo 95.png'
 
 import '../../styles/style.scss'
+import Carrucel from './carrucel.js'
 
-const Data = [
-  {
-    title: "Web",
-    img: "",
-    description: "Desarrollamos tu página web o E-Comerce bajo los estandares de weeb responsive.",
-    arr: ["Diseño Web","SEO Y SEM"],
-  },
-  {
-    title: "Social Media",
-    img: "",
-    description: "Nos encargamos de gestionar tu marca en redes sociales ayudándote a llegar a tu público objetivo.",
-    arr: ["Creación de contenido","Diseño gráfico y audiovisual","Facebook Ads","Community management"],
-  },
-  {
-    title: "Diseño Grafico",
-    img: "",
-    description: "Elaboramos piezas gráficas que plasmen la personalidad de tu marca.",
-    arr: ["Identidad de marca","Diseño de volantes","Diseño de piezas gráficas para plataformas virtuales e impresas"],
-  },
-  {
-    title: "Foto y Video",
-    img: "",
-    description: "Desarrolamos y producimos fotografía y video publicitario.",
-    arr: ["Fotografia de producto","Reels y Tiktok","Spots publicitarios","Videos institucionales"],
-  },
-]
 
 const Index = () => {
   return (
-  <>
-  <body>
+    <>
+    <div style={{backgroundColor: "white"}}>
 
     <div className='caja'>
       <img className='imagen' src={font} alt="No Cargo Imagen" />
     </div>
 
     <div className='gris caja' 
-    >
+      style={{
+        height: "800px", display: "flex",alignItems: "center"
+      }}>
       <Row>
-        <Col xs={5}>
+        <Col>
+          <div>
             <text style={{color: '#1D1D1B'}}>
-              <p className='title' style={{lineHeight: "1"}}><strong>ESTILO<br/>MAKI<text style={{color: "#6500FE"}} >.</text></strong></p>
-              <p><strong>Dualismo entre la inovación y lo<br/>tradicional</strong></p>
+              <p className='title' style={{lineHeight: "1"}}>
+                <strong>ESTILO<br/>MAKI<text style={{color: "#6500FE"}} >.</text></strong>
+              </p>
+              <p>
+                <strong>Dualismo entre la inovación y lo<br/>tradicional</strong>
+              </p>
               <p className='parrafo'>
-                Entendemos lo que tu empresa necesita y<br/> optimizamos la manera de obtener<br/> resultados
+                Entendemos lo que tu empresa necesita y<br/> optimizamos la manera de obtener<br/>
+                resultados
               </p>
               <p style={{color: "#6500FE"}}>Conoce nuestros servicios</p>
             </text>
+          </div>
         </Col>
-        <Col xs={7}>
-          <Card color="white">
-            <img className='imagenCard' src={web} alt="No Cargo Imagen" />
-            <text><strong>Web</strong></text>
-          </Card>
-          <Card color="white">
-            <img className='imagenCard' src={socialMedia} alt="No Cargo Imagen" />
-            <text><strong>Social Media</strong></text>
-          </Card>
+        <Col>
+          <div>
+            <Carrucel/>
+          </div>
         </Col>
       </Row>
     </div>
 
-    <div className='caja'>
-        {Data.map((card, index) => (
-          <Card key={index} color="white">
-            <div className='flip-card'>
-            <div className='flip-card-inner'>
-              <div className='flip-card-front'>
-                <div>imagen</div>
-                <div className='content'><strong>{card.title}</strong></div>
-
-              </div>
-              {/* <img alt={card.title} src={card.imageSrc} width="100" height="100" /> */}
-            
-              <div className='flip-card-back'>
-
-              <div className='content'><strong>{card.title}</strong></div>
-              <div className='parrafo'>{card.description}</div>
-              <ul>
-                {card.arr.map((item, index) => (
-                  <li 
-                    className='content'
-                    key={index}
-                  >
-                    <text>
-                      {item}
-                    </text>
-                  </li>
-                ))}
-              </ul>
-              </div>
-            </div>
-            </div>
-          </Card>
-        ))}
-      </div>
-
-    <div className='caja'>
+    <div className='caja' 
+      style={{
+        height: "600px", display: "flex",alignItems: "center"
+      }}>
       <Row>
         <Col>
           <div>
-          <text className="titleSecondary">
-            <strong>
-              <p style={{lineHeight: "0.75"}}>Ayudamos a </p>
-              <p style={{lineHeight: "0.75"}}>empresas a llegar </p>
-              <p style={{lineHeight: "0.75", color: "#6500FE"}} >al siguiente nivel.</p>
-            </strong>
-          </text>
-          <text>
-            <p>
-              Algunas de las empresas que confiaron<br/> 
-              en nosotros para empujarlos a seguir.
-            </p>
-            <p style={{color: "#6500FE"}}>Conoce más</p>
-          </text>
+            <text className="titleSecondary">
+              <strong>
+                <p style={{lineHeight: "0.75"}}>Ayudamos a </p>
+                <p style={{lineHeight: "0.75"}}>empresas a llegar </p>
+                <p style={{lineHeight: "0.75", color: "#6500FE"}} >al siguiente nivel.</p>
+              </strong>
+            </text>
+            <text>
+              <p>
+                Algunas de las empresas que confiaron<br/> 
+                en nosotros para empujarlos a seguir.
+              </p>
+              <p style={{color: "#6500FE"}}>Conoce más</p>
+            </text>
           </div>
         </Col>
         <Col>
-
 
         <Container>
           <Row>
@@ -163,9 +107,19 @@ const Index = () => {
 
         
     </div>
+    </div>
 
-  </body>
-  </>
+    </>
   )
 }
 export default Index
+
+//import Card from '../../components/Card/Card'
+// <Card color="white">
+//   <img className='imagenCard' src={web} alt="No Cargo Imagen" />
+//   <text><strong>Web</strong></text>
+// </Card>
+// <Card color="white">
+//   <img className='imagenCard' src={socialMedia} alt="No Cargo Imagen" />
+//   <text><strong>Social Media</strong></text>
+// </Card> 

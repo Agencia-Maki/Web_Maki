@@ -3,8 +3,6 @@
   width: 350px;
   height: 350px;
   perspective: 1000px;
-  margin: 30px;
-  margin-bottom: 100px;
 }
 
 .flip-card-inner {
@@ -30,7 +28,7 @@
 
 .flip-card-front {
   /* background-color: #6500FE; */
-  color: #eeeeee;
+  color: #000000;
 }
 
 .flip-card-back {

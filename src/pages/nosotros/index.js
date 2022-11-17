@@ -1,111 +1,181 @@
 import React from 'react'
-import Card from '../../components/Card/Card'
+import { Container, Row, Col } from 'react-bootstrap';
 
 import '../../styles/style.scss'
 
 const Index = () => {
   return (
     <>
+    <div style={{backgroundColor: "#F8F8F8"}}>
 
-      <div className='caja'>
-        <Card  backgroundColor={"#6500FE"}  
-        >
-          <text className='titleSecondary' style={{color: '#F8F8F8'}}>
-            Comprometidos<br/> con hacer crecer<br/> a tu empresa
-          </text>
-        </Card>
-        <Card>
-          <text className='content'>
-            <strong>
-              Nuestro propósito es poder<br/>
-              ayudar a nuestros clientes<br/>
-              a llegar al siguiente nivel y<br/>
-              <text style={{color: '#6500FE'}}>seguir creciendo juntos.</text>
-            </strong>
-          </text>
-        </Card>
-      </div>
+      <Row>
+        <Col style={{ height: "500px" , backgroundColor: "#6500FE"}}>
+          <div style={{position: "relative"}}>
+            <text style={{
+              position: "absolute",
+              top: "50%",
+              right: "5%",
+              marginTop: "15%"
+            }}>
+              <p className='titleSecondary' style={{color: '#F8F8F8'}}>
+                <strong>Comprometidos<br/> con hacer crecer<br/> a tu empresa</strong>
+              </p>
+            </text>
+          </div>
+        </Col>
 
-      <div className='caja'>
-        <Card>
-          <text className='titleSecondary'>
-            <strong>
-              Llevamos la<br/>
-              Innovación en<br/>
-              nuestro <text style={{color: '#6500FE'}}>ADN.</text>
-            </strong>
-          </text>
-        </Card>
-        <Card>
-          <text className='content'>
-            Maki nace por la necesidad de brindar una<br/>
-            mano a aquellas empresas que buscan<br/>
-            adaptarse a los cambios constantes en el<br/>
-            mundo digital.<br/><br/>
-          </text>
-          <text className='content'>
-            Al igual que ellos buscamos reinventarnos<br/>
-            constantemente para ofrecer la mejor<br/>
-            calidad en nuestros servicios.
-          </text>
-        </Card>
-      </div>
+        <Col>
+          <div style={{position: "relative"}}>
+            <text className='content' style={{
+              position: "absolute",
+              top: "50%",
+              left: "5%",
+              marginTop: "25%"
+            }}>
+              <p>
+                <strong>
+                Nuestro propósito es poder<br/>
+                ayudar a nuestros clientes<br/>
+                a llegar al siguiente nivel y<br/>
+                <text style={{color: '#6500FE'}}>seguir creciendo juntos.</text>
+                </strong>
+              </p>
+            </text>
+          </div>
+        </Col>
+      </Row>
 
-      <div className='caja'>
-        <text className='titleSecondary'><strong>Nuestros Valores</strong></text>
-        <div>
+      <Row>
+        <Col style={{ height: "400px"}}>
+          <div style={{position: "relative"}}>
+            <text className='titleSecondary' 
+              style={{
+                position: "absolute",
+                top: "50%",
+                right: "5%",
+                marginTop: "15%"
+              }}>
+              <strong>
+                Llevamos la<br/>
+                Innovación en<br/>
+                nuestro <text style={{color: '#6500FE'}}>ADN.</text>
+              </strong>
+            </text>
+          </div>
+        </Col>
+      
+        <Col> 
+          <div style={{position: "relative"}}>
+            <text className='content' style={{
+              position: "absolute",
+              top: "50%",
+              left: "5%",
+              marginTop: "15%"
+            }}
+            >
+              <p>
+                Maki nace por la necesidad de brindar una<br/>
+                mano a aquellas empresas que buscan<br/>
+                adaptarse a los cambios constantes en el<br/>
+                mundo digital.<br/>
+              </p>
+              <p>
+                Al igual que ellos buscamos reinventarnos<br/>
+                constantemente para ofrecer la mejor<br/>
+                calidad en nuestros servicios.
+              </p>
+            </text>
+          </div>
+        </Col>
+      </Row>
+
+      <Row>
+        <div className='caja'>
+          <text className='titleSecondary'><strong>Nuestros Valores</strong></text>
+        </div>
+      </Row>
+
+      <Row style={{ height: "100px"}}>
+        <Col>
           <li>Profesionalismo</li>
           <li>Innovación</li>
           <li>Responsabilidad</li>
           <li>Puntualidad</li>
           <li>Trabajo en Equipo</li>
-        </div>
-      </div>
+        </Col>
+      </Row>
 
-      <div className='caja'>
-        <text className='titleSecondary'><strong>El Dream Team</strong></text><br/>
-      </div>
-      <div className='caja'>
-        <text>
-          Somos un equipo que trabaja mediante procesos y se capacita constantemente para obtimizar la relación<br/>
-          de cada proyecto y lograr mejores trabajos en el menos tiempo posible, dejándonos tiempo para hacer lo<br/>
-          que más nos gusta: Ser Creativos.<br/>
-        
-          En Maki tenemos la política de nunca caer en lo convencional y siempre buscamos proponer cosas nuevas.<br/>
-        </text>
-      </div>
+      <Row style={{ height: "250px"}}>
+        <Col>
+          <div>
+            <text className='titleSecondary'><strong>El Dream Team</strong></text><br/>
+          </div>
 
-
-      <div className='caja'>
-        <text className='imagenCard'>imagen</text>
-        <text className='imagenCard'>imagen</text>
-        <text className='imagenCard'>imagen</text>
-        <text className='imagenCard'>imagen</text>
-      </div>
-      <div className='caja'>
-        <text className='imagenCard'>imagen</text>
-        <text className='imagenCard'>imagen</text>
-        <text className='imagenCard'>imagen</text>
-        <text className='imagenCard'>imagen</text>
-      </div>
-
-
-      <div className='caja'>
-        <Card>
-          <text className='titleSecondary'>
-            <strong>
-              Únete al<br/><text style={{color: '#6500FE'}}>equipo</text>
-            </strong>
-          </text>
-        </Card>
-        <Card>
           <text className='content'>
-            Siempre estamos en busqueda de nuevos latentos que <br/>
-            quieran sumarse a nuestro equipo de especilistas.
-          </text>
-          <input type="submit" value="Déjanos tu CV" />
-        </Card>
-      </div>
+            <p>
+              Somos un equipo que trabaja mediante procesos y se capacita constantemente para obtimizar la relación<br/>
+              de cada proyecto y lograr mejores trabajos en el menos tiempo posible, dejándonos tiempo para hacer lo<br/>
+              que más nos gusta: Ser Creativos.<br/>           
+              En Maki tenemos la política de nunca caer en lo convencional y siempre buscamos proponer cosas nuevas.<br/>
+            </p>
+        </text>
+        </Col>
+      </Row>
+
+      <Row>
+        <div className='caja'>
+          <text className='imagenCard'>imagen</text>
+          <text className='imagenCard'>imagen</text>
+          <text className='imagenCard'>imagen</text>
+          <text className='imagenCard'>imagen</text>
+        </div>
+        <div className='caja'>
+          <text className='imagenCard'>imagen</text>
+          <text className='imagenCard'>imagen</text>
+          <text className='imagenCard'>imagen</text>
+          <text className='imagenCard'>imagen</text>
+        </div>
+      </Row>
+
+      <Row>
+        <Col sm={3}>
+          <div className='titleSecondary' style={{position: "relative"}}>
+            <text
+              style={{
+                position: "absolute",
+                top: "50%",
+                right: "5%",
+                marginTop: "10%"
+              }}>
+              <p>
+                <strong>
+                  Únete al<br/><text style={{color: '#6500FE'}}>equipo</text>
+                </strong>
+              </p>
+            </text>
+          </div>
+        </Col>
+
+        <Col sm={9} style={{ height: "250px"}}>
+          <div style={{position: "relative"}}>
+            <text className='content'
+              style={{
+                position: "absolute",
+                top: "50%",
+                right: "5%",
+                marginTop: "12%"
+              }}>
+              <p>
+              Siempre estamos en busqueda de nuevos latentos que <br/>
+              quieran sumarse a nuestro equipo de especilistas.
+              </p>
+              <input type="submit" value="Déjanos tu CV" />
+            </text>
+          </div>
+        </Col>
+      </Row>
+
+    </div>
 
     </>
   )

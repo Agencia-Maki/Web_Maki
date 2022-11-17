@@ -1,39 +1,38 @@
 import React from 'react'
 import Card from '../../components/Card/Card'
 
-import '../../styles/style.scss'
 import { Container, Row, Col } from 'react-bootstrap';
-
-
 
 import socialMedia from '../../assets/images/servicios/socialMedia.png'
 import web from '../../assets/images/servicios/web.png'
 import diseñoGrafico from '../../assets/images/servicios/diseñoGrafico.png'
 import fotoMedia from '../../assets/images/servicios/fotoVideo.png'
+
+import '../../styles/style.scss'
 import './style.css'
 
 
 const Index = () => {
   return (
-    <body>
-      <div className='caja gris' style={{display: "flex", flexDirection: "column", textAlign: "center"}}>
-        <div className='title' style={{ justifyContent: "center"}}>
+    <div className='gris'>
+      <div className='caja gris' style={{height: "1000px" , display: "flex", flexDirection: "column", alignItems: "center"}}>
+        <text className='title'>
           <p style={{lineHeight: "1" }}>
             <strong>Lo que<br/>sabemos<br/> hacer <text style={{color: "#6500FE",lineHeight: "1"}}>bien</text></strong>
           </p>
           <p className='titleSecondary'>
             Calidad Optimizada<br/>
           </p>
-        </div>
-        <div>
+        </text>
+        <text>
           <p>
             Somos una agencia que trabaja con procesos optimizados,<br/>
             garantizando un trabajo con calidad y en los tiempos previstos.
           </p>
-        </div>
+        </text>
       </div>
 
-      <Container className='caja gris'>
+      <div className='caja gris' style={{height: "800px" , display: "flex", alignItems: "center", justifyContent: "center"}}>
         <Row>
           <Col>
     
@@ -151,9 +150,9 @@ const Index = () => {
 
           </Col>
         </Row>
-      </Container>
+      </div>
 
-    </body>
+    </div>
   )
 }
  export default Index

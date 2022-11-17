@@ -81,7 +81,7 @@ const Header = () => {
         <div className="menu-container">
           <ul className="menu-nav">
             <li className="nav-item">
-              <Link className="page-home-link active" to="/" onClick={() => setShowMenu(false)}>
+              <Link className="page-home-link" to="/" onClick={() => setShowMenu(false)}>
                 <span className="msk">
                   <span>Inicio</span>
                 </span>
