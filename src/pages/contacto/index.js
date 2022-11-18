@@ -1,11 +1,10 @@
 import React from 'react'
 import Card from '../../components/Card/Card'
+import Form from '../../components/Form/Form'
 
-import { Button, Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 import '../../styles/style.scss'
-
-import './style.css'
 
 const Index = () => {
   return (
@@ -47,51 +46,13 @@ const Index = () => {
 
         <Col>
           <Card>
-            <div className='form'>
-              <label>
-                <strong>Déjanos un mensaje</strong>
-              </label>
-              <div className='box'> 
-                <input type={"text"} id={"Nombre"}/>
-                <label>Nombre</label>
-              </div>
-              <div className='box'>
-                <input type={"text"} id={"Teléfono"}/>
-                <label>Teléfono</label>
-              </div>
-              <div className='box'>
-                <input type={"text"} id={"Correo"}/>
-                <label>Correo</label>
-              </div>
-              <div className='box'>
-                <input type={"text"} id={"Servicio que te interesa"}/>
-                <label>Servicio</label>
-              </div>
-              <Button as="a" style={{backgroundColor: "#6500FE"}}>
-                Enviar
-              </Button>
-            </div>
+            <Form/>
           </Card>
         </Col>
       </Row>
 
     </div>
-
     </>
   )
 }
 export default Index
-
-/*
-
-
-
-
-
-
-
-
-
-
-
-*/

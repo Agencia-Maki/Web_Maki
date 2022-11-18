@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from '../../components/Card/Card'
 
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 import socialMedia from '../../assets/images/servicios/socialMedia.png'
 import web from '../../assets/images/servicios/web.png'
