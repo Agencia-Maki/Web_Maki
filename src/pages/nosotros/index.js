@@ -92,15 +92,6 @@ const Index = () => {
       </Row>
 
       <Row>
-        <text className='caja'>
-          <p className='titleSecondary'
-            style={{ 
-              display: "flex", justifyContent: "space-around"
-            }}
-          >
-            <strong>Nuestros Valores</strong>
-          </p>
-        </text>
         <Timeline/>
       </Row>
 
@@ -132,23 +123,29 @@ const Index = () => {
       </Row>
 
       <Row>
+     
         <div className='caja'>
-          <text className='imagenCard'>imagen</text>
-          <text className='imagenCard'>imagen</text>
-          <text className='imagenCard'>imagen</text>
-          <text className='imagenCard'>imagen</text>
+          <text className='imagenCard' style={{backgroundColor: "lightblue"}}>imagen</text>
+          <text className='imagenCard' style={{backgroundColor: "lightblue"}}>imagen</text>
+          <text className='imagenCard' style={{backgroundColor: "lightblue"}}>imagen</text>
+          <text className='imagenCard' style={{backgroundColor: "lightblue"}}>imagen</text>
         </div>
         <div className='caja'>
-          <text className='imagenCard'>imagen</text>
-          <text className='imagenCard'>imagen</text>
-          <text className='imagenCard'>imagen</text>
-          <text className='imagenCard'>imagen</text>
+          <text className='imagenCard' style={{backgroundColor: "lightblue"}}>imagen</text>
+          <text className='imagenCard' style={{backgroundColor: "lightblue"}}>imagen</text>
+          <text className='imagenCard' style={{backgroundColor: "lightblue"}}>imagen</text>
+          <text className='imagenCard' style={{backgroundColor: "lightblue"}}>imagen</text>
         </div>
+
       </Row>
 
       <Row>
-        <Col sm={3}>
-          <div className='titleSecondary' style={{position: "relative"}}>
+        <Col sm={4}>
+          <div className='titleSecondary' 
+            style={{
+              position: "relative"
+            }}
+          >
             <text
               style={{
                 position: "absolute",
@@ -165,14 +162,14 @@ const Index = () => {
           </div>
         </Col>
 
-        <Col sm={9} style={{ height: "250px"}}>
+        <Col sm={8} style={{ height: "250px"}}>
           <div style={{position: "relative"}}>
             <text className='content'
               style={{
                 position: "absolute",
                 top: "50%",
-                right: "5%",
-                marginTop: "12%"
+                left: "30%",
+                marginTop: "8%"
               }}>
               <p>
               Siempre estamos en busqueda de nuevos latentos que <br/>

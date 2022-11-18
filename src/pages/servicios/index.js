@@ -15,7 +15,16 @@ import './style.css'
 const Index = () => {
   return (
     <div className='gris'>
-      <div className='caja gris' style={{height: "1000px" , display: "flex", flexDirection: "column", alignItems: "center"}}>
+      <div className='caja gris' 
+        style={{
+          height: "1100px" ,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          marginTop: "-50px"
+        }}
+      >
         <text className='title'>
           <p style={{lineHeight: "1" }}>
             <strong>Lo que<br/>sabemos<br/> hacer <text style={{color: "#6500FE",lineHeight: "1"}}>bien</text></strong>

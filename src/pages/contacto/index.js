@@ -11,7 +11,7 @@ const Index = () => {
   return (
     <>
     <div style={{backgroundColor: "white", height: "800px"}}>
-      <Row className="justify-content-md-center">
+      <Row>
         <Col>
           <div className='titleSecondary' style={{padding: "0"}}>
             <strong>

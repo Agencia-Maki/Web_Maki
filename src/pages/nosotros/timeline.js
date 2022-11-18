@@ -6,7 +6,24 @@ const timeline = () => {
 
   return (
     <>
-      <div>
+      <div className='caja' 
+        style={{
+          height: "400px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center"
+        }}
+      >        
+        <text>
+          <p className='titleSecondary'
+            style={{ 
+              display: "flex", 
+              justifyContent: "center"
+            }}
+          >
+            <strong>Nuestros Valores</strong>
+          </p>
+        </text>
 
         <ul className="timeline">
           <li>
