@@ -4,8 +4,6 @@ import Form from '../../components/Form/Form'
 
 import { Row, Col } from 'react-bootstrap';
 
-import '../../styles/style.scss'
-
 const Index = () => {
   return (
     <>

@@ -14,7 +14,6 @@ import anan from '../../assets/images/inicio/Grupo 483.png'
 import vapreh from '../../assets/images/inicio/Grupo 502.png'
 import parisinos from '../../assets/images/inicio/Grupo 95.png'
 
-import '../../styles/style.scss'
 import Carrucel from './carrucel.js'
 
 

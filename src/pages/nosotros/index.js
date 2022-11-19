@@ -2,8 +2,6 @@ import React from 'react'
 import Timeline from './timeline.js'
 import { Container, Row, Col } from 'react-bootstrap';
 
-import '../../styles/style.scss'
-
 const Index = () => {
   
   return (

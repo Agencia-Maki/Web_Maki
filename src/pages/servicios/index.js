@@ -1,6 +1,4 @@
 import React from 'react'
-import Card from '../../components/Card/Card'
-
 import { Row, Col } from 'react-bootstrap';
 
 import socialMedia from '../../assets/images/servicios/socialMedia.png'
@@ -8,7 +6,6 @@ import web from '../../assets/images/servicios/web.png'
 import diseñoGrafico from '../../assets/images/servicios/diseñoGrafico.png'
 import fotoMedia from '../../assets/images/servicios/fotoVideo.png'
 
-import '../../styles/style.scss'
 import './style.css'
 
 
