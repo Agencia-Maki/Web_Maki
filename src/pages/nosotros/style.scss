@@ -17,13 +17,13 @@
   }
   &:before{
     content: '';
-    width: 25px;
-    height: 25px;
+    width: 10px;
+    height: 10px;
     background-color: white;
     border-radius: 25px;
     border: 1px solid #ddd;
     position: absolute;
-    top: -15px;
+    top: -5px;
     left: 42%;
     transition: all 200ms ease-in;
   }

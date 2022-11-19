@@ -21,92 +21,92 @@ import Carrucel from './carrucel.js'
 const Index = () => {
   return (
     <>
-    <div style={{backgroundColor: "white"}}>
+      <div style={{backgroundColor: "white"}}>
 
-    <div className='caja'>
-      <img className='imagen' src={font} alt="No Cargo Imagen" />
-    </div>
+      <div className='caja'>
+        <img className='imagen' src={font} alt="No Cargo Imagen" />
+      </div>
 
-    <div className='gris caja' 
-      style={{
-        height: "800px", display: "flex",alignItems: "center"
-      }}>
-      <Row>
-        <Col>
-          <div>
-            <text style={{color: '#1D1D1B'}}>
-              <p className='title' style={{lineHeight: "1"}}>
-                <strong>ESTILO<br/>MAKI<text style={{color: "#6500FE"}} >.</text></strong>
-              </p>
-              <p>
-                <strong>Dualismo entre la inovación y lo<br/>tradicional</strong>
-              </p>
-              <p className='parrafo'>
-                Entendemos lo que tu empresa necesita y<br/> optimizamos la manera de obtener<br/>
-                resultados
-              </p>
-              <p style={{color: "#6500FE"}}>Conoce nuestros servicios</p>
-            </text>
-          </div>
-        </Col>
-        <Col>
-          <div>
-            <Carrucel/>
-          </div>
-        </Col>
-      </Row>
-    </div>
+      <div className='gris caja'
+        style={{
+          height: "800px", display: "flex",alignItems: "center"
+        }}>
+        <Row>
+          <Col>
+            <div style={{ margin: "100px"}}>
+              <text style={{color: '#1D1D1B'}}>
+                <p className='title' style={{lineHeight: "1"}}>
+                  <strong>ESTILO<br/>MAKI<text style={{color: "#6500FE"}} >.</text></strong>
+                </p>
+                <p>
+                  <strong>Dualismo entre la inovación y lo<br/>tradicional</strong>
+                </p>
+                <p className='parrafo'>
+                  Entendemos lo que tu empresa necesita y<br/> optimizamos la manera de obtener<br/>
+                  resultados
+                </p>
+                <p style={{color: "#6500FE"}}>Conoce nuestros servicios</p>
+              </text>
+            </div>
+          </Col>
+          <Col>
+            <div>
+              <Carrucel/>
+            </div>
+          </Col>
+        </Row>
+      </div>
 
-    <div className='caja' 
-      style={{
-        height: "600px", display: "flex",alignItems: "center"
-      }}>
-      <Row>
-        <Col>
-          <div>
-            <text className="titleSecondary">
-              <strong>
-                <p style={{lineHeight: "0.75"}}>Ayudamos a </p>
-                <p style={{lineHeight: "0.75"}}>empresas a llegar </p>
-                <p style={{lineHeight: "0.75", color: "#6500FE"}} >al siguiente nivel.</p>
-              </strong>
-            </text>
-            <text>
-              <p>
-                Algunas de las empresas que confiaron<br/> 
-                en nosotros para empujarlos a seguir.
-              </p>
-              <p style={{color: "#6500FE"}}>Conoce más</p>
-            </text>
-          </div>
-        </Col>
-        <Col>
+      <div className='caja' 
+        style={{
+          height: "600px", display: "flex",alignItems: "center"
+        }}>
+        <Row>
+          <Col>
+            <div style={{ marginLeft: "200px"}}>
+              <text className="titleSecondary">
+                <strong>
+                  <p style={{lineHeight: "0.75"}}>Ayudamos a </p>
+                  <p style={{lineHeight: "0.75"}}>empresas a llegar </p>
+                  <p style={{lineHeight: "0.75", color: "#6500FE"}} >al siguiente nivel.</p>
+                </strong>
+              </text>
+              <text>
+                <p>
+                  Algunas de las empresas que confiaron<br/> 
+                  en nosotros para empujarlos a seguir.
+                </p>
+                <p style={{color: "#6500FE"}}>Conoce más</p>
+              </text>
+            </div>
+          </Col>
+          <Col>
 
-        <Container>
-          <Row>
-            <Col>
-              <img className='logos' src={cato} alt="No Cargo Imagen" />
-              <img className='logos' src={aural} alt="No Cargo Imagen" />
-              <img className='logos' src={magna} alt="No Cargo Imagen" />
-            </Col>
-            <Col>
-              <img className='logos' src={puertoInca} alt="No Cargo Imagen" />
-              <img className='logos' src={gpr} alt="No Cargo Imagen" />
-              <img className='logos' src={altoImpacto} alt="No Cargo Imagen" />
-            </Col>
-            <Col>
-              <img className='logos' src={anan} alt="No Cargo Imagen" />
-              <img className='logos' src={vapreh} alt="No Cargo Imagen" />
-              <img className='logos' src={parisinos} alt="No Cargo Imagen" />
-            </Col>
-          </Row>
-        </Container>
+          <Container>
+            <Row>
+              <Col>
+                <img className='logos' src={cato} alt="No Cargo Imagen" />
+                <img className='logos' src={aural} alt="No Cargo Imagen" />
+                <img className='logos' src={magna} alt="No Cargo Imagen" />
+              </Col>
+              <Col>
+                <img className='logos' src={puertoInca} alt="No Cargo Imagen" />
+                <img className='logos' src={gpr} alt="No Cargo Imagen" />
+                <img className='logos' src={altoImpacto} alt="No Cargo Imagen" />
+              </Col>
+              <Col>
+                <img className='logos' src={anan} alt="No Cargo Imagen" />
+                <img className='logos' src={vapreh} alt="No Cargo Imagen" />
+                <img className='logos' src={parisinos} alt="No Cargo Imagen" />
+              </Col>
+            </Row>
+          </Container>
 
-        </Col>
-      </Row>
+          </Col>
+        </Row>
 
-        
-    </div>
+          
+      </div>
     </div>
 
     </>

@@ -1,5 +1,5 @@
 import React from 'react';
-// import Card from '../../components/Card/Card';
+import Card from '../../components/Card/Card';
 import Flickity from 'react-flickity-component'
 
 import '../../styles/flipCard.css'
@@ -7,6 +7,8 @@ import '../../styles/flipCard.css'
 import web from '../../assets/images/inicio/web.png'
 import socialMedia from '../../assets/images/inicio/socialMedia.png'
 import diseñoGrafico from '../../assets/images/inicio/diseñoGrafico.png'
+
+// import './style.scss'
 
 const Data = [
   {
@@ -36,26 +38,35 @@ const Data = [
 ]
 
 const flickityOptions = {
-  initialIndex: 1,
+  // initialIndex: 0,
   freeScroll: true,
   contain: true,
+
+  autoPlay: true,
   prevNextButtons: false,
   pageDots: false,
+  draggable: true,
   wrapAround: true,
-  autoPlay: true
+  selectedAttraction: 0.015,
+  friction: 0.25
 }
 
 const Carrucel = () => {
   return (
     <>
-    <div>
+    <div style={{ width: "600px", overflow: "hidden"}}>
       <Flickity
-        className={'carousel'}
-        elementType={'Card'}
-        options={flickityOptions} 
+        // className={"js-slideshow"}
+        // elementType={'Card'}
+        options={flickityOptions}
+        
+        style={{
+          width: "100%", /* full width */
+          //height: "2000px" /* height of carousel */
+        }}
       >
         {Data.map((card, index) => (
-          // <Card key={index} color="white">
+          <Card key={index} color="white" className="slide">
             <div className='flip-card' style={{margin: "20px"}}>
             <div className='flip-card-inner'>
               <div className='flip-card-front'>
@@ -63,12 +74,15 @@ const Carrucel = () => {
                   <img img src={card.img} alt="No Carga" height="250px"/>
                 </div>
                 <text>
-                  <p className='content'><strong>{card.title}</strong></p>
+                  <p className='content' style={{display: "flex", justifyContent: "center"}}>
+                    <strong>{card.title}</strong></p>
                 </text>
               </div>
             
               <div className='flip-card-back'>
-                <div className='content'><strong>{card.title}</strong></div>
+                <p className='content' style={{display: "flex", justifyContent: "center"}} >
+                  <strong>{card.title}</strong>
+                </p>
                 <div className='parrafo'>{card.description}</div>
                 <ul>
                   {card.arr.map((item, index) => (
@@ -85,7 +99,7 @@ const Carrucel = () => {
               </div>
             </div>
             </div>
-          // </Card>
+          </Card>
         ))}
         
       </Flickity>

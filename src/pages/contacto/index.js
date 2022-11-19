@@ -9,7 +9,12 @@ import '../../styles/style.scss'
 const Index = () => {
   return (
     <>
-    <div style={{backgroundColor: "white", height: "800px"}}>
+    <div style={{
+      backgroundColor: "white",
+      height: "800px",
+      padding: "150px"
+    }}
+    >
       <Row>
         <Col>
           <div className='titleSecondary' style={{padding: "0"}}>

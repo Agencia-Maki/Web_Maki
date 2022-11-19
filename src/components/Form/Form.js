@@ -7,8 +7,15 @@ const Form = (props) => {
 
   return (
     <div className='form'>
-      <label>
-        <strong>Déjanos un mensaje</strong>
+      <label style={{
+        marginTop: "50px",
+        marginBottom: "25px",
+        fontSize: "25px",
+        width: "250px"
+      }}>
+        <p>
+          <strong>Déjanos un mensaje</strong>
+        </p>
       </label>
       <div className='box'> 
         <input type={"text"} id={"Nombre"}/>
@@ -26,9 +33,9 @@ const Form = (props) => {
         <input type={"text"} id={"Servicio que te interesa"}/>
         <label>Servicio</label>
       </div>
-      <Button as="a" style={{backgroundColor: "#6500FE"}}>
+      <button className='button'>
         Enviar
-      </Button>
+      </button>
     </div>
   )
 }
@@ -44,9 +51,9 @@ export default Form
 <form>
   <div className='box'> 
     <input type={"text"} id={"Nombre"}/>
+    </form>
     <label>Nombre</label>
   </div>
-</form>
 <Button as="a" style={{backgroundColor: "#6500FE"}}>
   Enviar
 </Button>

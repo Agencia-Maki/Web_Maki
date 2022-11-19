@@ -1,0 +1,29 @@
+.mytooltip {
+    display: inline;
+    position: relative;
+    z-index: 999;
+  }
+.mytooltip .tooltip-content {
+position: absolute;
+z-index: 9999;
+left: 50%;
+bottom: 100%;
+line-height: 30px;
+background: white;
+opacity: 0;
+cursor: default;
+pointer-events: none;
+}
+.mytooltip .tooltip-content img {
+position: relative;
+display: block;
+float: left;
+margin-right: 1em;
+}
+.mytooltip:hover .tooltip-content {
+pointer-events: auto;
+opacity: 1;
+-webkit-transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0deg);
+transform: translate3d(0, 0, 0) rotate3d(0, 0, 0, 0deg);
+}
+  
