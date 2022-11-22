@@ -1,6 +1,8 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 
+import GridPicture from './GridPicture.js';
+
 import cato from '../../assets/images/inicio/Grupo 513.png'
 import aural from '../../assets/images/inicio/Grupo 498.png'
 import magna from '../../assets/images/inicio/Grupo 506.png'
@@ -63,86 +65,13 @@ const index = () => {
           </div>
         </Col>
       </Row>
-
-		<div>
-
       <Row>
-        <Col style={{ height: "400px", backgroundColor: "red"}}>
-					<span className="mytooltip">
-						<img style={{width: "500px", backgroundColor: "red"}} src={cato} alt="no carga"/>
-						<span  className="tooltip-content">
-							<img style={{width: "200px"}} src={aural} alt="no carga"/>
-						</span>
-					</span>
-        </Col>
-        <Col style={{ backgroundColor: "blue"}}>
-          <div>2</div>
-        </Col>
-        <Col style={{ backgroundColor: "green"}}>
-          <div>3</div>
-        </Col>
+        <GridPicture/>
       </Row>
-			
-			<Row>
-				<Col style={{ height: "400px", backgroundColor: "black"}}>
-					<div>1</div>
-				</Col>
-				<Col style={{ backgroundColor: "blue"}}>
-					<div>2</div>
-				</Col>
-			</Row>
-
-			<Row>
-				<Col>
-					<Row>
-						<Col style={{ height: "200px", backgroundColor: "green"}}>
-							<div>4</div>
-						</Col>
-						<Col style={{ height: "200px", backgroundColor: "red"}}>
-							<div>4</div>
-						</Col>
-					</Row>
-					<Row>
-						<Col style={{ height: "200px", backgroundColor: "blue"}}>
-							<div>4</div>
-						</Col>
-						<Col style={{ height: "200px", backgroundColor: "black"}}>
-							<div>4</div>
-						</Col>
-					</Row>
-				</Col>
-				<Col style={{ height: "400px", backgroundColor: "green"}}>
-					<div>4</div>
-				</Col>
-			</Row>
-
-			<Row>
-				<Col style={{ height: "400px", backgroundColor: "red"}}>
-					<div>1</div>
-				</Col>
-				<Col style={{backgroundColor: "blue"}}>
-				</Col>
-				<Col style={{backgroundColor: "black"}}>
-				</Col>
-			</Row>
-
-			<Row>
-        <Col style={{ height: "400px", backgroundColor: "blue"}}>
-          <div>1</div>
-        </Col>
-        <Col style={{ backgroundColor: "red"}}>
-          <div>2</div>
-        </Col>
-        <Col style={{ backgroundColor: "green"}}>
-          <div>3</div>
-        </Col>
-      </Row>
-			
-
-		</div>
 
 
-		<div style={{display: "flex"}}>
+
+		{/* <div style={{display: "flex"}}>
 			<span className="mytooltip">
 					<img style={{width: "500px", backgroundColor: "red"}} src={cato} alt="no carga"/>
 				<span  className="tooltip-content">
@@ -161,7 +90,7 @@ const index = () => {
 					<img style={{width: "200px"}} src={aural} alt="no carga"/>
 				</span>
 			</span>
-		</div>
+		</div> */}
 
 
       <Row>

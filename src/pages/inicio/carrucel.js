@@ -1,5 +1,4 @@
 import React from 'react';
-import Card from '../../components/Card/Card';
 import Flickity from 'react-flickity-component'
 
 import '../../styles/flipCard.css'
@@ -7,8 +6,7 @@ import '../../styles/flipCard.css'
 import web from '../../assets/images/inicio/web.png'
 import socialMedia from '../../assets/images/inicio/socialMedia.png'
 import diseñoGrafico from '../../assets/images/inicio/diseñoGrafico.png'
-
-// import './style.scss'
+import fotoVideo from '../../assets/images/inicio/fotoVideo.png'
 
 const Data = [
   {
@@ -31,7 +29,7 @@ const Data = [
   },
   {
     title: "Foto y Video",
-    img: "",
+    img: fotoVideo,
     description: "Desarrolamos y producimos fotografía y video publicitario.",
     arr: ["Fotografia de producto","Reels y Tiktok","Spots publicitarios","Videos institucionales"],
   },
@@ -56,18 +54,14 @@ const Carrucel = () => {
     <>
     <div style={{ width: "600px", overflow: "hidden"}}>
       <Flickity
-        // className={"js-slideshow"}
-        // elementType={'Card'}
         options={flickityOptions}
-        
         style={{
-          width: "100%", /* full width */
-          //height: "2000px" /* height of carousel */
+          width: "100%"
         }}
       >
         {Data.map((card, index) => (
-          <Card key={index} color="white" className="slide">
-            <div className='flip-card' style={{margin: "20px"}}>
+          <div key={index} color="white" className="slide">
+            <div className='flip-card'>
             <div className='flip-card-inner'>
               <div className='flip-card-front'>
                 <div>
@@ -99,7 +93,7 @@ const Carrucel = () => {
               </div>
             </div>
             </div>
-          </Card>
+          </div>
         ))}
         
       </Flickity>

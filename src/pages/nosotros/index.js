@@ -1,6 +1,8 @@
 import React from 'react'
-import Timeline from './timeline.js'
-import { Container, Row, Col } from 'react-bootstrap';
+import TimeLine from '../../components/TimeLine/timeline.js'
+
+import { Link } from 'react-router-dom';
+import { Row, Col } from 'react-bootstrap';
 
 const Index = () => {
   
@@ -90,7 +92,7 @@ const Index = () => {
       </Row>
 
       <Row>
-        <Timeline/>
+        <TimeLine/>
       </Row>
 
       <Row style={{ height: "250px"}}>
@@ -173,7 +175,12 @@ const Index = () => {
               Siempre estamos en busqueda de nuevos latentos que <br/>
               quieran sumarse a nuestro equipo de especilistas.
               </p>
-              <input type="submit" value="Déjanos tu CV" />
+
+              <div className="page-careers-link" to="/contactanos" >
+                <span className="msk">
+                  <span>Déjanos tu CV</span>
+                </span>
+              </div>
             </text>
           </div>
         </Col>
