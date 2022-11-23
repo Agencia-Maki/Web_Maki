@@ -1,17 +1,9 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 import GridPicture from './GridPicture.js';
+import Logos from '../../components/Logos/logos.js'
 
-import cato from '../../assets/images/inicio/Grupo 513.png'
-import aural from '../../assets/images/inicio/Grupo 498.png'
-import magna from '../../assets/images/inicio/Grupo 506.png'
-import puertoInca from '../../assets/images/inicio/Grupo 98.png'
-import gpr from '../../assets/images/inicio/Grupo 499.png'
-import altoImpacto from '../../assets/images/inicio/Grupo 507.png'
-import anan from '../../assets/images/inicio/Grupo 483.png'
-import vapreh from '../../assets/images/inicio/Grupo 502.png'
-import parisinos from '../../assets/images/inicio/Grupo 95.png'
 
 import './style.css'
 
@@ -21,17 +13,22 @@ const index = () => {
     <div style={{backgroundColor: "white"}}>
 
       <Row>
-        <Col style={{ height: "650px" , backgroundColor: "#1D1D1D"}}>
-          <div style={{position: "relative"}}>
+        <Col >
+          <div style={{ 
+              height: "650px", 
+              width: "100%", 
+              backgroundColor: "#1D1D1D", 
+              display: "flex",
+              justifyContent: "flex-end",
+              alignItems: "center",
+            }} 
+          >
+
             <text className='title'
               style={{
                 color: '#F8F8F8',
-                position: "absolute",
-                top: "50%",
-                right: "5%",
-                marginTop: "15%"
               }}
-            >
+              >
               <strong>
                 <p style={{lineHeight: "0.75"}}>PRO</p>
                 <p style={{lineHeight: "0.75"}}>YEC</p>               
@@ -94,9 +91,10 @@ const index = () => {
 
 
       <Row>
-      <Col>
+      <Col md={5}>
         <div 
           style={{
+            height: "400px",
             display: "flex",
             justifyContent: "center"
           }}
@@ -109,29 +107,11 @@ const index = () => {
           </text>
         </div>
       </Col>
-      <Col>
 
-      <Container>
-        <Row>
-          <Col>
-            <img className='logos' src={cato} alt="No Cargo Imagen" />
-            <img className='logos' src={aural} alt="No Cargo Imagen" />
-            <img className='logos' src={magna} alt="No Cargo Imagen" />
-          </Col>
-          <Col>
-            <img className='logos' src={puertoInca} alt="No Cargo Imagen" />
-            <img className='logos' src={gpr} alt="No Cargo Imagen" />
-            <img className='logos' src={altoImpacto} alt="No Cargo Imagen" />
-          </Col>
-          <Col>
-            <img className='logos' src={anan} alt="No Cargo Imagen" />
-            <img className='logos' src={vapreh} alt="No Cargo Imagen" />
-            <img className='logos' src={parisinos} alt="No Cargo Imagen" />
-          </Col>
-        </Row>
-      </Container>
-
+      <Col md={7}>
+        <Logos/>
       </Col>
+      
     </Row>
     </div>
     </>

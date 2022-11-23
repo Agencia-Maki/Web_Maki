@@ -11,14 +11,16 @@ const Index = () => {
     <div style={{backgroundColor: "#F8F8F8"}}>
 
       <Row>
-        <Col style={{ height: "650px" , backgroundColor: "#6500FE"}}>
-          <div style={{position: "relative"}}>
-            <text style={{
-              position: "absolute",
-              top: "50%",
-              right: "5%",
-              marginTop: "15%"
-            }}>
+        <Col>
+          <div style={{ 
+            backgroundColor: "#6500FE",
+            height: "650px", 
+            display: "flex", 
+            justifyContent: "flex-end", 
+            alignItems: "center"
+            }}
+          >
+            <text style={{marginRight: "25px"}}>
               <p className='titleSecondary' style={{color: '#F8F8F8'}}>
                 <strong>Comprometidos<br/> con hacer crecer<br/> a tu empresa</strong>
               </p>
@@ -27,13 +29,13 @@ const Index = () => {
         </Col>
 
         <Col>
-          <div style={{position: "relative"}}>
-            <text className='content' style={{
-              position: "absolute",
-              top: "50%",
-              left: "5%",
-              marginTop: "25%"
-            }}>
+          <div className='content' style={{
+            height: "650px", 
+            display: "flex", 
+            alignItems: "center"
+            }}
+          >
+            <text>
               <p>
                 <strong>
                 Nuestro propósito es poder<br/>
@@ -48,15 +50,14 @@ const Index = () => {
       </Row>
 
       <Row>
-        <Col style={{ height: "400px"}}>
-          <div style={{position: "relative"}}>
-            <text className='titleSecondary' 
-              style={{
-                position: "absolute",
-                top: "50%",
-                right: "5%",
-                marginTop: "15%"
-              }}>
+        <Col>
+          <div style={{
+            height: "400px", 
+            display: "flex", 
+            justifyContent: "flex-end", 
+            alignItems: "center"
+          }}>
+            <text className='titleSecondary'>
               <strong>
                 Llevamos la<br/>
                 Innovación en<br/>
@@ -67,14 +68,12 @@ const Index = () => {
         </Col>
       
         <Col> 
-          <div style={{position: "relative"}}>
-            <text className='content' style={{
-              position: "absolute",
-              top: "50%",
-              left: "5%",
-              marginTop: "15%"
-            }}
-            >
+          <div className='content' style={{
+            height: "400px", 
+            display: "flex", 
+            alignItems: "center"
+            }}>
+            <text>
               <p>
                 Maki nace por la necesidad de brindar una<br/>
                 mano a aquellas empresas que buscan<br/>
@@ -123,7 +122,7 @@ const Index = () => {
       </Row>
 
       <Row>
-     
+        
         <div className='caja'>
           <text className='imagenCard' style={{backgroundColor: "lightblue"}}>imagen</text>
           <text className='imagenCard' style={{backgroundColor: "lightblue"}}>imagen</text>

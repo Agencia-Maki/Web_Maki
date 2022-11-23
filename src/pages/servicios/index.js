@@ -11,15 +11,16 @@ import './style.css'
 
 const Index = () => {
   return (
-    <div className='gris'>
+    <>
+    <div style={{backgroundColor: "#F8F8F8"}}>
       <div className='caja gris' 
         style={{
-          height: "1100px" ,
+          height: "700px",
+          width: "80%",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          marginTop: "-50px"
         }}
       >
         <text className='title'>
@@ -38,25 +39,33 @@ const Index = () => {
         </text>
       </div>
 
-      <div className='caja gris' style={{height: "800px" , display: "flex", alignItems: "center", justifyContent: "center"}}>
+      <div className='caja gris' style={{height: "1000px" , display: "flex", alignItems: "center", justifyContent: "center"}}>
         <Row>
           <Col>
     
-            <div className='flip-card'>
-              <div className='flip-card-inner'>
-              <div className='flip-card-front'>
+            <div className='flip-box'>
+              <div className='flip-box-inner'>
+              <div className='flip-box-front'>
                 <img className='imagen' src={socialMedia} alt="No Cargo Imagen" />
               </div>
-              <div className='flip-card-back'>
-                <div style={{margin: "20px"}}>
+              <div className='flip-box-back'>
+                <div style={{
+                  margin: "0 50px 0 50px",
+                  height: "350px",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignContent: "center"
+                  }}
+                >
                   <text>
-                    <p style={{
-                        textAlign: "center"}}>
+                    <p style={{textAlign: "center"}}>
                       <strong>Social Media</strong>
                     </p>
-                    <p>Nos encargamos de gestionar tu marca en<br/>
-                      redes sociales ayudandote a llegar a tú<br/>
-                      público objetivo.</p>
+                    <p>Nos encargamos de gestionar tu marca en
+                      redes sociales ayudandote a llegar a tú
+                      público objetivo.
+                    </p>
                     <li><text>Creación de contenido</text></li>
                     <li><text>Diseño gráfico y audiovisual</text></li>
                     <li><text>Facebook Ads</text></li>
@@ -69,16 +78,23 @@ const Index = () => {
             </div>
 
 
-            <div className='flip-card'>
-              <div className='flip-card-inner'>
-              <div className='flip-card-front'>
+            <div className='flip-box'>
+              <div className='flip-box-inner'>
+              <div className='flip-box-front'>
               <img className='imagen' src={web} alt="No Cargo Imagen" />
               </div>
-              <div className='flip-card-back'>
-                <div style={{margin: "20px"}}>
+              <div className='flip-box-back'>
+                <div style={{
+                  margin: "0 50px 0 50px",
+                  height: "350px",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignContent: "center"
+                  }}
+                >
                   <text>
-                    <p style={{
-                        textAlign: "center"}}>
+                    <p style={{textAlign: "center"}}>
                       <strong>Social Media</strong>
                     </p>
                     <p>
@@ -101,16 +117,22 @@ const Index = () => {
           </Col>
           <Col>
 
-            <div className='flip-card'>
-              <div className='flip-card-inner'>
-              <div className='flip-card-front'>
+            <div className='flip-box'>
+              <div className='flip-box-inner'>
+              <div className='flip-box-front'>
                   <img className='imagen' src={diseñoGrafico} alt="No Cargo Imagen" />
               </div>
-              <div className='flip-card-back'>
-                <div style={{margin: "20px"}}>
+              <div className='flip-box-back'>
+                <div style={{
+                  margin: "0 50px 0 50px",
+                  height: "350px",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignContent: "center"
+                  }}>
                   <text>
-                    <p style={{
-                        textAlign: "center"}}>
+                    <p style={{textAlign: "center"}}>
                       <strong>Web</strong>
                     </p>
                     <p>
@@ -127,16 +149,22 @@ const Index = () => {
               </div>
             </div>            
               
-            <div className='flip-card'>
-              <div className='flip-card-inner'>
-              <div className='flip-card-front'>
+            <div className='flip-box'>
+              <div className='flip-box-inner'>
+              <div className='flip-box-front'>
                   <img className='imagen' src={fotoMedia} alt="No Cargo Imagen" />
               </div>
-              <div className='flip-card-back'>
-                <div style={{margin: "20px"}}>
+              <div className='flip-box-back'>
+                <div style={{
+                  margin: "0 50px 0 50px",
+                  height: "350px",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignContent: "center"
+                }}>
                   <text>
-                    <p style={{
-                        textAlign: "center"}}>
+                    <p style={{textAlign: "center"}}>
                       <strong>Foto y Video</strong>
                     </p>
                     <p>
@@ -159,6 +187,7 @@ const Index = () => {
       </div>
 
     </div>
+    </>
   )
 }
- export default Index
+export default Index

@@ -10,7 +10,6 @@ const Footer = () => {
     <>
     <Container fluid
       className='footer'
-      // className="web-content"
       style={{ 
       color: "#eeeeee",
       backgroundColor: "#6500FE",
@@ -18,7 +17,7 @@ const Footer = () => {
       zIndex: "1000"
     }}
     >
-      <Row className="justify-content-md-center">
+      <Row>
         <Col xs={2} className="center" style={{height: "200px"}}>
           <div>
             <img className='logo' src={logo} alt="No Cargo Imagen" />

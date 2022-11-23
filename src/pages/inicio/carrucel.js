@@ -63,33 +63,51 @@ const Carrucel = () => {
           <div key={index} color="white" className="slide">
             <div className='flip-card'>
             <div className='flip-card-inner'>
-              <div className='flip-card-front'>
+              <div className='flip-card-front' 
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center"
+                }}>
                 <div>
                   <img img src={card.img} alt="No Carga" height="250px"/>
                 </div>
                 <text>
-                  <p className='content' style={{display: "flex", justifyContent: "center"}}>
+                  <p>
                     <strong>{card.title}</strong></p>
                 </text>
               </div>
             
               <div className='flip-card-back'>
-                <p className='content' style={{display: "flex", justifyContent: "center"}} >
-                  <strong>{card.title}</strong>
-                </p>
-                <div className='parrafo'>{card.description}</div>
-                <ul>
-                  {card.arr.map((item, index) => (
-                    <li 
-                      className='content'
+                <div style={{
+                  margin: "0px 50px 0 50px",
+                  height: "400px",
+                  width: "250px",                  
+                  display: "flex",
+                  flexDirection: "column", 
+                  justifyContent: "center",
+                  // alignItems: "center",
+                }}>
+
+                <text>
+                  <p style={{textAlign: "center"}}>
+                    <strong>{card.title}</strong>
+                  </p>
+                  <div>{card.description}</div>
+                  <ul>
+                    {card.arr.map((item, index) => (
+                      <li
                       key={index}
-                    >
-                      <text>
-                        {item}
-                      </text>
-                    </li>
-                  ))}
-                </ul>
+                      >
+                        <text>
+                          {item}
+                        </text>
+                      </li>
+                    ))}
+                  </ul>
+                </text>
+                </div>
               </div>
             </div>
             </div>
@@ -103,6 +121,3 @@ const Carrucel = () => {
 }
 
 export default Carrucel
-
-
-

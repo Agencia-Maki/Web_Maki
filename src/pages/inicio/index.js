@@ -1,20 +1,11 @@
 import React from 'react'
 
-import { Container, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 import font from '../../assets/images/inicio/font.png'
 
-import cato from '../../assets/images/inicio/Grupo 513.png'
-import aural from '../../assets/images/inicio/Grupo 498.png'
-import magna from '../../assets/images/inicio/Grupo 506.png'
-import puertoInca from '../../assets/images/inicio/Grupo 98.png'
-import gpr from '../../assets/images/inicio/Grupo 499.png'
-import altoImpacto from '../../assets/images/inicio/Grupo 507.png'
-import anan from '../../assets/images/inicio/Grupo 483.png'
-import vapreh from '../../assets/images/inicio/Grupo 502.png'
-import parisinos from '../../assets/images/inicio/Grupo 95.png'
-
 import Carrucel from './carrucel.js'
+import Logos from '../../components/Logos/logos.js'
 
 
 const Index = () => {
@@ -22,13 +13,15 @@ const Index = () => {
     <>
       <div style={{backgroundColor: "white"}}>
 
-      <div className='caja'>
+      {/* <div className='caja'>
         <img className='imagen' src={font} alt="No Cargo Imagen" />
-      </div>
+      </div> */}
 
       <div className='gris caja'
         style={{
-          height: "800px", display: "flex",alignItems: "center"
+          height: "800px",
+          display: "flex",
+          alignItems: "center"
         }}>
         <Row>
           <Col>
@@ -40,7 +33,7 @@ const Index = () => {
                 <p>
                   <strong>Dualismo entre la inovación y lo<br/>tradicional</strong>
                 </p>
-                <p className='parrafo'>
+                <p>
                   Entendemos lo que tu empresa necesita y<br/> optimizamos la manera de obtener<br/>
                   resultados
                 </p>
@@ -56,21 +49,31 @@ const Index = () => {
         </Row>
       </div>
 
-      <div className='caja' 
-        style={{
-          height: "600px", display: "flex",alignItems: "center"
-        }}>
+      <div className='caja'
+        // style={{
+        //   display: "flex",
+        //   alignItems: "center"
+        // }}
+      >
         <Row>
           <Col>
-            <div style={{ marginLeft: "200px"}}>
-              <text className="titleSecondary">
-                <strong>
-                  <p style={{lineHeight: "0.75"}}>Ayudamos a </p>
-                  <p style={{lineHeight: "0.75"}}>empresas a llegar </p>
-                  <p style={{lineHeight: "0.75", color: "#6500FE"}} >al siguiente nivel.</p>
-                </strong>
-              </text>
+            <div style={{ 
+              height: "600px", 
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              // marginLeft: "200px"
+            }}
+            >
               <text>
+                <p className="titleSecondary">
+                  <strong>
+                    <p style={{lineHeight: "0.75"}}>Ayudamos a </p>
+                    <p style={{lineHeight: "0.75"}}>empresas a llegar </p>
+                    <p style={{lineHeight: "0.75", color: "#6500FE"}} >al siguiente nivel.</p>
+                  </strong>
+                </p>
                 <p>
                   Algunas de las empresas que confiaron<br/> 
                   en nosotros para empujarlos a seguir.
@@ -81,29 +84,12 @@ const Index = () => {
           </Col>
           <Col>
 
-          <Container>
-            <Row>
-              <Col>
-                <img className='logos' src={cato} alt="No Cargo Imagen" />
-                <img className='logos' src={aural} alt="No Cargo Imagen" />
-                <img className='logos' src={magna} alt="No Cargo Imagen" />
-              </Col>
-              <Col>
-                <img className='logos' src={puertoInca} alt="No Cargo Imagen" />
-                <img className='logos' src={gpr} alt="No Cargo Imagen" />
-                <img className='logos' src={altoImpacto} alt="No Cargo Imagen" />
-              </Col>
-              <Col>
-                <img className='logos' src={anan} alt="No Cargo Imagen" />
-                <img className='logos' src={vapreh} alt="No Cargo Imagen" />
-                <img className='logos' src={parisinos} alt="No Cargo Imagen" />
-              </Col>
-            </Row>
-          </Container>
+          <div>
+            <Logos/>
+          </div>
 
           </Col>
         </Row>
-
           
       </div>
     </div>
@@ -112,13 +98,3 @@ const Index = () => {
   )
 }
 export default Index
-
-//import Card from '../../components/Card/Card'
-// <Card color="white">
-//   <img className='imagenCard' src={web} alt="No Cargo Imagen" />
-//   <text><strong>Web</strong></text>
-// </Card>
-// <Card color="white">
-//   <img className='imagenCard' src={socialMedia} alt="No Cargo Imagen" />
-//   <text><strong>Social Media</strong></text>
-// </Card> 

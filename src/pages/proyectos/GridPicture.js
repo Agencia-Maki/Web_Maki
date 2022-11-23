@@ -1,6 +1,5 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap';
-import Masonry from "react-masonry-component";
 
 import hefziba from '../../assets/images/proyectos/hefziba.png'
 import aural from '../../assets/images/proyectos/aural.png'
@@ -24,8 +23,6 @@ import './gridPicture.css'
 const GridPicture = () => {
   return (
     <div>
-
-    <Masonry>
 
       <Row>
         <Col className='noPadding' lg={5} style={{ backgroundColor: "red", display: "inline-block"}}>
@@ -96,9 +93,7 @@ const GridPicture = () => {
 					<img img src={magna} alt="No Carga"/>
         </Col>
       </Row>
-			
-    </Masonry>
-    
+
 		</div>
   )
 }

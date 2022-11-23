@@ -1,5 +1,5 @@
-$borderSizeLarge: 55px;
-$borderSizeMedium: 40px;
+$borderSizeLarge: 60px;
+$borderSizeMedium: 45px;
 
 $fontColor: #1c1b20;
 $fontColorLight: #6d6d6d;
@@ -33,7 +33,7 @@ header.header {
   .navbar-brand {
     display: inline-block;
     position: absolute;
-    top: 30px;
+    top: 300px;
     z-index: 11;
     padding: 0px;
     height: $borderSizeMedium;
