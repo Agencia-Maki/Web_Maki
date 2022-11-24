@@ -6,6 +6,7 @@ import web from '../../assets/images/servicios/web.png'
 import diseñoGrafico from '../../assets/images/servicios/diseñoGrafico.png'
 import fotoMedia from '../../assets/images/servicios/fotoVideo.png'
 
+import arrowP from '../../assets/arrow/arrowP.svg'
 import './style.css'
 
 
@@ -17,10 +18,11 @@ const Index = () => {
         style={{
           height: "700px",
           width: "80%",
+          paddingTop: "100px",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          justifyContent: "center",
+          // justifyContent: "flex-end",
         }}
       >
         <text className='title'>
@@ -37,9 +39,34 @@ const Index = () => {
             garantizando un trabajo con calidad y en los tiempos previstos.
           </p>
         </text>
+
+        <div 
+          style={{
+            height:"300px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "flex-end"
+        }}
+        >
+          <div style={{
+            transform:"rotate(90deg)"
+          }}>
+
+            <div style={{width: "150px", display: "flex" , alignItems: "flex-end"}}>
+              <text style={{transform:"rotate(180deg)", paddingTop: "35px", color: "#6500FE"}}>Desliza</text>
+              <img src={arrowP} alt="My Happy SVG" style={{ height:"100px", width: "50px"}} />
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div className='caja gris' style={{height: "1000px" , display: "flex", alignItems: "center", justifyContent: "center"}}>
+      <div className='caja gris' 
+        style={{
+          height: "1000px" , 
+          display: "flex", 
+          alignItems: "center", 
+          justifyContent: "center"
+        }}>
         <Row>
           <Col>
     

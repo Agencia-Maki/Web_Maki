@@ -1,11 +1,11 @@
 import React from 'react'
-
 import { Row, Col } from 'react-bootstrap';
-
-import font from '../../assets/images/inicio/font.png'
 
 import Carrucel from './carrucel.js'
 import Logos from '../../components/Logos/logos.js'
+
+import font from '../../assets/images/inicio/font.png'
+import arrowP from '../../assets/arrow/arrowP.svg'
 
 
 const Index = () => {
@@ -13,9 +13,9 @@ const Index = () => {
     <>
       <div style={{backgroundColor: "white"}}>
 
-      {/* <div className='caja'>
+      <div className='caja'>
         <img className='imagen' src={font} alt="No Cargo Imagen" />
-      </div> */}
+      </div>
 
       <div className='gris caja'
         style={{
@@ -37,8 +37,11 @@ const Index = () => {
                   Entendemos lo que tu empresa necesita y<br/> optimizamos la manera de obtener<br/>
                   resultados
                 </p>
-                <p style={{color: "#6500FE"}}>Conoce nuestros servicios</p>
               </text>
+              <div style={{ width: "350px" , display: "flex" , flexDirection: "row"}}>
+                <p style={{color: "#6500FE"}}>Conoce nuestros servicios</p>
+                <img src={arrowP} alt="My Happy SVG" style={{margin: "5px 0px 0px 50px", height:"15px"}} />
+              </div>
             </div>
           </Col>
           <Col>

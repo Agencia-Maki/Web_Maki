@@ -4,6 +4,8 @@ import TimeLine from '../../components/TimeLine/timeline.js'
 import { Link } from 'react-router-dom';
 import { Row, Col } from 'react-bootstrap';
 
+import arrowW from '../../assets/arrow/arrowW.svg'
+
 const Index = () => {
   
   return (
@@ -13,29 +15,45 @@ const Index = () => {
       <Row>
         <Col>
           <div style={{ 
-            backgroundColor: "#6500FE",
+            width: "100%",
             height: "650px", 
-            display: "flex", 
-            justifyContent: "flex-end", 
-            alignItems: "center"
+            backgroundColor: "#6500FE",
             }}
           >
+            <div style={{
+              height: "450px",
+              display: "flex", 
+              justifyContent: "center", 
+              alignItems: "flex-end"
+            }}>
+
             <text style={{marginRight: "25px"}}>
               <p className='titleSecondary' style={{color: '#F8F8F8'}}>
                 <strong>Comprometidos<br/> con hacer crecer<br/> a tu empresa</strong>
               </p>
             </text>
+
+            </div>
+
+          <div style={{ height: "200px", display: "flex", alignItems: "center"}}>
+            <div style={{ width: "150px", transform:"rotate(90deg)", display: "flex" , alignItems: "flex-end"}}>
+              <text style={{ transform: "rotate(180deg)", color: "white" }}>Desliza</text>
+              <img src={arrowW} alt="My Happy SVG" style={{ margin: "50px 0px 5px 20px", height:"15px"}} />
+            </div>
+          </div>
+
           </div>
         </Col>
 
         <Col>
-          <div className='content' style={{
+          <div style={{
             height: "650px", 
             display: "flex", 
-            alignItems: "center"
+            alignItems: "center",
+            justifyContent: "center"
             }}
           >
-            <text>
+            <text className='content'>
               <p>
                 <strong>
                 Nuestro propósito es poder<br/>

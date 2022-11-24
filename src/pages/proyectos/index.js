@@ -3,7 +3,7 @@ import { Row, Col } from 'react-bootstrap';
 
 import GridPicture from './GridPicture.js';
 import Logos from '../../components/Logos/logos.js'
-
+import arrowW from '../../assets/arrow/arrowW.svg'
 
 import './style.css'
 
@@ -14,16 +14,20 @@ const index = () => {
 
       <Row>
         <Col >
-          <div style={{ 
-              height: "650px", 
-              width: "100%", 
-              backgroundColor: "#1D1D1D", 
+          <div style={{
+            height: "650px", 
+            width: "100%",
+            backgroundColor: "#1D1D1D", 
+          }}
+          >
+          <div style={{
+              height: "450px",  
               display: "flex",
-              justifyContent: "flex-end",
-              alignItems: "center",
+              justifyContent: "center",
+              alignItems: "flex-end",
+              marginLeft: "100px"
             }} 
           >
-
             <text className='title'
               style={{
                 color: '#F8F8F8',
@@ -35,18 +39,34 @@ const index = () => {
                 <p style={{lineHeight: "0.75"}}>TOS<text style={{color: "#6500FE"}} >.</text></p>
               </strong>
             </text>
+
+            <div style={{ marginLeft: "-200px", marginBottom: "150px",
+              width: "200px" , height: "30px", backgroundColor: "#6500FE" , zIndex: "5000"
+            }}></div>
+
+          </div>
+          
+          <div style={{ height: "200px", display: "flex", alignItems: "center"}}>
+            <div style={{ width: "150px", transform:"rotate(90deg)", display: "flex" , alignItems: "flex-end"}}>
+              <text style={{ transform: "rotate(180deg)", color: "white" }}>Desliza</text>
+              <img src={arrowW} alt="My Happy SVG" style={{ margin: "50px 0px 5px 20px", height:"15px"}} />
+            </div>
+          </div>
+
           </div>
         </Col>
 
         <Col>
           <div 
             style={{
+              height: "650px", 
               display: "flex",
               flexDirection: "column",
-              alignItems: "center"
+              alignItems: "center",
+              justifyContent: "center"
             }}
           >
-            <text className="titleSecondary" style={{marginTop: "150px"}}>
+            <text className="titleSecondary">
               <p style={{lineHeight: "0.75"}}>Una selección de</p>
               <p style={{lineHeight: "0.75"}}><strong>nuestros mejores</strong></p>
               <p style={{lineHeight: "0.75"}}><strong>proyectos.</strong></p>
@@ -132,4 +152,9 @@ export default index
 			/>
 		</span>
 	</span>
+
+  <div style={{  transform:"rotate(90deg)" , backgroundColor: "red"}}>
+              <text>Desliza</text>
+              <img src={arrowW} alt="My Happy SVG" style={{ margin: "5px 0px 0px 50px", height:"15px"}} />
+            </div>
 */
