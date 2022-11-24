@@ -1,5 +1,6 @@
-import React from 'react'
-import Masonry from "react-masonry-component";
+import React from "react";
+import Masonry, {ResponsiveMasonry} from "react-masonry-component";
+import "./logos.css";
 
 import cato from '../../assets/images/inicio/Grupo 513.png'
 import aural from '../../assets/images/inicio/Grupo 498.png'
@@ -11,26 +12,73 @@ import anan from '../../assets/images/inicio/Grupo 483.png'
 import vapreh from '../../assets/images/inicio/Grupo 502.png'
 import parisinos from '../../assets/images/inicio/Grupo 95.png'
 
-const Logos = () => {
+
+const PHOTOS = [
+  {img: cato},
+  {img: aural},
+  {img: magna},
+  {img: puertoInca},
+  {img: gpr},
+  {img: altoImpacto},
+  {img: anan},
+  {img: vapreh},
+  {img: parisinos},
+];
+
+const masonryOptions = {
+  fitWidth: false,
+  columnWidth: 300,
+  gutter: 30,
+  itemSelector: ".photo-item",
+};
+
+const Index = () => {
   return (
-    <>
-    
-    <Masonry>
+    <div style={{ 
+      // backgroundColor: "red",
+      height: "500px", 
+      width: "100%",
+      display: "flex" , 
+      justifyContent: "center", 
+      alignItems: "center"}}>
+      {/* <ResponsiveMasonry 
+      > */}
+        <Masonry 
+        // className="my-masonry-grid"
+        columnCount={3}
+        // columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
 
-      <img className='logos' src={cato} alt="No Cargo Imagen" />
-      <img className='logos' src={aural} alt="No Cargo Imagen" />
-      <img className='logos' src={magna} alt="No Cargo Imagen" />
-      <img className='logos' src={puertoInca} alt="No Cargo Imagen" />
-      <img className='logos' src={gpr} alt="No Cargo Imagen" />
-      <img className='logos' src={altoImpacto} alt="No Cargo Imagen" />
-      <img className='logos' src={anan} alt="No Cargo Imagen" />
-      <img className='logos' src={vapreh} alt="No Cargo Imagen" />
-      <img className='logos' src={parisinos} alt="No Cargo Imagen" />
+        // className={"photo-list"}
+        // elementType={"div"}
+        // options={masonryOptions}
+        // breakpointCols={3}
+        // disableImagesLoaded={false}
+        // updateOnEachImageLoad={false}
+        > 
 
-    </Masonry>
-    </>
+        {PHOTOS.map((photo) => (
+            <img className="log"  src={photo.img} alt="" />
+        ))}
 
-  )
-}
+          </Masonry>
+      {/* </ResponsiveMasonry> */}
+      
+    </div>
+  );
+};
 
-export default Logos
+export default Index;
+/*
+
+
+          <img src={cato} alt="No Carga" width="250"/>
+          <img src={cato} alt="No Carga" width="250"/>
+          <img src={cato} alt="No Carga" width="250"/>
+          <img src={cato} alt="No Carga" width="250"/>
+          <img src={cato} alt="No Carga" width="250"/>
+          <img src={cato} alt="No Carga" width="250"/>
+          <img src={cato} alt="No Carga" width="250"/>
+          <img src={cato} alt="No Carga" width="250"/>
+          <img src={cato} alt="No Carga" width="250"/>
+*/
+

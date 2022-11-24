@@ -61,7 +61,7 @@ const Index = () => {
         <Row>
           <Col>
             <div style={{ 
-              height: "600px", 
+              height: "500px", 
               display: "flex",
               flexDirection: "column",
               alignItems: "center",

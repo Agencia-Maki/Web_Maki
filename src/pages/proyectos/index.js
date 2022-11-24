@@ -129,7 +129,8 @@ const index = () => {
       <Col md={5}>
         <div 
           style={{
-            height: "400px",
+            // backgroundColor: "coral",
+            height: "500px",
             display: "flex",
             justifyContent: "center"
           }}
