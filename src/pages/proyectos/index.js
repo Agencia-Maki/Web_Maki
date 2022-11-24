@@ -31,6 +31,7 @@ const index = () => {
             <text className='title'
               style={{
                 color: '#F8F8F8',
+                zIndex: "2"
               }}
               >
               <strong>
@@ -40,8 +41,22 @@ const index = () => {
               </strong>
             </text>
 
-            <div style={{ marginLeft: "-200px", marginBottom: "150px",
-              width: "200px" , height: "30px", backgroundColor: "#6500FE" , zIndex: "5000"
+            <div style={{
+              position: "absolute",
+              top: "320px", left: "250px",
+              width: "200px" , height: "30px", backgroundColor: "#6500FE" , zIndex: "1"
+            }}></div>
+
+            <div style={{
+              position: "absolute",
+              top: "395px", left: "300px",
+              width: "200px" , height: "30px", backgroundColor: "#6500FE" , zIndex: "1"
+            }}></div>
+
+            <div style={{
+              position: "absolute",
+              top: "470px", left: "250px",
+              width: "200px" , height: "30px", backgroundColor: "#6500FE" , zIndex: "1"
             }}></div>
 
           </div>
