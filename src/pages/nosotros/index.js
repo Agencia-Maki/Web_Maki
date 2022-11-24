@@ -27,11 +27,17 @@ const Index = () => {
               alignItems: "flex-end"
             }}>
 
-            <text style={{marginRight: "25px"}}>
+            <text style={{marginRight: "25px", zIndex: "2"}}>
               <p className='titleSecondary' style={{color: '#F8F8F8'}}>
                 <strong>Comprometidos<br/> con hacer crecer<br/> a tu empresa</strong>
               </p>
             </text>
+
+            <div style={{
+              position: "absolute",
+              top: "380px", left: "250px",
+              width: "300px" , height: "30px", backgroundColor: "#1D1D1B" , zIndex: "1"
+            }}></div>
 
             </div>
 
