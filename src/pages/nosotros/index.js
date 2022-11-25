@@ -166,16 +166,14 @@ const Index = () => {
         <Col sm={4}>
           <div className='titleSecondary' 
             style={{
-              position: "relative"
+              height: "250px",
+              width: "100%",
+              display: "flex",
+              justifyContent: "flex-end",
+              alignItems: "center"
             }}
           >
-            <text
-              style={{
-                position: "absolute",
-                top: "50%",
-                right: "5%",
-                marginTop: "10%"
-              }}>
+            <text>
               <p>
                 <strong>
                   Únete al<br/><text style={{color: '#6500FE'}}>equipo</text>
@@ -185,21 +183,24 @@ const Index = () => {
           </div>
         </Col>
 
-        <Col sm={8} style={{ height: "250px"}}>
-          <div style={{position: "relative"}}>
-            <text className='content'
-              style={{
-                position: "absolute",
-                top: "50%",
-                left: "30%",
-                marginTop: "8%"
-              }}>
+        <Col sm={8}>
+          <div style={{
+            height: "250px",
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center"
+        }}>
+            <text className='content'>
               <p>
               Siempre estamos en busqueda de nuevos latentos que <br/>
               quieran sumarse a nuestro equipo de especilistas.
               </p>
+            </text>
 
-              <Link to="/contactanos" >
+
+            <Link to="/contactanos" >
                 <button style={{ 
                   width: "180px", height: "45px", padding: "0 10px 0 10px", margin: "10px",
                   backgroundColor: "#6500FE", borderRadius: "50px", color: "white"
@@ -207,7 +208,6 @@ const Index = () => {
                   Déjanos tu CV
                 </button>
               </Link>
-            </text>
           </div>
         </Col>
       </Row>
