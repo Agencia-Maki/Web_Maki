@@ -1,5 +1,4 @@
 import React from 'react'
-import Card from '../../components/Card/Card'
 import Form from '../../components/Form/Form'
 
 import { Row, Col } from 'react-bootstrap';
@@ -9,15 +8,25 @@ const Index = () => {
     <>
     <div style={{
       backgroundColor: "white",
-      height: "800px",
-      padding: "150px"
+      height: "650px",
     }}
     >
       <Row>
-        <Col>
-          <div className='titleSecondary' style={{padding: "0"}}>
+        <Col md={7}>
+          <div className='titleSecondary'
+            style={{
+              height: "650px",
+              width: "100%",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "flex-end"
+            }}
+          >
+          <div style={{ alignSelf: "center"}}>
             <strong>
-              <p style={{color: "#6500FE",lineHeight: "1"}}>Agenda una<br/> consulta gratuita
+              <p style={{color: "#6500FE",lineHeight: "1"}}>
+                Agenda una<br/> consulta gratuita
               </p>
               <p style={{lineHeight: "1", marginTop: "-15px"}}>
                 con uno de nuestros <br/>colaboradores
@@ -45,12 +54,20 @@ const Index = () => {
               </div>
             </Col>
           </Row>
+          </div>
         </Col>
 
         <Col>
-          <Card>
+          <div style={{
+            // backgroundColor: "coral",
+            height: "650px",
+            width: "100%",
+            display: "flex",
+            justifyContent: "flex-start",
+            alignItems: "center"
+          }}>
             <Form/>
-          </Card>
+          </div>
         </Col>
       </Row>
 
