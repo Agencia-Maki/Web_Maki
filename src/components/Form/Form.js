@@ -7,7 +7,7 @@ const Form = () => {
   return (
     <>
     <div style={{
-      height: "500px",
+      height: "550px",
       width: "400px",
       // backgroundColor: "coral",
       display: "flex",
