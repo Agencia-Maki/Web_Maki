@@ -52,12 +52,7 @@ const Index = () => {
         </Row>
       </div>
 
-      <div className='caja'
-        // style={{
-        //   display: "flex",
-        //   alignItems: "center"
-        // }}
-      >
+      <div className='caja'>
         <Row>
           <Col>
             <div style={{ 
@@ -81,8 +76,11 @@ const Index = () => {
                   Algunas de las empresas que confiaron<br/> 
                   en nosotros para empujarlos a seguir.
                 </p>
-                <p style={{color: "#6500FE"}}>Conoce más</p>
               </text>
+              <div style={{ width: "350px" , display: "flex" , flexDirection: "row"}}>
+                <p style={{color: "#6500FE"}}>Conoce más</p>
+                <img src={arrowP} alt="My Happy SVG" style={{margin: "5px 0px 0px 50px", height:"15px"}} />
+              </div>
             </div>
           </Col>
           <Col>

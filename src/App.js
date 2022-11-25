@@ -9,7 +9,7 @@ import Nosotros from './pages/nosotros/index'
 import Contacto from './pages/contacto/index'
 import Inicio from './pages/inicio/index'
 
-import Layout from './layouts/Layout';
+import Layout from './Layouts/Layout';
 
 function App() {
   return (

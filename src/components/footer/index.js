@@ -13,8 +13,9 @@ const Footer = () => {
       style={{ 
       color: "#eeeeee",
       backgroundColor: "#6500FE",
-      display: "absolute",
-      zIndex: "1000"
+      display: "flex",
+      justifyContent: "space-evenly"
+      // zIndex: "1000"
     }}
     >
       <Row>
@@ -35,14 +36,14 @@ const Footer = () => {
             <strong>ventas@agenciamaki.com</strong></p>
           </text>
         </Col>
-        <Col xs={3} className="center">
+        <Col xs={4} className="center">
           <text>
             <p style={{lineHeight: "2"}}><strong>Horarios de atencion</strong><br/>
             Lunes a Viernes:  8:00 am - 6:00 pm<br/>
             Sabados:  8:00 am - 2:00 pm</p>
           </text>
         </Col>
-        <Col xs={3} className="center">
+        <Col xs={2} className="center">
           <text>
             <p style={{lineHeight: "1.5"}}>¿Quieres trabajar con nosotros?<br/>
             <strong>DÉJANOS UN MENSAJE</strong></p>
