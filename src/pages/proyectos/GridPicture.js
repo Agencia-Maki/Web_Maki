@@ -67,17 +67,9 @@ const GridPicture = () => {
           <img style={{margin: "0px"}} src={hefziba} alt="No Carga"/>
 					<img style={{margin: "0px"}} src={iyali} alt="No Carga"/>
           <img style={{margin: "0px"}} src={aural} alt="No Carga"/>
-				</Masonry>
-      </div>
-			<div>
-				<Masonry>
+				
 					<img style={{margin: "0px"}} src={grp} alt="No Carga"/>
           <img style={{margin: "0px"}} src={cato} alt="No Carga"/>
-				</Masonry>
-			</div>
-			
-			<div>
-				<Masonry>
 
 					<img style={{margin: "0px"}} src={capital} alt="No Carga"/>
 					<img style={{margin: "0px"}} src={venturaTravel} alt="No Carga"/>
@@ -85,19 +77,10 @@ const GridPicture = () => {
 					<img style={{margin: "0px"}} src={nuevoHorizonte} alt="No Carga"/>
 					<img style={{margin: "0px"}} src={vapreh} alt="No Carga"/>
 			
-				</Masonry>
-			</div>
-
-			<div>
-				<Masonry>
 					<img style={{margin: "0px"}} src={puertoInka} alt="No Carga"/>
 					<img style={{margin: "0px"}} src={parisinos} alt="No Carga"/>
 					<img style={{margin: "0px"}} src={carpediem} alt="No Carga"/>
-				</Masonry>
-			</div>
 
-			<div>
-				<Masonry>
 					<img style={{margin: "0px"}} src={altoImpacto} alt="No Carga"/>
 					<img style={{margin: "0px"}} src={magna} alt="No Carga"/>
 				</Masonry>

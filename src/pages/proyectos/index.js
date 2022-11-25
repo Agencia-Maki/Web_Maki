@@ -100,41 +100,40 @@ const index = () => {
 
       <Row>
         <Col>
-        <div style={{
-            backgroundColor: "coral",
-            height: "4000px", 
-            width: "100%"
-          }}
-          >
-          <GridPicture/>
-        </div>
+          <div style={{
+              // backgroundColor: "coral",
+              height: "auto", 
+              width: "100%"
+            }}
+            >
+            <GridPicture/>
+          </div>
         </Col>
       </Row>
 
       <Row>
-      <Col md={5}>
-        <div 
-          style={{
-            // backgroundColor: "coral",
-            height: "500px",
-            display: "flex",
-            justifyContent: "center"
-          }}
-        >
-          <text className="titleSecondary" style={{marginTop: "100px" }}>
-            <strong>
-              <p style={{lineHeight: "0.75"}}>Nuestros</p>
-              <p style={{lineHeight: "0.75", color: "#6500FE"}} >clientes.</p>
-            </strong>
-          </text>
-        </div>
-      </Col>
+        <Col md={5}>
+          <div 
+            style={{
+              // backgroundColor: "coral",
+              height: "500px",
+              display: "flex",
+              justifyContent: "center"
+            }}
+          >
+            <text className="titleSecondary" style={{marginTop: "100px" }}>
+              <strong>
+                <p style={{lineHeight: "0.75"}}>Nuestros</p>
+                <p style={{lineHeight: "0.75", color: "#6500FE"}} >clientes.</p>
+              </strong>
+            </text>
+          </div>
+        </Col>
 
-      <Col md={7}>
-        <Logos/>
-      </Col>
-      
-    </Row>
+        <Col md={7}>
+          <Logos/>
+        </Col>
+      </Row>
     </div>
     </>
   )
