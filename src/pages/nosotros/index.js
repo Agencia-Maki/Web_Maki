@@ -199,11 +199,14 @@ const Index = () => {
               quieran sumarse a nuestro equipo de especilistas.
               </p>
 
-              <div className="page-careers-link" to="/contactanos" >
-                <span className="msk">
-                  <span>Déjanos tu CV</span>
-                </span>
-              </div>
+              <Link to="/contactanos" >
+                <button style={{ 
+                  width: "180px", height: "45px", padding: "0 10px 0 10px", margin: "10px",
+                  backgroundColor: "#6500FE", borderRadius: "50px", color: "white"
+                }}>
+                  Déjanos tu CV
+                </button>
+              </Link>
             </text>
           </div>
         </Col>

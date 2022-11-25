@@ -12,7 +12,7 @@ const Data = [
   {
     title: "Web",
     img: web,
-    description: "Desarrollamos tu página web o E-Comerce bajo los estandares de weeb responsive.",
+    description: "Desarrollamos tu página web o E-Comerce bajo los estandares de web responsive.",
     arr: ["Diseño Web","SEO Y SEM"],
   },
   {
@@ -22,7 +22,7 @@ const Data = [
     arr: ["Creación de contenido","Diseño gráfico y audiovisual","Facebook Ads","Community management"],
   },
   {
-    title: "Diseño Grafico",
+    title: "Diseño Gráfico",
     img: diseñoGrafico,
     description: "Elaboramos piezas gráficas que plasmen la personalidad de tu marca.",
     arr: ["Identidad de marca","Diseño de volantes","Diseño de piezas gráficas para plataformas virtuales e impresas"],
@@ -31,7 +31,7 @@ const Data = [
     title: "Foto y Video",
     img: fotoVideo,
     description: "Desarrolamos y producimos fotografía y video publicitario.",
-    arr: ["Fotografia de producto","Reels y Tiktok","Spots publicitarios","Videos institucionales"],
+    arr: ["Fotografía de producto","Reels y Tiktok","Spots publicitarios","Videos institucionales"],
   },
 ]
 

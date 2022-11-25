@@ -89,7 +89,8 @@ const Index = () => {
                     <p style={{textAlign: "center"}}>
                       <strong>Social Media</strong>
                     </p>
-                    <p>Nos encargamos de gestionar tu marca en
+                    <p>
+                      Nos encargamos de gestionar tu marca en
                       redes sociales ayudandote a llegar a tú
                       público objetivo.
                     </p>
@@ -98,6 +99,12 @@ const Index = () => {
                     <li><text>Facebook Ads</text></li>
                     <li><text>Community management</text></li>
                   </text>
+                  <div style={{
+                    position: "absolute",
+                    top: "75px",left: "100px",
+                    width: "150px" , height: "5px", 
+                    backgroundColor: "#6500FE"
+                  }}></div>
                 </div>
               </div>
 
@@ -122,19 +129,21 @@ const Index = () => {
                 >
                   <text>
                     <p style={{textAlign: "center"}}>
-                      <strong>Social Media</strong>
+                      <strong>Web</strong>
                     </p>
                     <p>
-                      Elaboramos piezas graficas que plasmen la<br/>
-                      personalidad de tu marca
+                      Desarrollamos tu página web o<br/>
+                      E-Commerce bajo los estandares de web responsive.
                     </p>
-                    <li><text>Identidad de marca</text></li>
-                    <li><text>Diseño de volantes</text></li>
-                    <li>
-                      <text>Diseno de piezas graticas para<br/>
-                      platatormas virtuales e impresas</text>
-                    </li>
+                    <li><text>Diseño Web</text></li>
+                    <li><text>SEO y SEM</text></li>
                   </text>
+                  <div style={{
+                    position: "absolute",
+                    top: "110px",left: "100px",
+                    width: "150px" , height: "5px", 
+                    backgroundColor: "#6500FE"
+                  }}></div>
                 </div>
               </div>
 
@@ -160,16 +169,25 @@ const Index = () => {
                   }}>
                   <text>
                     <p style={{textAlign: "center"}}>
-                      <strong>Web</strong>
+                      <strong>Diseño Gráfico</strong>
                     </p>
                     <p>
-                      Desarrollamos tu página web o<br/>
-                      E-Commerce bajo los estandares de web<br/>
-                      responsive.
+                      Elaboramos piezas graficas que plasmen la
+                      personalidad de tu marca.
                     </p>
-                    <li><text>Diseño Web</text></li>
-                    <li><text>SEO y SEM</text></li>
+                    <li><text>Identidad de marca</text></li>
+                    <li><text>Diseño de volantes</text></li>
+                    <li>
+                      <text>Diseño de piezas gráficas para<br/>
+                      platatormas virtuales e impresas</text>
+                    </li>
                   </text>
+                  <div style={{
+                    position: "absolute",
+                    top: "85px",left: "100px",
+                    width: "150px" , height: "5px", 
+                    backgroundColor: "#6500FE"
+                  }}></div>
                 </div>
               </div>
 
@@ -195,14 +213,20 @@ const Index = () => {
                       <strong>Foto y Video</strong>
                     </p>
                     <p>
-                      Desarrollamos y producimos fotogratia y<br/>
-                      video publicitario.<br/>
+                      Desarrollamos y producimos fotografía y
+                      video publicitario.
                     </p>
-                    <li><text>Fotogratia de producto</text></li>
+                    <li><text>Fotografía de producto</text></li>
                     <li><text>Reels y Tiktok</text></li>
                     <li><text>Spots publicitarios</text></li>
-                    <li><text>Ideos institucionales</text></li>
+                    <li><text>Videos institucionales</text></li>
                   </text>
+                  <div style={{
+                    position: "absolute",
+                    top: "100px",left: "100px",
+                    width: "150px" , height: "5px", 
+                    backgroundColor: "#6500FE"
+                  }}></div>
                 </div>
               </div>
 

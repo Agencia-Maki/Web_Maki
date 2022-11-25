@@ -90,40 +90,26 @@ const index = () => {
               <h4>
                 Con más de 50 clientes confiando en<br/>
                 nuestro trabajo, no podemos<br/>
-                mostrando todo. Hicimos una pequeña<br/>
+                mostrarlo todo. Hicimos una pequeña<br/>
                 selección.
               </h4>
             </text>
           </div>
         </Col>
       </Row>
+
       <Row>
-        <GridPicture/>
+        <Col>
+        <div style={{
+            backgroundColor: "coral",
+            height: "4000px", 
+            width: "100%"
+          }}
+          >
+          <GridPicture/>
+        </div>
+        </Col>
       </Row>
-
-
-
-		{/* <div style={{display: "flex"}}>
-			<span className="mytooltip">
-					<img style={{width: "500px", backgroundColor: "red"}} src={cato} alt="no carga"/>
-				<span  className="tooltip-content">
-					<img style={{width: "200px"}} src={aural} alt="no carga"/>
-				</span>
-			</span>
-			<span className="mytooltip">
-					<img style={{width: "500px", backgroundColor: "red"}} src={cato} alt="no carga"/>
-				<span  className="tooltip-content">
-					<img style={{width: "200px"}} src={aural} alt="no carga"/>
-				</span>
-			</span>
-			<span className="mytooltip">
-					<img style={{width: "500px", backgroundColor: "red"}} src={cato} alt="no carga"/>
-				<span  className="tooltip-content">
-					<img style={{width: "200px"}} src={aural} alt="no carga"/>
-				</span>
-			</span>
-		</div> */}
-
 
       <Row>
       <Col md={5}>
