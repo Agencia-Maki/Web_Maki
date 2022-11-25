@@ -53,8 +53,8 @@ const Index = () => {
           }}>
 
             <div style={{width: "150px", display: "flex" , alignItems: "flex-end"}}>
-              <text style={{transform:"rotate(180deg)", paddingTop: "35px", color: "#6500FE"}}>Desliza</text>
-              <img src={arrowP} alt="My Happy SVG" style={{ height:"100px", width: "50px"}} />
+              <text style={{transform:"rotate(180deg)", padding: "35px 0 0 15px", color: "#6500FE"}}>Desliza</text>
+              <img src={arrowP} alt="Error" style={{ height:"100px", width: "50px"}} />
             </div>
           </div>
         </div>

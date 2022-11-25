@@ -21,10 +21,11 @@ const Index = () => {
         style={{
           height: "800px",
           display: "flex",
-          alignItems: "center"
+          alignItems: "center",
+          justifyContent: "center"
         }}>
         <Row>
-          <Col>
+          <Col md={5}>
             <div style={{ margin: "100px"}}>
               <text style={{color: '#1D1D1B'}}>
                 <p className='title' style={{lineHeight: "1"}}>
@@ -77,7 +78,7 @@ const Index = () => {
                   en nosotros para empujarlos a seguir.
                 </p>
               </text>
-              <div style={{ width: "350px" , display: "flex" , flexDirection: "row"}}>
+              <div style={{ width: "425px" , display: "flex", alignSelf: "center" , flexDirection: "row"}}>
                 <p style={{color: "#6500FE"}}>Conoce más</p>
                 <img src={arrowP} alt="My Happy SVG" style={{margin: "5px 0px 0px 50px", height:"15px"}} />
               </div>

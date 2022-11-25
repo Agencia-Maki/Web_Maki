@@ -73,7 +73,7 @@ const Carrucel = () => {
                 <div>
                   <img img src={card.img} alt="No Carga" height="250px"/>
                 </div>
-                <text>
+                <text style={{paddingTop: "30px"}}>
                   <p>
                     <strong>{card.title}</strong></p>
                 </text>
