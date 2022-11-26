@@ -54,10 +54,14 @@ const Index = () => {
       </div>
 
       <div className='caja'>
+
         <Row>
-          <Col>
-            <div style={{ 
-              height: "500px", 
+          <Col md={5}>
+            <div 
+            style={{ 
+              // backgroundColor: "red",
+              height: "500px",
+              width: "100%",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
@@ -84,16 +88,12 @@ const Index = () => {
               </div>
             </div>
           </Col>
-          <Col>
-
-          <div>
+          <Col md={7}>
             <Logos/>
-          </div>
-
           </Col>
         </Row>
-          
       </div>
+          
     </div>
 
     </>
