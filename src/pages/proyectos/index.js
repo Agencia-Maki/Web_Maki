@@ -118,7 +118,8 @@ const index = () => {
               // backgroundColor: "coral",
               height: "500px",
               display: "flex",
-              justifyContent: "center"
+              justifyContent: "center",
+              alignItems: "center"
             }}
           >
             <text className="titleSecondary" style={{marginTop: "100px" }}>

@@ -1,6 +1,5 @@
 import React from 'react'
-import { Row, Col } from 'react-bootstrap';
-import Masonry, {ResponsiveMasonry} from "react-masonry-component";
+import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
 
 
 import hefziba from '../../assets/images/proyectos/hefziba.png'
@@ -41,75 +40,25 @@ const PHOTOS = [
 
 const GridPicture = () => {
   return (
-    <div>
 
-			{/* <div style={{ 
-				// backgroundColor: "red",
-				height: "500px", 
-				width: "100%",
-				display: "flex" , 
-				justifyContent: "center", 
-				alignItems: "center"}}>
-      
-        <Masonry> 
-
-        {PHOTOS.map((photo) => (
-            <img style={{margin: "0px"}} className="log"  src={photo.img} alt="" />
-        ))}
-
-				</Masonry>
-      
-			</div> */}
-
-
-			<div>
+			<ResponsiveMasonry
+				columnsCountBreakPoints={{ 350: 1, 700:2, 1100: 3}}
+			>
 				<Masonry>
-          <img style={{margin: "0px"}} src={hefziba} alt="No Carga"/>
-					<img style={{margin: "0px"}} src={iyali} alt="No Carga"/>
-          <img style={{margin: "0px"}} src={aural} alt="No Carga"/>
-				
-					<img style={{margin: "0px"}} src={grp} alt="No Carga"/>
-          <img style={{margin: "0px"}} src={cato} alt="No Carga"/>
-
-					<img style={{margin: "0px"}} src={capital} alt="No Carga"/>
-					<img style={{margin: "0px"}} src={venturaTravel} alt="No Carga"/>
-					<img style={{margin: "0px"}} src={anan} alt="No Carga"/>
-					<img style={{margin: "0px"}} src={nuevoHorizonte} alt="No Carga"/>
-					<img style={{margin: "0px"}} src={vapreh} alt="No Carga"/>
-			
-					<img style={{margin: "0px"}} src={puertoInka} alt="No Carga"/>
-					<img style={{margin: "0px"}} src={parisinos} alt="No Carga"/>
-					<img style={{margin: "0px"}} src={carpediem} alt="No Carga"/>
-
-					<img style={{margin: "0px"}} src={altoImpacto} alt="No Carga"/>
-					<img style={{margin: "0px"}} src={magna} alt="No Carga"/>
+				{PHOTOS.map((image, i) => (
+					<div>
+							<img
+								key={i}
+								src={image.img}
+								style={{ width: "100%", display: "block" }}
+								alt=""
+							/>
+					</div>
+				))}
 				</Masonry>
-			</div>
+			</ResponsiveMasonry>
 
-		</div>
   )
 }
 
 export default GridPicture
-
-
-		/* <div style={{display: "flex"}}>
-			<span className="mytooltip">
-					<img style={{width: "500px", backgroundColor: "red"}} src={cato} alt="no carga"/>
-				<span  className="tooltip-content">
-					<img style={{width: "200px"}} src={aural} alt="no carga"/>
-				</span>
-			</span>
-			<span className="mytooltip">
-					<img style={{width: "500px", backgroundColor: "red"}} src={cato} alt="no carga"/>
-				<span  className="tooltip-content">
-					<img style={{width: "200px"}} src={aural} alt="no carga"/>
-				</span>
-			</span>
-			<span className="mytooltip">
-					<img style={{width: "500px", backgroundColor: "red"}} src={cato} alt="no carga"/>
-				<span  className="tooltip-content">
-					<img style={{width: "200px"}} src={aural} alt="no carga"/>
-				</span>
-			</span>
-		</div> */
