@@ -27,7 +27,7 @@ const Header = () => {
           <div className="sub-page"></div>
         </a>
 
-        <a className="navbar-toggle" href="#" onClick={() => toggleMenu()}>
+        <Link className="navbar-toggle" onClick={() => toggleMenu()} >
           <i className="icon">
             <span className="line"></span>
             <span className="line"></span>
@@ -39,37 +39,37 @@ const Header = () => {
             <span>K</span>
             <span>I</span>
           </span>
-        </a>
+        </Link>
 
         <ul className="contact-button-top hidden-sm-down">
-          <a href="#">
+          <a href="/">
             Contáctanos
           </a>
         </ul>
 
         <ul className="list-socials hidden-sm-down">
           <li>
-            <a href="https://www.facebook.com/agenciadigitalmaki/" rel="external" target="_blank">
+            <a href="https://www.facebook.com/agenciadigitalmaki/" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={['fab', 'facebook-f']} size="xl" />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/makiagenciadigital.peru/" rel="external" target="_blank">
+            <a href="https://www.instagram.com/makiagenciadigital.peru/" rel="noreferrer" target="_blank">
               <FontAwesomeIcon icon={['fab', 'instagram']} size="xl" />
             </a>
           </li>
           <li>
-            <a href="https://api.whatsapp.com/send?phone=51932678688&text=Hola%20amigos%20de%20Maki%E2%9C%8B%2C%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios/" rel="external" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=51932678688&text=Hola%20amigos%20de%20Maki%E2%9C%8B%2C%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios/" rel="noreferrer" target="_blank">
               <FontAwesomeIcon icon={['fab', 'whatsapp']} size="xl" />
             </a>
           </li>
           <li>
-            <a href="https://www.tiktok.com/@maki.agencia.digital/" rel="external" target="_blank">
+            <a href="https://www.tiktok.com/@maki.agencia.digital/" rel="noreferrer" target="_blank">
               <FontAwesomeIcon icon={['fab', 'tiktok']} size="xl" />
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/company/maki-agencia-digital/" rel="external" target="_blank">
+            <a href="https://www.linkedin.com/company/maki-agencia-digital/" rel="noreferrer" target="_blank">
               <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="xl" />
             </a>
           </li>
@@ -124,12 +124,12 @@ const Header = () => {
 
           <div className="contact">
             <address className="addresse">
-              <a href="https://goo.gl/maps/fzzmqZ25Gmz" rel="external" target="_blank">
+              <a href="https://goo.gl/maps/fzzmqZ25Gmz" rel="noreferrer" target="_blank">
                 Urb Real Felipe Mz. A Lte. 1 Cerro Colorado
               </a>
             </address> <br />
-            <a href="tel:+51932678688" rel="external" className="phone">+51932678688</a><br />
-            <a href="mailto:ventas@agenciamaki.com" rel="external" className="mail">ventas@agenciamaki.com</a>
+            <a href="tel:+51932678688" rel="noreferrer" className="phone">+51932678688</a><br />
+            <a href="mailto:ventas@agenciamaki.com" rel="noreferrer" className="mail">ventas@agenciamaki.com</a>
           </div>
 
         </div>

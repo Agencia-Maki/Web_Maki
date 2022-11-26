@@ -41,10 +41,9 @@ const Index = () => {
           alignItems: "center"}}
           > 
 
-        {PHOTOS.map((image, i) => (
-          <div>
+        {PHOTOS.map((image, index) => (
+          <div key={index}>
             <img
-                key={i}
                 src={image.img}
                 style={{margin: "10px", width: "60%", display: "block" }}
                 alt=""
@@ -59,16 +58,4 @@ const Index = () => {
 };
 
 export default Index;
-/*
-
-          <img src={cato} alt="No Carga" width="250"/>
-          <img src={cato} alt="No Carga" width="250"/>
-          <img src={cato} alt="No Carga" width="250"/>
-          <img src={cato} alt="No Carga" width="250"/>
-          <img src={cato} alt="No Carga" width="250"/>
-          <img src={cato} alt="No Carga" width="250"/>
-          <img src={cato} alt="No Carga" width="250"/>
-          <img src={cato} alt="No Carga" width="250"/>
-          <img src={cato} alt="No Carga" width="250"/>
-*/
 
