@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Row, Col, Container } from 'react-bootstrap';
 
-import Carrucel from './carrucel.js'
+// import Carrucel from './carrucel.js'
 import Logos from '../../components/Logos/logos.js'
 
 import font from '../../assets/images/inicio/font.png'
@@ -14,7 +14,7 @@ const Index = () => {
     <>
       <div style={{ backgroundColor: "white" }}>
 
-        {/* <div className='caja'>
+        <div className='caja'>
           <img className='imagen' src={font} alt="No Cargo Imagen" />
         </div>
 
@@ -54,11 +54,11 @@ const Index = () => {
             </Col>
             <Col>
               <div>
-                <Carrucel />
+                {/* <Carrucel /> */}
               </div>
             </Col>
           </Row>
-        </div> */}
+        </div>
 
 
         <div
