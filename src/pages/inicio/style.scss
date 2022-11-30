@@ -9,30 +9,6 @@ $borderSizeMedium: 45px;
   
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .list-item-carousel {
   li {
     color: #6500FE !important;
@@ -55,11 +31,13 @@ $borderSizeMedium: 45px;
 }
 
 
-.logos-text-container {
+.maki-box-container {
   height: 500px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  // align-items: center;
+  margin-left: 90px;
   justify-content: center;
   h2 {
     font-weight: bold;

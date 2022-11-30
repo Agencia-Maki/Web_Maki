@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Row, Col, Container } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
-// import Carrucel from './carrucel.js'
-import SimpleSlider from './carousel.js'
+import Carrucel from './carousel.js'
 import Logos from '../../components/Logos/logos.js'
 
 import font from '../../assets/images/inicio/font.png'
 import arrowP from '../../assets/arrow/arrowP.svg'
+
+import './style.scss'
 
 
 const Index = () => {
@@ -22,13 +23,12 @@ const Index = () => {
         <div className='gris caja'
           style={{
             height: "800px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center"
+            width: "100%",
           }}>
           <Row>
             <Col md={5}>
-              <div style={{ margin: "100px" }}>
+              <div className="maki-box-container"
+              style={{ height: "800px" }}>
                 <h1>
                   <strong>
                     <p className='title' style={{ lineHeight: "1" }}>
@@ -40,35 +40,39 @@ const Index = () => {
                   </strong>
                 </h1>
 
-                <p>
-                  <strong>Dualismo entre la inovación y lo<br />tradicional</strong>
-                </p>
+                <div>
+                  <strong>
+                    Dualismo entre la inovación y lo<br />
+                    tradicional</strong>
+                </div>
                 <p>
                   Entendemos lo que tu empresa necesita y<br /> optimizamos la manera de obtener<br />
                   resultados
                 </p>
-                <div style={{ width: "350px", display: "flex", flexDirection: "row" }}>
-                  <p style={{ color: "#6500FE" }}>Conoce nuestros servicios</p>
-                  <img src={arrowP} alt="My Happy SVG" style={{ margin: "5px 0px 0px 50px", height: "15px" }} />
+
+                <div className="more-arrow" style={{ width: "500px", display: "flex", flexDirection:"row"}}>
+                  <Link href="">Conoce nuestros servicios
+                    <img src={arrowP} alt="My Happy SVG" />
+                  </Link>
                 </div>
               </div>
             </Col>
-            <Col>
-              <div style={{ width: "700px", overflow: "hidden"}}>
-                <SimpleSlider />
+            <Col md={7}>
+              <div 
+                style={{ height: "800px", display: "flex", justifyContent: "center", alignItems: "center" }}
+              >
+                <Carrucel /> 
               </div>
             </Col>
           </Row>
         </div>
 
 
-        <div
-          className='clients-apart-container'
-        >
+        <div className='caja'>
           <Row>
-            <Col md={4}>
+            <Col md={5}>
               <div
-                className="logos-text-container"
+                className="maki-box-container"
               >
                 <h2 className="titleSecondary">
                   Ayudamos a <br />
@@ -86,7 +90,7 @@ const Index = () => {
                 </div>
               </div>
             </Col>
-            <Col md={6}>
+            <Col md={7}>
               <Logos />
             </Col>
           </Row>

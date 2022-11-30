@@ -44,21 +44,18 @@ const Data = [
 
 const SimpleSlider = () => {
   const settings = {
-    // className: "center",
     infinite: true,
     centerPadding: "60px",
-    // centerMode: true,
     autoplay: true,
     slidesToShow: 2,
     swipeToSlide: true,
-    // afterChange: function (index) {
-    //   console.log(
-    //     `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
-    //   );
-    // }
+    speed: 500,
+    autoplaySpeed: 1700,
+    pauseOnHover: true,
+    arrows: false
   };
   return (
-    <Slider {...settings}>
+    <Slider {...settings} style={{ width: "75%" }} >
       {Data.map((card, index) => (
         <div key={index} color="white" className="slide">
           <div className='flip-card'>
