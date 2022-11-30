@@ -17,12 +17,12 @@ const Index = () => {
       <div className='caja gris' 
         style={{
           height: "700px",
-          width: "80%",
+          // width: "100%",
           paddingTop: "100px",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          // justifyContent: "flex-end",
+          justifyContent: "center",
         }}
       >
         <text className='title'>
