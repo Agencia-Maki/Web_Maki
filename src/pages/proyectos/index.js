@@ -17,13 +17,13 @@ const index = () => {
       <Row>
         <Col >
           <div style={{
-            height: "650px", 
+            height: "95vh", 
             width: "100%",
             backgroundColor: "#1D1D1D", 
           }}
           >
           <div style={{
-              height: "450px",  
+              height: "60vh",  
               display: "flex",
               justifyContent: "center",
               alignItems: "flex-end",
@@ -45,36 +45,28 @@ const index = () => {
 
             <div style={{
               position: "absolute",
-              top: "320px", left: "250px",
+              top: "420px", left: "250px",
               width: "200px" , height: "30px", backgroundColor: "#6500FE" , zIndex: "1"
             }}></div>
 
             <div style={{
               position: "absolute",
-              top: "395px", left: "300px",
+              top: "495px", left: "300px",
               width: "200px" , height: "30px", backgroundColor: "#6500FE" , zIndex: "1"
             }}></div>
 
             <div style={{
               position: "absolute",
-              top: "470px", left: "250px",
+              top: "570px", left: "250px",
               width: "200px" , height: "30px", backgroundColor: "#6500FE" , zIndex: "1"
             }}></div>
-
           </div>
-          
-          {/* <div style={{ height: "200px", display: "flex", alignItems: "center"}}>
-            <div style={{ width: "150px", transform:"rotate(90deg)", display: "flex" , alignItems: "flex-end"}}>
-              <text style={{ transform: "rotate(180deg)", color: "white" }}>Desliza</text>
-              <img src={arrowW} alt="My Happy SVG" style={{ margin: "50px 0px 5px 20px", height:"15px"}} />
-            </div>
-          </div> */}
 
           <div className='linkTo'>
-            <Link to="/proyectos">
+            <a href="#maki-grid">
               <img src={arrowW} alt="My Happy SVG"/>
               Desliza
-            </Link>
+            </a>
           </div>
 
           </div>
@@ -83,7 +75,7 @@ const index = () => {
         <Col>
           <div 
               style={{
-              height: "650px", 
+              height: "95vh", 
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
@@ -107,10 +99,9 @@ const index = () => {
         </Col>
       </Row>
 
-      <Row>
+      <Row id="maki-grid">
         <Col>
           <div style={{
-              // backgroundColor: "coral",
               height: "auto", 
               width: "100%"
             }}

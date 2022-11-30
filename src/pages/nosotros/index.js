@@ -6,6 +6,8 @@ import { Row, Col } from 'react-bootstrap';
 
 import arrowW from '../../assets/arrow/arrowW.svg'
 
+import './style.scss'
+
 const Index = () => {
   
   return (
@@ -16,12 +18,12 @@ const Index = () => {
         <Col>
           <div style={{ 
             width: "100%",
-            height: "650px", 
+            height: "95vh", 
             backgroundColor: "#6500FE",
             }}
           >
             <div style={{
-              height: "450px",
+              height: "60vh",
               display: "flex", 
               justifyContent: "center", 
               alignItems: "flex-end"
@@ -35,17 +37,17 @@ const Index = () => {
 
             <div style={{
               position: "absolute",
-              top: "380px", left: "250px",
+              top: "480px", left: "250px",
               width: "300px" , height: "30px", backgroundColor: "#1D1D1B" , zIndex: "1"
             }}></div>
 
             </div>
 
-          <div style={{ height: "200px", display: "flex", alignItems: "center"}}>
-            <div style={{ width: "150px", transform:"rotate(90deg)", display: "flex" , alignItems: "flex-end"}}>
-              <text style={{ transform: "rotate(180deg)", color: "white" }}>Desliza</text>
-              <img src={arrowW} alt="My Happy SVG" style={{ margin: "50px 0px 5px 20px", height:"15px"}} />
-            </div>
+          <div className='linkTo'>
+            <a href="#maki-ADN">
+              <img src={arrowW} alt="My Happy SVG"/>
+              Desliza
+            </a>
           </div>
 
           </div>
@@ -53,7 +55,7 @@ const Index = () => {
 
         <Col>
           <div style={{
-            height: "650px", 
+            height: "95vh", 
             display: "flex", 
             alignItems: "center",
             justifyContent: "center"
@@ -73,7 +75,7 @@ const Index = () => {
         </Col>
       </Row>
 
-      <Row>
+      <Row id="maki-ADN">
         <Col>
           <div style={{
             height: "400px", 

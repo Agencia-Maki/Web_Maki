@@ -8,7 +8,7 @@ import fotoMedia from '../../assets/images/servicios/fotoVideo.png'
 
 import arrowP from '../../assets/arrow/arrowP.svg'
 import './style.css'
-
+import './style.scss'
 
 const Index = () => {
   return (
@@ -16,9 +16,8 @@ const Index = () => {
     <div style={{backgroundColor: "#F8F8F8"}}>
       <div className='caja gris' 
         style={{
-          height: "700px",
+          height: "95vh",
           // width: "100%",
-          paddingTop: "100px",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -42,32 +41,31 @@ const Index = () => {
 
         <div 
           style={{
-            height:"300px",
+            height:"30vh",
             display: "flex",
-            justifyContent: "center",
+            // justifyContent: "flex-start",
+            marginLeft: "300px",
             alignItems: "flex-end"
         }}
         >
-          <div style={{
-            transform:"rotate(90deg)"
-          }}>
-
-            <div style={{width: "150px", display: "flex" , alignItems: "flex-end"}}>
-              <text style={{transform:"rotate(180deg)", padding: "35px 0 0 15px", color: "#6500FE"}}>Desliza</text>
-              <img src={arrowP} alt="Error" style={{ height:"100px", width: "50px"}} />
-            </div>
+          <div className='linkTo'>
+            <a href="#maki-boxes">
+              <img src={arrowP} alt="My Happy SVG"/>
+              Desliza
+            </a>
           </div>
+
         </div>
       </div>
 
       <div className='caja gris' 
         style={{
-          height: "1000px" , 
+          height: "100vh" , 
           display: "flex", 
           alignItems: "center", 
           justifyContent: "center"
         }}>
-        <Row>
+        <Row id="maki-boxes">
           <Col>
     
             <div className='flip-box'>

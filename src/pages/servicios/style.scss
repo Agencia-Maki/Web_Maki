@@ -1,0 +1,28 @@
+.linkTo {
+	// background-color: red;
+	width: 500px;
+	display: flex;
+	flex-direction:row; 
+	a {
+		// color: #6500FE !important;
+		width: 150px;
+		transform:rotate(270deg);
+		display: flex;
+		align-items: flex-end;
+		// justify-content: flex-start;
+		color: white;
+		text-decoration: none;
+		img {
+			transform:rotate(180deg);
+			align-self: flex-end;
+			margin: 50px 20px 5px 10px;
+			height: 15px;
+			transition: ease .9s;
+		}
+	}
+	&:hover{
+		img {
+			margin-left: 55px;
+		}
+	}
+}
