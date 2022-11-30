@@ -8,8 +8,6 @@ import './style.scss'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
-
-
 import web from '../../assets/images/inicio/web.png'
 import socialMedia from '../../assets/images/inicio/socialMedia.png'
 import diseñoGrafico from '../../assets/images/inicio/diseñoGrafico.png'
