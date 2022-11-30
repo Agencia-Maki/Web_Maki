@@ -1,11 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Row, Col } from 'react-bootstrap';
 
 import GridPicture from './GridPicture.js';
 import Logos from '../../components/Logos/logos.js'
 import arrowW from '../../assets/arrow/arrowW.svg'
 
-import './style.css'
+import './style.scss'
+// import './style.css'
 
 const index = () => {
   return (
@@ -61,11 +63,18 @@ const index = () => {
 
           </div>
           
-          <div style={{ height: "200px", display: "flex", alignItems: "center"}}>
+          {/* <div style={{ height: "200px", display: "flex", alignItems: "center"}}>
             <div style={{ width: "150px", transform:"rotate(90deg)", display: "flex" , alignItems: "flex-end"}}>
               <text style={{ transform: "rotate(180deg)", color: "white" }}>Desliza</text>
               <img src={arrowW} alt="My Happy SVG" style={{ margin: "50px 0px 5px 20px", height:"15px"}} />
             </div>
+          </div> */}
+
+          <div className='linkTo'>
+            <Link to="/proyectos">
+              <img src={arrowW} alt="My Happy SVG"/>
+              Desliza
+            </Link>
           </div>
 
           </div>
@@ -73,7 +82,7 @@ const index = () => {
 
         <Col>
           <div 
-            style={{
+              style={{
               height: "650px", 
               display: "flex",
               flexDirection: "column",
