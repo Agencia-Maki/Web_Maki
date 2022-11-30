@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Row, Col, Container } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
-// import Carrucel from './carrucel.js'
+import Carrucel from './carousel.js'
 import Logos from '../../components/Logos/logos.js'
 
 import font from '../../assets/images/inicio/font.png'
@@ -58,9 +58,10 @@ const Index = () => {
               </div>
             </Col>
             <Col md={7}>
-              <div>
-                <p>hola</p>
-                {/* <Carrucel />  */}
+              <div 
+                style={{ height: "800px", display: "flex", justifyContent: "center", alignItems: "center" }}
+              >
+                <Carrucel /> 
               </div>
             </Col>
           </Row>
