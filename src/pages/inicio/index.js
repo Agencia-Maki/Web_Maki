@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Row, Col, Container } from 'react-bootstrap';
 
 // import Carrucel from './carrucel.js'
+import SimpleSlider from './carousel.js'
 import Logos from '../../components/Logos/logos.js'
 
 import font from '../../assets/images/inicio/font.png'
@@ -53,8 +54,8 @@ const Index = () => {
               </div>
             </Col>
             <Col>
-              <div>
-                {/* <Carrucel /> */}
+              <div style={{ width: "700px", overflow: "hidden"}}>
+                <SimpleSlider />
               </div>
             </Col>
           </Row>
