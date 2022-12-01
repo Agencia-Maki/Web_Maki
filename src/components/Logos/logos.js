@@ -2,15 +2,15 @@ import React from "react";
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
 import "./logos.css";
 
-import cato from '../../assets/images/inicio/Grupo 513.png'
-import aural from '../../assets/images/inicio/Grupo 498.png'
-import magna from '../../assets/images/inicio/Grupo 506.png'
-import puertoInca from '../../assets/images/inicio/Grupo 98.png'
-import gpr from '../../assets/images/inicio/Grupo 499.png'
-import altoImpacto from '../../assets/images/inicio/Grupo 507.png'
-import anan from '../../assets/images/inicio/Grupo 483.png'
-import vapreh from '../../assets/images/inicio/Grupo 502.png'
-import parisinos from '../../assets/images/inicio/Grupo 95.png'
+import cato from '../../assets/images/logos/Grupo 513.png'
+import aural from '../../assets/images/logos/Grupo 498.png'
+import magna from '../../assets/images/logos/Grupo 506.png'
+import puertoInca from '../../assets/images/logos/Grupo 98.png'
+import gpr from '../../assets/images/logos/Grupo 499.png'
+import altoImpacto from '../../assets/images/logos/Grupo 507.png'
+import anan from '../../assets/images/logos/Grupo 483.png'
+import vapreh from '../../assets/images/logos/Grupo 502.png'
+import parisinos from '../../assets/images/logos/Grupo 95.png'
 
 
 const PHOTOS = [
