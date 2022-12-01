@@ -147,7 +147,7 @@ const Index = () => {
         </Col>
       </Row>
 
-      <Row>
+      {/* <Row>
         
         <div className='caja'>
           <text className='imagenCard' style={{backgroundColor: "lightblue"}}>imagen</text>
@@ -162,7 +162,7 @@ const Index = () => {
           <text className='imagenCard' style={{backgroundColor: "lightblue"}}>imagen</text>
         </div>
 
-      </Row>
+      </Row> */}
 
       <Row>
         <Col sm={4}>

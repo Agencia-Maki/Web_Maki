@@ -42,7 +42,7 @@ const Header = () => {
         </Link>
 
         <ul className="contact-button-top hidden-sm-down">
-          <a href="/">
+          <a href="/contactanos">
             Contáctanos
           </a>
         </ul>
