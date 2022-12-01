@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Row, Col } from 'react-bootstrap';
 
 import socialMedia from '../../assets/images/servicios/socialMedia.png'
@@ -11,6 +11,11 @@ import './style.css'
 import './style.scss'
 
 const Index = () => {
+
+  useEffect(() =>{
+    window.scrollTo({top: 0, behavior: "smooth"})
+  })
+
   return (
     <>
     <div style={{backgroundColor: "#F8F8F8"}}>

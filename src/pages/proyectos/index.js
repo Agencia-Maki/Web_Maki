@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import { Row, Col } from 'react-bootstrap';
 
@@ -9,7 +9,12 @@ import arrowW from '../../assets/arrow/arrowW.svg'
 import './style.scss'
 // import './style.css'
 
-const index = () => {
+const Index = () => {
+
+  useEffect(() =>{
+    window.scrollTo({top: 0, behavior: "smooth"})
+  })
+
   return (
     <>
     <div style={{backgroundColor: "white"}}>
@@ -139,7 +144,7 @@ const index = () => {
     </>
   )
 }
-export default index
+export default Index
 
 /*
 
