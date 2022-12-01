@@ -42,18 +42,33 @@ const Data = [
 
 const SimpleSlider = () => {
   const settings = {
+    // centerPadding: "60px",
+    className: "center",
+    centerMode: true,
     infinite: true,
-    centerPadding: "60px",
-    autoplay: true,
+    centerPadding: "20px",
     slidesToShow: 2,
+
+    autoplay: true,
+    speed: 1500,
+    autoplaySpeed: 2500,
     swipeToSlide: true,
-    speed: 500,
-    autoplaySpeed: 1700,
-    pauseOnHover: true,
-    arrows: false
+    // pauseOnHover: true,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      }
+    ]
   };
   return (
-    <Slider {...settings} style={{ width: "75%" }} >
+    <Slider {...settings} style={{ width: "100%" }} >
       {Data.map((card, index) => (
         <div key={index} color="white" className="slide">
           <div className='flip-card'>
