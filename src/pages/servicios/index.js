@@ -21,7 +21,7 @@ const Index = () => {
     <div style={{backgroundColor: "#F8F8F8"}}>
       <div className='caja gris' 
         style={{
-          height: "95vh",
+          height: "100vh",
           // width: "100%",
           display: "flex",
           flexDirection: "column",
@@ -46,7 +46,7 @@ const Index = () => {
 
         <div 
           style={{
-            height:"30vh",
+            height:"20vh",
             display: "flex",
             // justifyContent: "flex-start",
             marginLeft: "300px",
@@ -54,7 +54,7 @@ const Index = () => {
         }}
         >
           <div className='linkTo'>
-            <a href="#maki-boxes">
+            <a href="#maki-boxes" style={{color: "#6500FE"}}>
               <img src={arrowP} alt="My Happy SVG"/>
               Desliza
             </a>

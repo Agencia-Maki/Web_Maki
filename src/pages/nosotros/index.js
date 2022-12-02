@@ -37,7 +37,7 @@ const Index = () => {
 
             <div style={{
               position: "absolute",
-              top: "480px", left: "250px",
+              top: "50%", left: "18%",
               width: "300px" , height: "30px", backgroundColor: "#1D1D1B" , zIndex: "1"
             }}></div>
 

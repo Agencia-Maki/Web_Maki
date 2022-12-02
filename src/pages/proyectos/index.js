@@ -50,19 +50,19 @@ const Index = () => {
 
             <div style={{
               position: "absolute",
-              top: "420px", left: "250px",
+              top: "42%", left: "18%",
               width: "200px" , height: "30px", backgroundColor: "#6500FE" , zIndex: "1"
             }}></div>
 
             <div style={{
               position: "absolute",
-              top: "495px", left: "300px",
+              top: "52%", left: "22%",
               width: "200px" , height: "30px", backgroundColor: "#6500FE" , zIndex: "1"
             }}></div>
 
             <div style={{
               position: "absolute",
-              top: "570px", left: "250px",
+              top: "62%", left: "18%",
               width: "200px" , height: "30px", backgroundColor: "#6500FE" , zIndex: "1"
             }}></div>
           </div>

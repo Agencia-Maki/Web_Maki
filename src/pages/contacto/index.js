@@ -8,14 +8,14 @@ const Index = () => {
     <>
     <div style={{
       backgroundColor: "white",
-      height: "650px",
+      height: "700px",
     }}
     >
       <Row>
         <Col md={7}>
           <div className='titleSecondary'
             style={{
-              height: "650px",
+              height: "100%",
               width: "100%",
               display: "flex",
               flexDirection: "column",
@@ -59,7 +59,7 @@ const Index = () => {
 
         <Col>
           <div style={{
-            height: "650px",
+            height: "100%",
             width: "100%",
             display: "flex",
             justifyContent: "flex-start",
