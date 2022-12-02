@@ -15,7 +15,7 @@ const Header = () => {
   }
 
   const sendCurriculum = () => {
-    alert("No hay Pan SECO :V")
+    alert("Estamos trabajando en ello, lo sentimos.")
   }
 
   return (

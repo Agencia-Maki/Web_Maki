@@ -46,11 +46,11 @@ const Index = () => {
 
         <div 
           style={{
-            height:"20vh",
+            // height:"20vh",
             display: "flex",
             // justifyContent: "flex-start",
             marginLeft: "300px",
-            alignItems: "flex-end"
+            // alignItems: "flex-end",
         }}
         >
           <div className='linkTo'>
@@ -65,11 +65,14 @@ const Index = () => {
 
       <div className='caja gris' 
         style={{
-          height: "100vh" , 
+          height: "110vh" , 
           display: "flex", 
           alignItems: "center", 
-          justifyContent: "center"
+          justifyContent: "center",
+          // backgroundColor: "coral"
+          // marginBottom: "100px"
         }}>
+        <div>
         <Row id="maki-boxes">
           <Col>
     
@@ -79,15 +82,7 @@ const Index = () => {
                 <img className='imagen' src={socialMedia} alt="No Cargo Imagen" />
               </div>
               <div className='flip-box-back'>
-                <div style={{
-                  margin: "0 50px 0 50px",
-                  height: "350px",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignContent: "center"
-                  }}
-                >
+                <div className='flip-box-content'>
                   <text>
                     <p style={{textAlign: "center"}}>
                       <strong>Social Media</strong>
@@ -121,15 +116,7 @@ const Index = () => {
               <img className='imagen' src={web} alt="No Cargo Imagen" />
               </div>
               <div className='flip-box-back'>
-                <div style={{
-                  margin: "0 50px 0 50px",
-                  height: "350px",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignContent: "center"
-                  }}
-                >
+                <div className='flip-box-content'>
                   <text>
                     <p style={{textAlign: "center"}}>
                       <strong>Web</strong>
@@ -162,14 +149,7 @@ const Index = () => {
                   <img className='imagen' src={diseñoGrafico} alt="No Cargo Imagen" />
               </div>
               <div className='flip-box-back'>
-                <div style={{
-                  margin: "0 50px 0 50px",
-                  height: "350px",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignContent: "center"
-                  }}>
+                <div className='flip-box-content'>
                   <text>
                     <p style={{textAlign: "center"}}>
                       <strong>Diseño Gráfico</strong>
@@ -181,7 +161,7 @@ const Index = () => {
                     <li><text>Identidad de marca</text></li>
                     <li><text>Diseño de volantes</text></li>
                     <li>
-                      <text>Diseño de piezas gráficas para<br/>
+                      <text>Diseño de piezas gráficas para
                       platatormas virtuales e impresas</text>
                     </li>
                   </text>
@@ -203,14 +183,7 @@ const Index = () => {
                   <img className='imagen' src={fotoMedia} alt="No Cargo Imagen" />
               </div>
               <div className='flip-box-back'>
-                <div style={{
-                  margin: "0 50px 0 50px",
-                  height: "350px",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignContent: "center"
-                }}>
+                <div className='flip-box-content'>
                   <text>
                     <p style={{textAlign: "center"}}>
                       <strong>Foto y Video</strong>
@@ -238,6 +211,7 @@ const Index = () => {
 
           </Col>
         </Row>
+        </div>
       </div>
 
     </div>

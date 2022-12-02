@@ -3,8 +3,7 @@
   width: 350px;
   height: 350px;
   perspective: 1000px;
-  margin: 10px;
-  margin-bottom: 50px;
+  margin: 0px 10px 10px 0px;
 }
 
 .flip-box-inner {
@@ -36,4 +35,13 @@
 .flip-box-back {
   background-color: #F8F8F8;;
   transform: rotateY(180deg);
+}
+
+.flip-box-content {
+  margin: 0 50px 0 50px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }

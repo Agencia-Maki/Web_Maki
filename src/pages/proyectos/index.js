@@ -145,23 +145,3 @@ const Index = () => {
   )
 }
 export default Index
-
-/*
-
-	<span className="mytooltip">
-		<img
-			style="width: 200px;"
-			src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1567228891/Untitled_design_6.png"
-		/>
-		<span className="tooltip-content">
-			<img
-				src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1567228891/Untitled_design_6.png"
-			/>
-		</span>
-	</span>
-
-  <div style={{  transform:"rotate(90deg)" , backgroundColor: "red"}}>
-              <text>Desliza</text>
-              <img src={arrowW} alt="My Happy SVG" style={{ margin: "5px 0px 0px 50px", height:"15px"}} />
-            </div>
-*/

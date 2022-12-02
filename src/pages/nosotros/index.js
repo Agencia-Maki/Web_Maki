@@ -78,7 +78,7 @@ const Index = () => {
       <Row id="maki-ADN">
         <Col>
           <div style={{
-            height: "400px", 
+            height: "100vh", 
             display: "flex", 
             justifyContent: "flex-end", 
             alignItems: "center"
@@ -95,7 +95,7 @@ const Index = () => {
       
         <Col> 
           <div className='content' style={{
-            height: "400px", 
+            height: "100vh", 
             display: "flex", 
             alignItems: "center"
             }}>
@@ -204,8 +204,12 @@ const Index = () => {
 
             <Link to="/contactanos" >
                 <button style={{ 
-                  width: "180px", height: "45px", padding: "0 10px 0 10px", margin: "10px",
-                  backgroundColor: "#6500FE", borderRadius: "50px", color: "white"
+                  width: "180px", height: "45px", 
+                  margin: "10px",
+                  backgroundColor: "#6500FE", 
+                  borderRadius: "50px",
+                  border: "none",
+                  color: "white",
                 }}>
                   Déjanos tu CV
                 </button>

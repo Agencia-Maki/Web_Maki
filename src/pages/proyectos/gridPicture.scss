@@ -1,0 +1,12 @@
+.noPadding {
+  padding: 0px;
+}
+
+.imgBox {
+  width: 100%;
+  display: block;
+  &:hover {
+    // bottom: -36px;
+    opacity: 1;
+  }
+}

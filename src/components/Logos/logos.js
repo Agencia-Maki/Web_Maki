@@ -14,14 +14,14 @@ import parisinos from '../../assets/images/logos/Grupo 95.png'
 
 
 const PHOTOS = [
-  {img: cato},
   {img: aural},
-  {img: magna},
-  {img: puertoInca},
-  {img: gpr},
   {img: altoImpacto},
-  {img: anan},
+  {img: puertoInca},
   {img: vapreh},
+  {img: magna},
+  {img: gpr},
+  {img: anan},
+  {img: cato},
   {img: parisinos},
 ];
 
@@ -44,8 +44,8 @@ const Index = () => {
         {PHOTOS.map((image, index) => (
           <div key={index}>
             <img
+                style={{margin: "10px", width: "150px", height: "65px" ,display: "block" }}
                 src={image.img}
-                style={{margin: "10px", width: "60%", display: "block" }}
                 alt=""
             />
           </div>
