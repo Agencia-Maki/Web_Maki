@@ -57,17 +57,22 @@ const GridPicture = () => {
 	>
 		<Masonry>
 		{PHOTOS.map((image, i) => (
-			<div className='imgBox'>
-				<img className="fondo"
-					key={i}
+			<div key={i} className='imgBoxP'>
+				<div className="fondoP">
+					<img					
 					src={image.img}
 					alt=""
-				/>
-				<img className="logo"
-          key={i}
-          src={image.logo}
-          alt=""
-        />
+					/>
+
+				<div className="logoP">
+					<img
+						src={image.logo}
+						alt=""
+					/>
+
+				</div>
+				</div>
+			
 			</div>
 		))}
 		</Masonry>
@@ -80,6 +85,7 @@ export default GridPicture
 
 /*
 
+				
 	<span className="mytooltip">
 		<img
 			style="width: 200px;"
