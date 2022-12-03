@@ -46,11 +46,9 @@ const Index = () => {
 
         <div 
           style={{
-            // height:"20vh",
             display: "flex",
-            // justifyContent: "flex-start",
             marginLeft: "300px",
-            // alignItems: "flex-end",
+            marginTop: "100px"
         }}
         >
           <div className='linkTo'>
@@ -65,12 +63,11 @@ const Index = () => {
 
       <div className='caja gris' 
         style={{
-          height: "110vh" , 
+          height: "auto",
+          padding: "150px", 
           display: "flex", 
           alignItems: "center", 
           justifyContent: "center",
-          // backgroundColor: "coral"
-          // marginBottom: "100px"
         }}>
         <div>
         <Row id="maki-boxes">
