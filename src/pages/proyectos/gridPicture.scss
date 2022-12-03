@@ -3,10 +3,37 @@
 }
 
 .imgBox {
-  width: 100%;
-  display: block;
-  &:hover {
-    // bottom: -36px;
-    opacity: 1;
+  position: relative;
+  width: auto;
+  height: auto;
+  .fondo{
+    width: 100%;
+    display: block;
+    z-index: 2;
+    &:hover {
+      //bottom: -36px;
+      //opacity: 0;
+      -webkit-filter: grayscale(100%) blur(3px);
+      filter: grayscale(80%) blur(1px);
+      //animation-name: aparecer;
+    }
   }
+  .logo {
+    //width: 200px;
+    //height: 100px;
+    position: absolute;
+    background-color: red;
+    //top: -5px;
+    opacity: 0;
+    z-index: 1;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  
 }
+
+//@keyframes aparecer {
+//  from {opacity: 0;}
+//  to {opacity: 1;}
+//}

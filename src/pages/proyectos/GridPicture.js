@@ -57,12 +57,17 @@ const GridPicture = () => {
 	>
 		<Masonry>
 		{PHOTOS.map((image, i) => (
-			<div>
-					<img className='imgBox'
-						key={i}
-						src={image.img}
-						alt=""
-					/>
+			<div className='imgBox'>
+				<img className="fondo"
+					key={i}
+					src={image.img}
+					alt=""
+				/>
+				<img className="logo"
+          key={i}
+          src={image.logo}
+          alt=""
+        />
 			</div>
 		))}
 		</Masonry>
