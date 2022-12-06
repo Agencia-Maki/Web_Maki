@@ -1,5 +1,5 @@
 $borderSizeLarge: 60px;
-$borderSizeMedium: 45px;
+$borderSizeMedium: 50px;
 
 $fontColor: #1c1b20;
 $fontColorLight: #6d6d6d;
@@ -23,7 +23,7 @@ $ease3 : cubic-bezier(1, 0, 0, 1);
 $mobile: 480px;
 $small: 767px;
 $medium: 992px;
-$large: 1200px;
+$large: 1600px;
 $vlarge: 1600px;
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;900&display=swap');
@@ -39,7 +39,7 @@ header.header {
     height: $borderSizeMedium;
     line-height: $borderSizeMedium;
     left: $borderSizeMedium;
-    margin: 0px;
+    margin: 10px;
     color: inherit;
     white-space: nowrap;
     -webkit-transition: -webkit-transform 500ms cubic-bezier(0.7, 0, 0.3, 1) 0ms;
@@ -65,20 +65,20 @@ header.header {
         transition-duration: $transitionDuration;
 
         // @include transform(translate(calc(16vw - 40px), 100%));
-        -webkit-transform: translate(calc(16vw - 40px), 100%);
-        -moz-transform: translate(calc(16vw - 40px), 100%);
-        -ms-transform: translate(calc(16vw - 40px), 100%);
-        -o-transform: translate(calc(16vw - 40px), 100%);
-        transform: translate(calc(16vw - 40px), 100%);
+        -webkit-transform: translate(calc(16vw - 40px), 50%);
+        -moz-transform: translate(calc(16vw - 40px), 50%);
+        -ms-transform: translate(calc(16vw - 40px), 50%);
+        -o-transform: translate(calc(16vw - 40px), 50%);
+        transform: translate(calc(16vw - 40px), 50%);
       }
 
       @media (min-width: $large) {
-        // @include transform(translate(calc(16vw - 60px), 100%));
-        -webkit-transform: translate(calc(16vw - 60px), 100%);
-        -moz-transform: translate(calc(16vw - 60px), 100%);
-        -ms-transform: translate(calc(16vw - 60px), 100%);
-        -o-transform: translate(calc(16vw - 60px), 100%);
-        transform: translate(calc(16vw - 60px), 100%);
+        // @include transform(translate(calc(16vw - 60px), 50%));
+        -webkit-transform: translate(calc(16vw - 60px), 50%);
+        -moz-transform: translate(calc(16vw - 60px), 50%);
+        -ms-transform: translate(calc(16vw - 60px), 50%);
+        -o-transform: translate(calc(16vw - 60px), 50%);
+        transform: translate(calc(16vw - 60px), 50%);
       }
 
     }
@@ -86,7 +86,8 @@ header.header {
     img {
       display: inline-block;
       vertical-align: middle;
-      height: 100%;
+      margin-top: -25px;
+      height: 80%;
       width: auto;
       -webkit-transition: -webkit-fill 150ms linear 0ms;
       -moz-transition: -moz-fill 150ms linear 0ms;

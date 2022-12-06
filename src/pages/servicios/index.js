@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Row, Col } from 'react-bootstrap';
 
 import socialMedia from '../../assets/images/servicios/socialMedia.png'
@@ -8,17 +8,21 @@ import fotoMedia from '../../assets/images/servicios/fotoVideo.png'
 
 import arrowP from '../../assets/arrow/arrowP.svg'
 import './style.css'
-
+import './style.scss'
 
 const Index = () => {
+
+  useEffect(() =>{
+    window.scrollTo({top: 0, behavior: "smooth"})
+  })
+
   return (
     <>
     <div style={{backgroundColor: "#F8F8F8"}}>
       <div className='caja gris' 
         style={{
-          height: "700px",
+          height: "100vh",
           // width: "100%",
-          paddingTop: "100px",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -42,32 +46,31 @@ const Index = () => {
 
         <div 
           style={{
-            height:"300px",
             display: "flex",
-            justifyContent: "center",
-            alignItems: "flex-end"
+            marginLeft: "300px",
+            marginTop: "100px"
         }}
         >
-          <div style={{
-            transform:"rotate(90deg)"
-          }}>
-
-            <div style={{width: "150px", display: "flex" , alignItems: "flex-end"}}>
-              <text style={{transform:"rotate(180deg)", padding: "35px 0 0 15px", color: "#6500FE"}}>Desliza</text>
-              <img src={arrowP} alt="Error" style={{ height:"100px", width: "50px"}} />
-            </div>
+          <div className='linkTo'>
+            <a href="#maki-boxes" style={{color: "#6500FE"}}>
+              <img src={arrowP} alt="My Happy SVG"/>
+              Desliza
+            </a>
           </div>
+
         </div>
       </div>
 
       <div className='caja gris' 
         style={{
-          height: "1000px" , 
+          height: "auto",
+          padding: "150px", 
           display: "flex", 
           alignItems: "center", 
-          justifyContent: "center"
+          justifyContent: "center",
         }}>
-        <Row>
+        <div>
+        <Row id="maki-boxes">
           <Col>
     
             <div className='flip-box'>
@@ -76,15 +79,7 @@ const Index = () => {
                 <img className='imagen' src={socialMedia} alt="No Cargo Imagen" />
               </div>
               <div className='flip-box-back'>
-                <div style={{
-                  margin: "0 50px 0 50px",
-                  height: "350px",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignContent: "center"
-                  }}
-                >
+                <div className='flip-box-content'>
                   <text>
                     <p style={{textAlign: "center"}}>
                       <strong>Social Media</strong>
@@ -118,15 +113,7 @@ const Index = () => {
               <img className='imagen' src={web} alt="No Cargo Imagen" />
               </div>
               <div className='flip-box-back'>
-                <div style={{
-                  margin: "0 50px 0 50px",
-                  height: "350px",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignContent: "center"
-                  }}
-                >
+                <div className='flip-box-content'>
                   <text>
                     <p style={{textAlign: "center"}}>
                       <strong>Web</strong>
@@ -159,14 +146,7 @@ const Index = () => {
                   <img className='imagen' src={diseñoGrafico} alt="No Cargo Imagen" />
               </div>
               <div className='flip-box-back'>
-                <div style={{
-                  margin: "0 50px 0 50px",
-                  height: "350px",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignContent: "center"
-                  }}>
+                <div className='flip-box-content'>
                   <text>
                     <p style={{textAlign: "center"}}>
                       <strong>Diseño Gráfico</strong>
@@ -178,7 +158,7 @@ const Index = () => {
                     <li><text>Identidad de marca</text></li>
                     <li><text>Diseño de volantes</text></li>
                     <li>
-                      <text>Diseño de piezas gráficas para<br/>
+                      <text>Diseño de piezas gráficas para
                       platatormas virtuales e impresas</text>
                     </li>
                   </text>
@@ -200,14 +180,7 @@ const Index = () => {
                   <img className='imagen' src={fotoMedia} alt="No Cargo Imagen" />
               </div>
               <div className='flip-box-back'>
-                <div style={{
-                  margin: "0 50px 0 50px",
-                  height: "350px",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignContent: "center"
-                }}>
+                <div className='flip-box-content'>
                   <text>
                     <p style={{textAlign: "center"}}>
                       <strong>Foto y Video</strong>
@@ -235,6 +208,7 @@ const Index = () => {
 
           </Col>
         </Row>
+        </div>
       </div>
 
     </div>

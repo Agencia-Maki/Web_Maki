@@ -6,42 +6,29 @@ const Form = () => {
 
   return (
     <>
-    <div style={{
-      height: "550px",
-      width: "400px",
-      // backgroundColor: "coral",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "flex-start",
-      borderRadius: "25px",
-      border: "5px solid #F8F8F8"
+    <div className='form-container' style={{
     }}>
       <form className='form'>
-        <label style={{
-          marginTop: "50px",
-          marginBottom: "25px",
-          fontSize: "25px",
-          width: "250px"
-        }}>
+        <label>
           <p>
             <strong>Déjanos un mensaje</strong>
           </p>
         </label>
         <div className='box'> 
-          <input type={"text"} id={"Nombre"}/>
           <label>Nombre</label>
+          <input type={"text"} id={"Nombre"}/>
         </div>
         <div className='box'>
-          <input type={"text"} id={"Teléfono"}/>
           <label>Teléfono</label>
+          <input  type={"text"} id={"Teléfono"}/>
         </div>
         <div className='box'>
-          <input type={"text"} id={"Correo"}/>
           <label>Correo</label>
+          <input type={"text"} id={"Correo"}/>
         </div>
         <div className='box'>
-          <input type={"text"} id={"Servicio que te interesa"}/>
           <label>Servicio</label>
+          <input type={"text"} id={"Servicio que te interesa"}/>
         </div>
         <button className='button'>
           Enviar

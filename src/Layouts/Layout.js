@@ -9,10 +9,10 @@ const Layout = (props) => {
   return (
     <>
       <Header />
-        <div className="web-content">
-          {props.children}
-        </div>   
-      <Footer />
+      <div className="web-content">
+        {props.children}
+        <Footer />
+      </div>
     </>
   )
 }

@@ -18,7 +18,54 @@
   justify-content: center;
 }
 
-.logo {
-  width: 100px;
-  // height: 100px;
+.footer-container {
+  background-color: #6500FE;
+
+  div {
+    height: 200px;
+    display: table;
+    // padding: 0;
+  }
+
+  .footer-brand-container {
+    display: table-cell;
+    vertical-align: middle;
+
+    img {
+      width: 100px;
+      height: auto;
+      margin-top: 20px;
+    }
+
+    p {
+      color: #FFF;
+      font-weight: 600;
+      font-size: 13px;
+    }
+  }
+}
+
+
+
+.footer-column-container {
+  height: 200px;
+  display: table;
+  color: #FFF;
+  .footer-apart-container {
+    display: table-cell;
+    vertical-align: middle;
+    p {
+      margin-top: 30px;
+    }
+  }
+}
+
+.secondary-small-text {
+  color: #fff;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
