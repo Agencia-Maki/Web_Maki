@@ -65,20 +65,20 @@ header.header {
         transition-duration: $transitionDuration;
 
         // @include transform(translate(calc(16vw - 40px), 100%));
-        -webkit-transform: translate(calc(16vw - 40px), 100%);
-        -moz-transform: translate(calc(16vw - 40px), 100%);
-        -ms-transform: translate(calc(16vw - 40px), 100%);
-        -o-transform: translate(calc(16vw - 40px), 100%);
-        transform: translate(calc(16vw - 40px), 100%);
+        -webkit-transform: translate(calc(16vw - 40px), 50%);
+        -moz-transform: translate(calc(16vw - 40px), 50%);
+        -ms-transform: translate(calc(16vw - 40px), 50%);
+        -o-transform: translate(calc(16vw - 40px), 50%);
+        transform: translate(calc(16vw - 40px), 50%);
       }
 
       @media (min-width: $large) {
-        // @include transform(translate(calc(16vw - 60px), 100%));
-        -webkit-transform: translate(calc(16vw - 60px), 100%);
-        -moz-transform: translate(calc(16vw - 60px), 100%);
-        -ms-transform: translate(calc(16vw - 60px), 100%);
-        -o-transform: translate(calc(16vw - 60px), 100%);
-        transform: translate(calc(16vw - 60px), 100%);
+        // @include transform(translate(calc(16vw - 60px), 50%));
+        -webkit-transform: translate(calc(16vw - 60px), 50%);
+        -moz-transform: translate(calc(16vw - 60px), 50%);
+        -ms-transform: translate(calc(16vw - 60px), 50%);
+        -o-transform: translate(calc(16vw - 60px), 50%);
+        transform: translate(calc(16vw - 60px), 50%);
       }
 
     }

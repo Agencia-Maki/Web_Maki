@@ -8,41 +8,48 @@ import logo from '../../assets/images/logoWhite.png'
 const Footer = () => {
   return (
     <>
-      <Container fluid
-        className='footer'
-        style={{
-          color: "#eeeeee",
-          backgroundColor: "#6500FE",
-          display: "flex",
-          justifyContent: "space-evenly"
-          // zIndex: "1000"
-        }}
-      >
-        <Row>
-          <Col xs={2} className="center" style={{ height: "200px" }}>
-            <div>
-              <img className='logo' src={logo} alt="No Cargo Imagen" />
-              <p style={{ lineHeight: "1.5" }}>
-                @2022 MAKI<br />
-                Todos los derechos</p>
+      <div className='caja'>
+        <Row className="footer-container">
+          <Col md={5}>
+            <div className="maki-box-container">
+              <div className="footer-brand-container">
+                <img className='logo-footer' src={logo} alt="No Cargo Imagen" />
+                <p>
+                  @2022 Agencia MAKI
+                  todos los derechos reservados
+                </p>
+              </div>
+
+            </div>
+
+          </Col>
+          <Col md={2} className="footer-column-container">
+            <div className="footer-apart-container">
+              <p>Urb. Felipe Mz. A lte. 1 Cerro Colorado<br />
+                <strong>+51 987 652 464</strong><br />
+                <strong>ventas@agenciamaki.com</strong>
+              </p>
             </div>
           </Col>
-          <Col xs={4} className="center">
-            <p style={{ lineHeight: "2" }}>Urb. Felipe Mz. A lte. 1 Cerro Colorado<br />
-              <strong>+51 987 652 464</strong><br />
-              <strong>ventas@agenciamaki.com</strong></p>
+          <Col md={2} className="footer-column-container">
+            <div className="footer-apart-container">
+              <p>
+                <strong>Horarios de atención</strong> <br />
+                Lunes a Viernes:  8:00 am - 6:00 pm<br />
+                Sabados:  8:00 am - 2:00 pm
+              </p>
+            </div>
           </Col>
-          <Col xs={4} className="center">
-            <p style={{ lineHeight: "2" }}><strong>Horarios de atencion</strong><br />
-              Lunes a Viernes:  8:00 am - 6:00 pm<br />
-              Sabados:  8:00 am - 2:00 pm</p>
-          </Col>
-          <Col xs={2} className="center">
-            <p style={{ lineHeight: "1.5" }}>¿Quieres trabajar con nosotros?<br />
-              <strong>DÉJANOS UN MENSAJE</strong></p>
+          <Col md={2} className="footer-column-container">
+            <div className="footer-apart-container">
+              <p className="cursor-pointer">¿Quieres trabajar con nosotros? <br />
+                <strong>DÉJANOS UN MENSAJE</strong> <br />
+                <small className="secondary-small-text"> no te preocupes es gratis! </small>🤗
+              </p>                
+            </div>
           </Col>
         </Row>
-      </Container>
+      </div>
     </>
   )
 }

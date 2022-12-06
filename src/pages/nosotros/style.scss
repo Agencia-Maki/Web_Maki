@@ -25,3 +25,11 @@
 		}
 	}
 }
+
+.about-container-text-left {
+	background-color: #000;
+	.text-wrapper {
+		display: flex;
+		align-items: flex-end;
+	}
+}

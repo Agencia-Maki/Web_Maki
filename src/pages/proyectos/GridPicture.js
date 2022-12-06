@@ -1,5 +1,5 @@
 import React from 'react'
-import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 
 import hefziba from '../../assets/images/proyectos/hefziba.jpg'
@@ -32,53 +32,53 @@ import logoParisinos from '../../assets/images/logos/Grupo 95.png'
 import './gridPicture.scss'
 
 const PHOTOS = [
-	{img: hefziba, logo: ""},
-	{img: aural, logo: logoAural},
-	{img: iyali, logo: ""},
-	{img: grp, logo: logogpr},
-	{img: cato, logo: logoCato},
-	{img: capital, logo: ""},
-	{img: venturaTravel, logo: ""},
-	{img: anan, logo: logoHanan},
-	{img: nuevoHorizonte, logo: ""},
-	{img: vapreh, logo: logoVapreh},
-	{img: puertoInka, logo: logoPuertoInka},
-	{img: parisinos, logo: logoParisinos},
-	{img: carpediem, logo: ""},
-	{img: altoImpacto, logo: logoAltoImpacto},
-	{img: magna, logo: logoMagna}
+	{ img: hefziba, logo: logoAural },
+	{ img: aural, logo: logoAural },
+	{ img: iyali, logo: logoAural },
+	{ img: grp, logo: logogpr },
+	{ img: cato, logo: logoCato },
+	{ img: capital, logo: logoAural },
+	{ img: venturaTravel, logo: logoAural },
+	{ img: anan, logo: logoHanan },
+	{ img: nuevoHorizonte, logo: logoAural },
+	{ img: vapreh, logo: logoVapreh },
+	{ img: puertoInka, logo: logoPuertoInka },
+	{ img: parisinos, logo: logoParisinos },
+	{ img: carpediem, logo: logoAural },
+	{ img: altoImpacto, logo: logoAltoImpacto },
+	{ img: magna, logo: logoMagna }
 ]
 
 const GridPicture = () => {
-  return (
+	return (
+		<>
+			<ResponsiveMasonry
+				columnsCountBreakPoints={{ 350: 1, 700: 2, 1100: 3 }}
+				// className="my-masonry-grid"
+				// columnClassName="my-masonry-grid_column"
+				style={{ padding: "0", margin: "0" }}
+			>
+				<Masonry
+					style={{ padding: "0", margin: "0" }}
+				>
+					{PHOTOS.map((image, i) => (
+						<div key={i} className="gallery">
+							<div className="gallery-image">
+								<img src={image.img} alt="cargando" />
 
-	<ResponsiveMasonry
-		columnsCountBreakPoints={{ 350: 1, 700:2, 1100: 3}}
-	>
-		<Masonry>
-		{PHOTOS.map((image, i) => (
-			<div key={i} className='imgBoxP'>
-				<div className="fondoP">
-					<img					
-					src={image.img}
-					alt=""
-					/>
+								<div className="gallery-logo">
 
-				<div className="logoP">
-					<img
-						src={image.logo}
-						alt=""
-					/>
+									<img src={image.logo} alt="cargando" />
 
-				</div>
-				</div>
-			
-			</div>
-		))}
-		</Masonry>
-	</ResponsiveMasonry>
+								</div>
+							</div>
+						</div>
+					))}
+				</Masonry>
+			</ResponsiveMasonry>
 
-  )
+		</>
+	)
 }
 
 export default GridPicture
@@ -98,8 +98,8 @@ export default GridPicture
 		</span>
 	</span>
 
-  <div style={{  transform:"rotate(90deg)" , backgroundColor: "red"}}>
-              <text>Desliza</text>
-              <img src={arrowW} alt="My Happy SVG" style={{ margin: "5px 0px 0px 50px", height:"15px"}} />
-            </div>
+	<div style={{  transform:"rotate(90deg)" , backgroundColor: "red"}}>
+							<text>Desliza</text>
+							<img src={arrowW} alt="My Happy SVG" style={{ margin: "5px 0px 0px 50px", height:"15px"}} />
+						</div>
 */

@@ -81,11 +81,10 @@ const SimpleSlider = () => {
                   alignItems: "center"
                 }}>
                 <div>
-                  <img src={card.img} alt="No Carga" height="250px" />
+                  <img src={card.img} alt="No Carga" height="175px" />
                 </div>
-                <h1 style={{ paddingTop: "30px" }}>
-                  <p>
-                    <strong>{card.title}</strong></p>
+                <h1 style={{ paddingTop: "30px", fontWeight: "600" }}>
+                  {card.title}
                 </h1>
               </div>
 

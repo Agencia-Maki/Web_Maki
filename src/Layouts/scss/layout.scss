@@ -3,23 +3,28 @@
 @import '../../styles/fontSize/fontSize.scss';
 @import '../../styles/style.scss';
 
+html {
+  scrollbar-color: #6500FE #F8F8F8;
+  scrollbar-width: 50px;
+}
 
 body {
 	margin: 0;
 	padding: 0;
 }
 
-.web-content {
-	background-color: #ccc;
-	margin-top: 55px;
-	@media (min-width: calc(#{$small} - 1)) {
-		width: calc(100vw - ($borderSizeMedium * 2));
-		margin-left: $borderSizeMedium;
-	}
-	@media (min-width: $vlarge) {
-		width: calc((100vw - ($borderSizeLarge * 2)));
-		margin-left: $borderSizeLarge;
-	}
+body::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #F8F8F8;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #6500FE;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 2px solid #F8F8F8;  /* creates padding around scroll thumb */
 }
 
 

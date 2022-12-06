@@ -7,8 +7,14 @@ import './header.scss'
 import './menu.scss'
 import Logo from '../../assets/images/logo.png'
 
+import ContactModal from './extras/modalContact'
+
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false)
+
+  const [showModal, setShowModal] = useState(false);
+  const handleClose = () => setShowModal(false);
+  const handleShow = () => setShowModal(true);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu)
@@ -134,7 +140,7 @@ const Header = () => {
 
         </div>
 
-        <button className="newsletterLink" onClick={() => sendCurriculum()}>
+        <button className="newsletterLink" onClick={() => handleShow()}>
           <span className="block-title">Quieres trabajar con nostros?</span>
           <span className="next-page-title">Déjanos un mensaje.</span>
         </button>
@@ -149,6 +155,11 @@ const Header = () => {
       </div>
 
       <div className="menuColor" onClick={() => setShowMenu(false)}></div>
+      <ContactModal 
+        showModal={showModal}
+        handleClose={handleClose}
+        handleShow={handleShow}
+      />
     </div>
   )
 }
