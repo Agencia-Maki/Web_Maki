@@ -22,7 +22,7 @@ const Index = () => {
           <Col md="6">
             <div
               className="maki-box-container projects-container-text"
-              style={{ height: "95vh" }}
+              style={{ height: "100vh" }}
             >
               <h1 className="big-title-maki">
                 <strong>
@@ -33,19 +33,19 @@ const Index = () => {
               </h1>
               <div style={{
                 position: "absolute",
-                top: "37%", left: "22%",
+                top: "40%", left: "22%",
                 width: "200px", height: "30px", backgroundColor: "#6500FE", zIndex: "1"
               }}></div>
 
               <div style={{
                 position: "absolute",
-                top: "46%", left: "25%",
+                top: "50%", left: "25%",
                 width: "200px", height: "30px", backgroundColor: "#6500FE", zIndex: "1"
               }}></div>
 
               <div style={{
                 position: "absolute",
-                top: "54%", left: "22%",
+                top: "60%", left: "22%",
                 width: "200px", height: "30px", backgroundColor: "#6500FE", zIndex: "1"
               }}></div>
             </div>
@@ -53,7 +53,7 @@ const Index = () => {
           <Col md="5">
             <div
               className="maki-box-container projects-container-text-rigth"
-              style={{ height: "95vh" }}
+              style={{ height: "100vh" }}
             >
               <div className="text-box-container-projects">
                 <h4 className="semi-big-title-maki">

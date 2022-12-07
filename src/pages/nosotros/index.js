@@ -13,23 +13,7 @@ const Index = () => {
   return (
     <>
       <div className='caja'>
-        <Row>
-          <Col md="6">
-            <div
-              className="maki-box-container about-container-text-left"
-              style={{ height: "95vh" }}
-            >
-              <div className="text-wrapper">
-                <h1 style={{ marginRight: "25px", zIndex: "2" }}>
-                  <p className='titleSecondary' style={{ color: '#F8F8F8' }}>
-                    <strong>Comprometidos<br /> con hacer crecer<br /> a tu empresa</strong>
-                  </p>
-                </h1>
-              </div>
-            </div>
-          </Col>
-        </Row>
-      </div>
+        
 
       <div style={{ backgroundColor: "#F8F8F8" }}>
 
@@ -37,7 +21,7 @@ const Index = () => {
           <Col>
             <div style={{
               width: "100%",
-              height: "95vh",
+              height: "100vh",
               backgroundColor: "#6500FE",
             }}
             >
@@ -56,7 +40,7 @@ const Index = () => {
 
                 <div style={{
                   position: "absolute",
-                  top: "50%", left: "18%",
+                  top: "45%", left: "18%",
                   width: "300px", height: "30px", backgroundColor: "#1D1D1B", zIndex: "1"
                 }}></div>
 
@@ -74,7 +58,7 @@ const Index = () => {
 
           <Col>
             <div style={{
-              height: "95vh",
+              height: "100vh",
               display: "flex",
               alignItems: "center",
               justifyContent: "center"
@@ -239,6 +223,8 @@ const Index = () => {
 
       </div>
 
+      </div>
+      
     </>
   )
 }
