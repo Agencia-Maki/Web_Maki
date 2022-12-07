@@ -12,12 +12,12 @@ const Index = () => {
 
   return (
     <>
-      <div className='caja'>
+      <div className='caja gris'>
         <Row>
           <Col md="6">
             <div
-              className="maki-box-container about-container-text-left"
-              style={{ height: "95vh" }}
+              className="about-container-text-left"
+              // style={{ height: "95vh" }}
             >
               <div className="text-wrapper">
                 <h1 style={{ marginRight: "25px", zIndex: "2" }}>
@@ -27,13 +27,46 @@ const Index = () => {
                 </h1>
               </div>
             </div>
+
+            <div style={{
+                  position: "absolute",
+                  top: "50%", left: "18%",
+                  width: "300px", height: "30px", backgroundColor: "#1D1D1B", zIndex: "1"
+            }}></div>
+            
+            <div className='linkTo'>
+              <a href="#maki-ADN">
+                <img src={arrowW} alt="My Happy SVG" />
+                Desliza
+              </a>
+            </div>
+          </Col>
+          <Col>
+            <div style={{
+              height: "95vh",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center"
+            }}
+            >
+              <text className='content'>
+                <p>
+                  <strong>
+                    Nuestro propósito es poder<br />
+                    ayudar a nuestros clientes<br />
+                    a llegar al siguiente nivel y<br />
+                    <text style={{ color: '#6500FE' }}>seguir creciendo juntos.</text>
+                  </strong>
+                </p>
+              </text>
+            </div>
           </Col>
         </Row>
       </div>
 
       <div style={{ backgroundColor: "#F8F8F8" }}>
 
-        <Row>
+        {/* <Row>
           <Col>
             <div style={{
               width: "100%",
@@ -92,7 +125,7 @@ const Index = () => {
               </text>
             </div>
           </Col>
-        </Row>
+        </Row> */}
 
         <Row id="maki-ADN">
           <Col>

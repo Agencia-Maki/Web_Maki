@@ -26,7 +26,7 @@ const Index = () => {
             width: "100%",
           }}>
           <Row>
-            <Col md={5}>
+            <Col md={6}>
               <div className="maki-box-container"
               style={{ height: "800px" }}>
                 <h1>
@@ -57,7 +57,7 @@ const Index = () => {
                 </div>
               </div>
             </Col>
-            <Col md={7}>
+            <Col md={6}>
               <div 
                 style={{ height: "800px", display: "flex", justifyContent: "center", alignItems: "center" }}
               >
@@ -70,7 +70,7 @@ const Index = () => {
 
         <div className='caja'>
           <Row>
-            <Col md={5}>
+            <Col md={6}>
               <div
                 className="maki-box-container"
               >
@@ -90,7 +90,7 @@ const Index = () => {
                 </div>
               </div>
             </Col>
-            <Col md={7}>
+            <Col md={6}>
               <Logos />
             </Col>
           </Row>
