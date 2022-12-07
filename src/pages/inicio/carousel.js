@@ -68,11 +68,11 @@ const SimpleSlider = () => {
     ]
   };
   return (
-<<<<<<< HEAD
-    <Slider {...settings} style={{ maxWidth: "100%" }} className="slider-services">
-=======
-    <Slider {...settings} style={{ width: "100%" }} >
->>>>>>> miguel
+// <<<<<<< HEAD
+    // <Slider {...settings} style={{ width: "100%" }} className="slider-services">
+// =======
+    <Slider {...settings} style={{ width: "100%" }} > 
+{/* >>>>>>> miguel */}
       {Data.map((card, index) => (
         <div key={index} color="white" className="slide">
           <div className='flip-card'>
