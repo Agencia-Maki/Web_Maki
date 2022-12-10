@@ -15,22 +15,21 @@ const Layout = (props) => {
   return (
     <>
       <Container fluid>
+        <Header />
         <Row>
           <Col md={1} style={{padding: "0"}}> 
-            {/* <Left/> */}
+            <Left/>
           </Col>
           <Col md={10}>
-            <Header />
             <div >
               {props.children}
             </div>
-            <Footer />
           </Col>
           <Col md={1} style={{padding: "0"}}>
-            {/* <Right/> */}
+            <Right/>
           </Col>
-        
         </Row>
+        <Footer />
       </Container>
     </>
   )

@@ -34,7 +34,7 @@ const Index = () => {
         <Masonry 
         style={{ 
           // backgroundColor: "red",
-          height: "500px", 
+          height: "55vh", 
           width: "100%",
           display: "flex" , 
           justifyContent: "center", 
@@ -44,7 +44,7 @@ const Index = () => {
         {PHOTOS.map((image, index) => (
           <div key={index}>
             <img
-                style={{margin: "15px", width: "150px" ,display: "block" }}
+                style={{margin: "20px", width: "150px" ,display: "block" }}
                 src={image.img}
                 alt=""
             />
