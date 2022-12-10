@@ -1,52 +1,24 @@
-.linkTo {
-	// background-color: red;
-	width: 500px;
+.maki-box-proyectos {
+	height: 100%;
+	width: 100%;
 	display: flex;
-	flex-direction: row;
-
-	a {
-		width: 150px;
-		transform: rotate(270deg);
-		display: flex;
-		align-items: flex-end;
-		// justify-content: flex-start;
-		color: white;
-		text-decoration: none;
-
-		img {
-			transform: rotate(180deg);
-			align-self: flex-end;
-			margin: 50px 20px 5px 10px;
-			height: 15px;
-			transition: ease .9s;
-		}
-	}
-
-	&:hover {
-		img {
-			margin-left: 55px;
-		}
-	}
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .projects-container-text {
-	background-color: #000;
-	text-align: center;
-	display: flex;
 	.big-title-maki {
+		position: relative;
 		color: #F8F8F8;
 		z-index: 2;
 		font-size: 80px;
 	}
-}
-
-.projects-container-text-rigth {
-	background-color: #FFF;
-	height: 95vh;
-	.text-box-container-projects {
-		margin-left: 25%;
-		.semi-big-title-maki {
-			font-size: 50px;
-		}
+	.line-title {
+		position: absolute;
+		z-index: 1;
+		width: 200px; 
+		height: 30px; 
+		background-color: #6500FE
 	}
 }

@@ -4,7 +4,6 @@ import Navbar from 'react-bootstrap/Navbar';
 
 
 import './header.scss'
-import './menu.scss'
 import Logo from '../../assets/images/logo.png'
 
 

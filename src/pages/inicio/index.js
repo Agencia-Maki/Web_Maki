@@ -20,33 +20,33 @@ const Index = () => {
           <img className='imagen' src={font} alt="No Cargo Imagen" />
         </div>
 
-        <div className='gris caja'
+        <div className='caja gris'
           style={{
-            height: "800px",
+            height: "100%",
             width: "100%",
           }}>
           <Row>
-            <Col md={6}>
+            <Col md={6} sm={12}>
               <div className="maki-box-container"
-              style={{ height: "800px" }}>
-                <h1>
+              style={{ height: "80vh"}}>
+                <div>
+
+                <h1 className='title' style={{ lineHeight: "1" }}>
                   <strong>
-                    <p className='title' style={{ lineHeight: "1" }}>
-                      ESTILO
-                    </p>
-                    <p className='title' style={{ lineHeight: "1" }}>
-                      MAKI<span style={{ color: "#6500FE" }}>.</span>
-                    </p>
+                    ESTILO<br/>
+                    MAKI<span style={{ color: "#6500FE" }}>.</span>
                   </strong>
                 </h1>
 
-                <div>
+                <h5>
                   <strong>
                     Dualismo entre la inovación y lo<br />
-                    tradicional</strong>
-                </div>
-                <p>
-                  Entendemos lo que tu empresa necesita y<br /> optimizamos la manera de obtener<br />
+                    tradicional
+                  </strong>
+                </h5>
+                <p style={{marginTop: "15px"}}>
+                  Entendemos lo que tu empresa necesita y<br />
+                  optimizamos la manera de obtener<br />
                   resultados
                 </p>
 
@@ -55,11 +55,13 @@ const Index = () => {
                     <img src={arrowP} alt="My Happy SVG" />
                   </Link>
                 </div>
+
+                </div>
               </div>
             </Col>
-            <Col md={6}>
+            <Col md={6} sm={12}>
               <div 
-                style={{ height: "800px", display: "flex", justifyContent: "center", alignItems: "center" }}
+                style={{ height: "100%", width: "100%", display: "flex", justifyContent: "center", alignItems: "center"}}
               >
                 <Carrucel /> 
               </div>
@@ -67,19 +69,27 @@ const Index = () => {
           </Row>
         </div>
 
-
-        <div className='caja'>
+        <div className='caja'
+        style={{
+          height: "100%",
+          width: "100%",
+        }}
+        >
           <Row>
-            <Col md={6}>
-              <div
-                className="maki-box-container"
+            <Col md={6} sm={12}>
+              <div className="maki-box-container" 
+                style={{height: "55vh"}}
               >
-                <h2 className="titleSecondary">
-                  Ayudamos a <br />
-                  empresas a llegar <br />
-                  <span style={{ lineHeight: "0.75", color: "#6500FE" }} >al siguiente nivel.</span>
+              <div>
+
+                <h2 className="titleSecondary" style={{ lineHeight: "1" }}>
+                  <strong>
+                    Ayudamos a <br />
+                    empresas a llegar <br />
+                    <span style={{ color: "#6500FE" }} >al siguiente nivel.</span>
+                  </strong>
                 </h2>
-                <p>
+                <p style={{marginTop: "15px"}}>
                   Algunas de las empresas que confiaron <br />
                   en nosotros para empujarlos a seguir.
                 </p>
@@ -89,9 +99,12 @@ const Index = () => {
                   </Link>
                 </div>
               </div>
+              </div>
             </Col>
-            <Col md={6}>
-              <Logos />
+            <Col md={6} sm={12}>
+              <div style={{height: "55vh"}}>
+                <Logos />
+              </div>
             </Col>
           </Row>
         </div>

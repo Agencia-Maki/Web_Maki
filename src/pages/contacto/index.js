@@ -10,7 +10,7 @@ const Index = () => {
     <>
       <div className='caja' style={{height: "600px"}}>
         <Row className="content-contact-maki">
-          <Col className="offset-md-1" md={4}>
+          <Col md={4}>
             <div
               className="maki-box-container"
             >

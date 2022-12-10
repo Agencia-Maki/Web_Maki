@@ -19,11 +19,13 @@ const Index = () => {
 
       <div className='caja'>
         <Row>
-          <Col md="6">
+          <Col md={6} sm={12}>
             <div
-              className="maki-box-container projects-container-text"
-              style={{ height: "95vh" }}
+              className="maki-box-proyectos"
+              style={{ height: "100vh", backgroundColor: "black"}}
             >
+              <div className='projects-container-text'>
+
               <h1 className="big-title-maki">
                 <strong>
                   <p style={{ lineHeight: "0.75" }}>PRO</p>
@@ -31,32 +33,28 @@ const Index = () => {
                   <p style={{ lineHeight: "0.75" }}>TOS<span style={{ color: "#6500FE" }} >.</span></p>
                 </strong>
               </h1>
-              <div style={{
-                position: "absolute",
-                top: "37%", left: "22%",
-                width: "200px", height: "30px", backgroundColor: "#6500FE", zIndex: "1"
+              <div className='line-title' style={{
+                top: "42%", left: "22%",
               }}></div>
 
-              <div style={{
-                position: "absolute",
-                top: "46%", left: "25%",
-                width: "200px", height: "30px", backgroundColor: "#6500FE", zIndex: "1"
+              <div className='line-title' style={{
+                top: "50%", left: "25%",
               }}></div>
 
-              <div style={{
-                position: "absolute",
-                top: "54%", left: "22%",
-                width: "200px", height: "30px", backgroundColor: "#6500FE", zIndex: "1"
+              <div className='line-title' style={{
+                top: "58%", left: "22%",
               }}></div>
+
+              </div>
             </div>
           </Col>
-          <Col md="5">
+          <Col md={6} sm={12}>
             <div
-              className="maki-box-container projects-container-text-rigth"
-              style={{ height: "95vh" }}
+              className="maki-box-proyectos"
+              style={{ height: "100vh"}}
             >
-              <div className="text-box-container-projects">
-                <h4 className="semi-big-title-maki">
+              <div>
+                <h4 className="titleSecondary">
                   <p style={{ lineHeight: "0.75" }}>Una selección de</p>
                   <p style={{ lineHeight: "0.75" }}><strong>nuestros mejores</strong></p>
                   <p style={{ lineHeight: "0.75" }}><strong>proyectos.</strong></p>
@@ -75,9 +73,9 @@ const Index = () => {
 
       <div className='caja' style={{ marginTop: "50px" }}>
         <Row>
-          <Col md="11">
+          <Col md={12}>
             <div
-              className="maki-box-container" style={{ height: "auto" }}
+              //className="maki-box-container" style={{ height: "auto" }}
             >
               <GridPicture />
             </div>
@@ -88,22 +86,26 @@ const Index = () => {
 
       <div className='caja'>
         <Row>
-          <Col className="offset-md-1" md={3}>
-            <div
-              className="maki-box-container" style={{ height: "auto" }}
+          <Col md={6} sm={12}>
+            <div className="maki-box-proyectos" 
+              style={{ height: "55vh"}}
             >
-              <div style={{ width: "100%", marginTop: "5%" }}>
-                <h1 className="titleSecondary" style={{ marginTop: "100px" }}>
+              <div>
+                <h1 className="titleSecondary" 
+                  style={{lineHeight: "1" }}
+                >
                   <strong>
-                    <p style={{ lineHeight: "0.75" }}>Nuestros</p>
-                    <p style={{ lineHeight: "0.75", color: "#6500FE" }} >clientes.</p>
+                    Nuestros<br />
+                    <span style={{ color: "#6500FE" }} >clientes.</span>
                   </strong>
                 </h1>
               </div>
             </div>
           </Col>
-          <Col md={7}>
+          <Col md={6} sm={12}>
+            <div style={{ height: "55vh"}}>
             <Logos />
+            </div>
           </Col>
         </Row>
       </div>

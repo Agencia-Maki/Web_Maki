@@ -17,18 +17,18 @@ const Layout = (props) => {
       <Container fluid>
         <Row>
           <Col md={1} style={{padding: "0"}}> 
-            <Left/>
+            {/* <Left/> */}
           </Col>
           <Col md={10}>
-            <Header />
-            <div className="web-content">
+            {/* <Header /> */}
+            <div >
               {props.children}
             </div>
           </Col>
           <Col md={1} style={{padding: "0"}}>
-            <Right/>
+            {/* <Right/> */}
           </Col>
-        <Footer />
+        {/* <Footer /> */}
         </Row>
       </Container>
     </>

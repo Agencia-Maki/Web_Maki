@@ -7,7 +7,7 @@ import diseñoGrafico from '../../assets/images/servicios/diseñoGrafico.png'
 import fotoMedia from '../../assets/images/servicios/fotoVideo.png'
 
 import arrowP from '../../assets/arrow/arrowP.svg'
-import './style.css'
+import './flip-box.css'
 import './style.scss'
 
 const Index = () => {

@@ -46,23 +46,20 @@ const SimpleSlider = () => {
     className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "20px",
+    centerPadding: "-50px",
     slidesToShow: 2,
 
     autoplay: true,
     speed: 1500,
     autoplaySpeed: 2500,
     swipeToSlide: true,
-    // pauseOnHover: true,
     arrows: false,
     responsive: [
       {
-        breakpoint: 1280,
+        breakpoint: 1600,
         settings: {
+          //centerPadding: "25px",
           slidesToShow: 1,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
         }
       }
     ]
