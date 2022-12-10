@@ -50,7 +50,7 @@ const Index = () => {
                   resultados
                 </p>
 
-                <div className="more-arrow" style={{ width: "500px", display: "flex", flexDirection:"row"}}>
+                <div className="more-arrow">
                   <Link to="/servicios">Conoce nuestros servicios
                     <img src={arrowP} alt="My Happy SVG" />
                   </Link>

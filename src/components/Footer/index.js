@@ -8,9 +8,9 @@ import logo from '../../assets/images/logoWhite.png'
 const Footer = () => {
   return (
     <>
-      <div className='caja'>
+      <div style={{  padding: "0px 50px 0 50px"}}> 
         <Row className="footer-container">
-          <Col md={5}>
+          <Col md={3} sm={6}>
             <div className="maki-box-container">
               <div className="footer-brand-container">
                 <img className='logo-footer' src={logo} alt="No Cargo Imagen" />
@@ -23,7 +23,7 @@ const Footer = () => {
             </div>
 
           </Col>
-          <Col md={2} className="footer-column-container">
+          <Col md={3} sm={6} className="footer-column-container">
             <div className="footer-apart-container">
               <p>Urb. Felipe Mz. A lte. 1 Cerro Colorado<br />
                 <strong>+51 987 652 464</strong><br />
@@ -31,7 +31,7 @@ const Footer = () => {
               </p>
             </div>
           </Col>
-          <Col md={2} className="footer-column-container">
+          <Col md={3} sm={6} className="footer-column-container">
             <div className="footer-apart-container">
               <p>
                 <strong>Horarios de atención</strong> <br />
@@ -40,7 +40,7 @@ const Footer = () => {
               </p>
             </div>
           </Col>
-          <Col md={2} className="footer-column-container">
+          <Col md={3} sm={6} className="footer-column-container">
             <div className="footer-apart-container">
               <p className="cursor-pointer">¿Quieres trabajar con nosotros? <br />
                 <strong>DÉJANOS UN MENSAJE</strong> <br />

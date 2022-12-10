@@ -20,15 +20,16 @@ const Layout = (props) => {
             {/* <Left/> */}
           </Col>
           <Col md={10}>
-            {/* <Header /> */}
+            <Header />
             <div >
               {props.children}
             </div>
+            <Footer />
           </Col>
           <Col md={1} style={{padding: "0"}}>
             {/* <Right/> */}
           </Col>
-        {/* <Footer /> */}
+        
         </Row>
       </Container>
     </>
