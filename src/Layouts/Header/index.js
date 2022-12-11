@@ -22,7 +22,7 @@ const Header = () => {
           </a>
 
           <ul style={{width: "100%", display:"flex", justifyContent: "flex-end", marginRight: "10px"}} 
-            className="contact-button-top hidden-sm-down">
+            className="contact-button-top">
             <a href="/contactanos">
               Contáctanos
             </a>
