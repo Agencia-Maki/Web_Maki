@@ -8,11 +8,12 @@ import './contacto.scss'
 const Index = () => {
   return (
     <>
-      <div className='caja' style={{height: "600px"}}>
+      <div className='caja'>
         <Row className="content-contact-maki">
-          <Col md={4}>
+          <Col md={7} sm={12}>
             <div
               className="maki-box-container"
+              style={{height: "80vh"}}
             >
               <strong>
                 <h3 className="title-purple-maki">
@@ -40,74 +41,9 @@ const Index = () => {
               </div>
             </div>
           </Col>
-          <Col md={6}>
+          <Col md={5} sm={12}>
             <div style={{
-              height: "100%",
-              width: "100%",
-              display: "flex",
-              justifyContent: "center",
-              // alignItems: "center",
-            }}>
-              <Form />
-            </div>
-          </Col>
-        </Row>
-      </div>
-
-      {/* <div style={{
-        backgroundColor: "white",
-        height: "700px",
-      }}
-      >
-        <Row>
-          <Col md={7}>
-            <div className='titleSecondary'
-              style={{
-                height: "100%",
-                width: "100%",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "flex-end"
-              }}
-            >
-              <div style={{ alignSelf: "center" }}>
-                <strong>
-                  <p style={{ color: "#6500FE", lineHeight: "1" }}>
-                    Agenda una<br /> consulta gratuita
-                  </p>
-                  <p style={{ lineHeight: "1", marginTop: "-15px" }}>
-                    con uno de nuestros <br />colaboradores
-                  </p>
-                </strong>
-              </div>
-
-              <Row>
-                <Col>
-                  <div className='content'>
-                    <p>
-                      Urb Real Felipe Mz. A Lte. 1 Cerro Colorado<br />
-                      +51 932 678 688<br />
-                      <strong>ventas@agenciamaki.com</strong>
-                    </p>
-                  </div>
-                </Col>
-                <Col>
-                  <div className='content'>
-                    <p>
-                      <strong>Horarios de Atención</strong><br />
-                      +51 932 678 688<br />
-                      ventas@agenciamaki.com
-                    </p>
-                  </div>
-                </Col>
-              </Row>
-            </div>
-          </Col>
-
-          <Col>
-            <div style={{
-              height: "100%",
+              height: "80vh",
               width: "100%",
               display: "flex",
               justifyContent: "center",
@@ -117,8 +53,7 @@ const Index = () => {
             </div>
           </Col>
         </Row>
-
-      </div> */}
+      </div>
     </>
   )
 }
