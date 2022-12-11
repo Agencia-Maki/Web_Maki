@@ -21,7 +21,7 @@ const Layout = (props) => {
             <Left/>
           </Col>
           <Col md={10}>
-            <div >
+            <div>
               {props.children}
             </div>
           </Col>

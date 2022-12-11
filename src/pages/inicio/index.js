@@ -60,7 +60,11 @@ const Index = () => {
             </Col>
             <Col md={6} sm={12}>
               <div 
-                style={{ height: "100%", width: "100%", display: "flex", justifyContent: "center", alignItems: "center"}}
+                style={{ height: "100%", width: "100%", 
+                display: "flex", alignItems: "center",
+                // justifyContent: "center", 
+                // backgroundColor: "coral"
+              }}
               >
                 <Carrucel /> 
               </div>
@@ -107,6 +111,7 @@ const Index = () => {
             </Col>
           </Row>
         </div>
+
       </div>
     </>
   )
