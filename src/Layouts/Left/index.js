@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import ContactModal from '../Modal/modalContact'
+import ContactModal from '../../components/Modal/modalContact'
 
 
 export const Index = () => {

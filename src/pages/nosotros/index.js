@@ -6,7 +6,7 @@ import { Row, Col } from 'react-bootstrap';
 
 import arrowW from '../../assets/arrow/arrowW.svg'
 
-import './style.scss'
+import './nosotros.scss'
 
 const Index = () => {
 

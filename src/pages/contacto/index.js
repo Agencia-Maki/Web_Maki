@@ -3,7 +3,7 @@ import Form from '../../components/Form/Form'
 
 import { Row, Col } from 'react-bootstrap'
 
-import './contact.scss'
+import './contacto.scss'
 
 const Index = () => {
   return (

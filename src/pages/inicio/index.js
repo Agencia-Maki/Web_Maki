@@ -2,14 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Row, Col } from 'react-bootstrap';
 
-import Carrucel from './carousel.js'
+import Carrucel from '../../components/Carousel/carousel.js'
 import Logos from '../../components/Logos/logos.js'
 
 import font from '../../assets/images/inicio/font.png'
 import arrowP from '../../assets/arrow/arrowP.svg'
 
-import './style.scss'
-
+import './inicio.scss'
 
 const Index = () => {
   return (

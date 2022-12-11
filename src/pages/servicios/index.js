@@ -8,7 +8,7 @@ import fotoMedia from '../../assets/images/servicios/fotoVideo.png'
 
 import arrowP from '../../assets/arrow/arrowP.svg'
 import './flip-box.css'
-import './style.scss'
+import './servicios.scss'
 
 const Index = () => {
 

@@ -1,0 +1,17 @@
+.about-container-text-left {
+	width: 100%;
+	height: 100vh;
+	background-color: #6500FE;
+	.text-wrapper {
+		height: 60vh;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+	}
+}
+
+.imagenCard {
+  margin: 15px;
+  height: 250px;
+  width: 250px;
+}

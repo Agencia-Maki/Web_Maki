@@ -2,11 +2,11 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Row, Col } from 'react-bootstrap';
 
-import GridPicture from './GridPicture.js';
+import GridPicture from '../../components/GridPicture/GridPicture.js';
 import Logos from '../../components/Logos/logos.js'
 import arrowW from '../../assets/arrow/arrowW.svg'
 
-import './style.scss'
+import './proyectos.scss'
 
 const Index = () => {
 

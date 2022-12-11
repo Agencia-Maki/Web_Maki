@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from '../components/Header'
-import Left from '../components/Left'
-import Right from '../components/Right'
-import Footer from '../components/Footer'
+import Header from './Header'
+import Left from './Left'
+import Right from './Right'
+import Footer from './Footer'
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';

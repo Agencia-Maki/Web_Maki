@@ -1,0 +1,20 @@
+$borderSizeLarge: 60px;
+$borderSizeMedium: 45px;
+
+.more-arrow {
+  a {
+    color: #6500FE;
+    text-decoration: none;
+    font-weight: 500;
+    img {
+      margin-left: 20px;
+      height: 15px;
+      transition: ease .9s;
+    }
+  }
+  &:hover{
+    img {
+      margin-left: 55px;
+    }
+  }
+}
