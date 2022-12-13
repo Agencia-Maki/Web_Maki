@@ -9,11 +9,10 @@ const Index = () => {
   return (
     <>
       <div className='caja'>
-        <Row className="content-contact-maki">
+        <Row>
           <Col md={7} sm={12}>
-            <div
-              className="maki-box-container"
-              style={{height: "80vh"}}
+            <div className="maki-box-container"
+              style={{height: "100vh"}}
             >
               <strong>
                 <h3 className="title-purple-maki">
@@ -42,13 +41,8 @@ const Index = () => {
             </div>
           </Col>
           <Col md={5} sm={12}>
-            <div style={{
-              height: "80vh",
-              width: "100%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}>
+            <div className="maki-box-contacto"
+             style={{height: "100vh"}}>
               <Form />
             </div>
           </Col>

@@ -14,40 +14,33 @@ const Index = () => {
     <>
       <div className='caja gris'>
         <Row>
-          <Col md="6">
+          <Col md={6} sm={12}>
             <div
-              className="about-container-text-left"
-              // style={{ height: "95vh" }}
+              className="maki-box-nosotros"
+              style={{ backgroundColor: "#6500FE" }}
             >
               <div className="text-wrapper">
-                <h1 style={{ marginRight: "25px", zIndex: "2" }}>
+                <h1 style={{ zIndex: "2" }}>
                   <p className='titleSecondary' style={{ color: '#F8F8F8' }}>
                     <strong>Comprometidos<br /> con hacer crecer<br /> a tu empresa</strong>
                   </p>
                 </h1>
               </div>
-            </div>
 
-            <div style={{
-                  position: "absolute",
-                  top: "50%", left: "18%",
-                  width: "300px", height: "30px", backgroundColor: "#1D1D1B", zIndex: "1"
-            }}></div>
+              <div className='line-text'></div>
+
+              {/* <div className='linkTo'>
+                <a href="#maki-ADN">
+                  <img src={arrowW} alt="My Happy SVG" />
+                 Desliza
+                </a>
+              </div> */}
             
-            <div className='linkTo'>
-              <a href="#maki-ADN">
-                <img src={arrowW} alt="My Happy SVG" />
-                Desliza
-              </a>
             </div>
           </Col>
-          <Col>
-            <div style={{
-              height: "95vh",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center"
-            }}
+          <Col md={6} sm={12}>
+            <div className='maki-box-nosotros' 
+
             >
               <text className='content'>
                 <p>
@@ -64,77 +57,10 @@ const Index = () => {
         </Row>
       </div>
 
-      <div style={{ backgroundColor: "#F8F8F8" }}>
-
-        {/* <Row>
-          <Col>
-            <div style={{
-              width: "100%",
-              height: "95vh",
-              backgroundColor: "#6500FE",
-            }}
-            >
-              <div style={{
-                height: "60vh",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "flex-end"
-              }}>
-
-                <text style={{ marginRight: "25px", zIndex: "2" }}>
-                  <p className='titleSecondary' style={{ color: '#F8F8F8' }}>
-                    <strong>Comprometidos<br /> con hacer crecer<br /> a tu empresa</strong>
-                  </p>
-                </text>
-
-                <div style={{
-                  position: "absolute",
-                  top: "50%", left: "18%",
-                  width: "300px", height: "30px", backgroundColor: "#1D1D1B", zIndex: "1"
-                }}></div>
-
-              </div>
-
-              <div className='linkTo'>
-                <a href="#maki-ADN">
-                  <img src={arrowW} alt="My Happy SVG" />
-                  Desliza
-                </a>
-              </div>
-
-            </div>
-          </Col>
-
-          <Col>
-            <div style={{
-              height: "95vh",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center"
-            }}
-            >
-              <text className='content'>
-                <p>
-                  <strong>
-                    Nuestro propósito es poder<br />
-                    ayudar a nuestros clientes<br />
-                    a llegar al siguiente nivel y<br />
-                    <text style={{ color: '#6500FE' }}>seguir creciendo juntos.</text>
-                  </strong>
-                </p>
-              </text>
-            </div>
-          </Col>
-        </Row> */}
-
+      <div className='caja' style={{ backgroundColor: "#F8F8F8" }}>
         <Row id="maki-ADN">
-          <Col>
-            <div style={{
-              height: "100vh",
-              display: "flex",
-              justifyContent: "flex-end",
-              alignItems: "center"
-            }}>
+          <Col md={6} sm={12}>
+            <div className='adn-container'>
               <text className='titleSecondary'>
                 <strong>
                   Llevamos la<br />
@@ -145,57 +71,66 @@ const Index = () => {
             </div>
           </Col>
 
-          <Col>
-            <div className='content' style={{
-              height: "100vh",
-              display: "flex",
-              alignItems: "center"
-            }}>
-              <text>
-                <p>
-                  Maki nace por la necesidad de brindar una<br />
-                  mano a aquellas empresas que buscan<br />
-                  adaptarse a los cambios constantes en el<br />
-                  mundo digital.<br />
-                </p>
-                <p>
-                  Al igual que ellos buscamos reinventarnos<br />
-                  constantemente para ofrecer la mejor<br />
-                  calidad en nuestros servicios.
-                </p>
-              </text>
+          <Col md={6} sm={12}>
+            <div className='adn-container'>
+              <div className='content' style={{
+                height: "100vh",
+                width: "95%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "flex-start"
+              }}>
+                <text>
+                  <p>
+                    Maki nace por la necesidad de brindar una<br />
+                    mano a aquellas empresas que buscan<br />
+                    adaptarse a los cambios constantes en el<br />
+                    mundo digital.<br />
+                  </p>
+                  <p>
+                    Al igual que ellos buscamos reinventarnos<br />
+                    constantemente para ofrecer la mejor<br />
+                    calidad en nuestros servicios.
+                  </p>
+                </text>
+              </div>
             </div>
           </Col>
         </Row>
+      </div>
 
+      <div className='caja' style={{ backgroundColor: "#F8F8F8" }}>
         <Row>
           <TimeLine />
         </Row>
+      </div>
 
-        <Row style={{ height: "250px" }}>
+      <div className='caja' style={{ backgroundColor: "#F8F8F8" }}>
+        <Row>
           <Col>
-            <text>
-              <p className='titleSecondary'
+            <div className='dream-container'>
+              <text>
+                <p className='titleSecondary'
+                  style={{ display: "flex", justifyContent: "center"}}
+                >
+                  <strong>El Dream Team</strong>
+                </p>
+              </text>
+
+              <text className='content'
                 style={{
+                  width: "90%",
                   display: "flex", justifyContent: "center"
                 }}
               >
-                <strong>El Dream Team</strong>
-              </p>
-            </text>
-
-            <text className='content'
-              style={{
-                display: "flex", justifyContent: "center"
-              }}
-            >
-              <p>
-                Somos un equipo que trabaja mediante procesos y se capacita constantemente para obtimizar la relación<br />
-                de cada proyecto y lograr mejores trabajos en el menos tiempo posible, dejándonos tiempo para hacer lo<br />
-                que más nos gusta: Ser Creativos.<br />
-                En Maki tenemos la política de nunca caer en lo convencional y siempre buscamos proponer cosas nuevas.<br />
-              </p>
-            </text>
+                <p>
+                  Somos un equipo que trabaja mediante procesos y se capacita constantemente para obtimizar la relación
+                  de cada proyecto y lograr mejores trabajos en el menos tiempo posible, dejándonos tiempo para hacer lo
+                  que más nos gusta: Ser Creativos.<br />
+                  En Maki tenemos la política de nunca caer en lo convencional y siempre buscamos proponer cosas nuevas.
+                </p>
+              </text>
+            </div>
           </Col>
         </Row>
 
@@ -215,18 +150,12 @@ const Index = () => {
         </div>
 
       </Row> */}
+      </div>
 
+      <div className='caja' style={{ backgroundColor: "#F8F8F8" }}>
         <Row>
           <Col sm={4}>
-            <div className='titleSecondary'
-              style={{
-                height: "250px",
-                width: "100%",
-                display: "flex",
-                justifyContent: "flex-end",
-                alignItems: "center"
-              }}
-            >
+            <div className='titleSecondary container-unete' >
               <text>
                 <p>
                   <strong>
@@ -236,16 +165,8 @@ const Index = () => {
               </text>
             </div>
           </Col>
-
           <Col sm={8}>
-            <div style={{
-              height: "250px",
-              width: "100%",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center"
-            }}>
+            <div className='container-unete-text'>
               <text className='content'>
                 <p>
                   Siempre estamos en busqueda de nuevos latentos que <br />
@@ -253,23 +174,14 @@ const Index = () => {
                 </p>
               </text>
 
-
               <Link to="/contactanos" >
-                <button style={{
-                  width: "180px", height: "45px",
-                  margin: "10px",
-                  backgroundColor: "#6500FE",
-                  borderRadius: "50px",
-                  border: "none",
-                  color: "white",
-                }}>
+                <button className='dejanos-cv'>
                   Déjanos tu CV
                 </button>
               </Link>
             </div>
           </Col>
         </Row>
-
       </div>
 
     </>

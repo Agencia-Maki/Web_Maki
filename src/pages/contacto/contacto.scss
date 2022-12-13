@@ -1,8 +1,3 @@
-.content-contact-maki{
-  // background-color: #000;
-  margin-top: 100px !important;
-  margin-bottom: auto;
-}
 
 .title-purple-maki {
   color: #6500FE;
@@ -15,4 +10,24 @@
   color: #000;
   margin-top: -10px;
   font-weight: 700;
+}
+
+.maki-box-contacto {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+	.maki-box-contacto {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }

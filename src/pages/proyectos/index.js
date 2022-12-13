@@ -87,7 +87,7 @@ const Index = () => {
       <div className='caja'>
         <Row>
           <Col md={6} sm={12}>
-            <div className="maki-box-proyectos" 
+            <div className="maki-box-proyectos logos-height" 
               style={{ height: "55vh"}}
             >
               <div>
@@ -103,7 +103,7 @@ const Index = () => {
             </div>
           </Col>
           <Col md={6} sm={12}>
-            <div style={{ height: "55vh"}}>
+            <div className='logos-height'>
             <Logos />
             </div>
           </Col>

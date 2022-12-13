@@ -25,3 +25,24 @@
 // 		}
 // 	}
 // }
+
+.maki-box-servicios {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+	.maki-box-servicios{
+		//background-color: blue;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}

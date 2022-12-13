@@ -20,15 +20,10 @@ const Index = () => {
     <>
     <div style={{backgroundColor: "#F8F8F8"}}>
       <div className='caja gris' 
-        style={{
-          height: "100vh",
-          // width: "100%",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
+        style={{ height: "100vh" }}
       >
+        <div className='maki-box-servicios'>
+
         <text className='title'>
           <p style={{lineHeight: "1" }}>
             <strong>Lo que<br/>sabemos<br/> hacer <text style={{color: "#6500FE",lineHeight: "1"}}>bien</text></strong>
@@ -44,19 +39,21 @@ const Index = () => {
           </p>
         </text>
 
-        <div 
+        {/* <div 
           style={{
             display: "flex",
             marginLeft: "300px",
             marginTop: "100px"
-        }}
-        >
+          }}
+          >
           <div className='linkTo'>
             <a href="#maki-boxes" style={{color: "#6500FE"}}>
               <img src={arrowP} alt="My Happy SVG"/>
               Desliza
             </a>
           </div>
+
+        </div> */}
 
         </div>
       </div>

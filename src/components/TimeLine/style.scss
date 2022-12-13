@@ -1,3 +1,12 @@
+.timeLine-content {
+  //background-color: blue;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1000px) {
 .timeline{
   list-style-type: none;
   display: flex;
@@ -27,8 +36,8 @@
     left: 42%;
     transition: all 200ms ease-in;
   }
-  }
-  
+}
+
 li{
   .status{
     border-top: 2px solid #6500FE;
@@ -43,4 +52,6 @@ li{
       color: black;
     }
   }
+}
+
 }

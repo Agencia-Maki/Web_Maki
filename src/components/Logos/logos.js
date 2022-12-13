@@ -29,12 +29,12 @@ const Index = () => {
   return (
 
       <ResponsiveMasonry 
-        columnsCountBreakPoints={{ 350: 1, 700:2, 1100: 3}}
+        columnsCountBreakPoints={{ 350: 2, 700:2, 1100: 3}}
       >
-        <Masonry 
+        <Masonry className="logos-height"
         style={{ 
           // backgroundColor: "red",
-          height: "55vh", 
+          //height: "55vh", 
           width: "100%",
           display: "flex" , 
           justifyContent: "center", 
