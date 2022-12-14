@@ -6,14 +6,7 @@ import './right.scss'
 export const Index = () => {
   return (
     <>
-      <div 
-        // className='socials' 
-        style={{ 
-        // backgroundColor: "coral" ,
-        height: "100%" , width: "50px",
-        // justifyContent: "flex-end",
-        // alignItems: "flex-end"
-        }}>
+      <div className='list-socials-container'>
         <ul className="list-socials">
           <a href="https://www.facebook.com/agenciadigitalmaki/" target="_blank" rel="noreferrer" >
             <FontAwesomeIcon icon={['fab', 'facebook-f']} size="xl" />

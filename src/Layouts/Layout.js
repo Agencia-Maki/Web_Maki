@@ -18,7 +18,7 @@ const Layout = (props) => {
         <Header />
         <Row>
           <Col md={1} style={{margin: "0", padding: "0"}}>
-            {/* <Left/> */}
+            <Left/>
           </Col>
           <Col md={10} style={{margin: "0", padding: "0"}}>
             <div>
@@ -26,7 +26,7 @@ const Layout = (props) => {
             </div>
           </Col>
           <Col md={1} style={{margin: "0", padding: "0"}}>
-            {/* <Right/> */}
+            <Right/>
           </Col>
         </Row>
         <Footer />

@@ -1,3 +1,9 @@
+.list-socials-container {
+  // background-color: coral;
+  position:fixed;
+  margin-left:1%;
+}
+
 .list-socials {
   height: 100vh;
   width: 100%;
@@ -9,6 +15,13 @@
     color: #6500FE;
   }
 }
+
+@media screen and (max-width: 540px) {
+  .list-socials-container{
+    display: none;
+  }
+}
+
 
 // .list-socials {
 //   margin-bottom: 40px;
