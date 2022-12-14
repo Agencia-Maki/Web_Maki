@@ -33,26 +33,18 @@ const Index = () => {
                   <p style={{ lineHeight: "0.75" }}>TOS<span style={{ color: "#6500FE" }} >.</span></p>
                 </strong>
               </h1>
-              <div className='line-title' style={{
-                top: "42%", left: "22%",
-              }}></div>
 
-              <div className='line-title' style={{
-                top: "50%", left: "25%",
-              }}></div>
-
-              <div className='line-title' style={{
-                top: "58%", left: "22%",
-              }}></div>
+              <div className='line-title'>
+                <div className='line1'></div>
+                <div className='line2'></div>
+                <div className='line3'></div>
+              </div>
 
               </div>
             </div>
           </Col>
           <Col md={6} sm={12}>
-            <div
-              className="maki-box-proyectos"
-              style={{ height: "100vh"}}
-            >
+            <div className="maki-box-proyectos">
               <div>
                 <h4 className="titleSecondary">
                   <p style={{ lineHeight: "0.75" }}>Una selección de</p>
@@ -87,9 +79,7 @@ const Index = () => {
       <div className='caja'>
         <Row>
           <Col md={6} sm={12}>
-            <div className="maki-box-proyectos logos-height" 
-              style={{ height: "55vh"}}
-            >
+            <div className="maki-box-proyectos2">
               <div>
                 <h1 className="titleSecondary" 
                   style={{lineHeight: "1" }}

@@ -7,6 +7,37 @@
 	align-items: center;
 }
 
+@media screen and (max-width: 450px) {
+	.maki-box-proyectos {
+		height: 50vh;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.maki-box-proyectos2 {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+	.maki-box-proyectos2 {
+		height: 30vh;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
 .projects-container-text {
 	.big-title-maki {
 		position: relative;
@@ -14,11 +45,66 @@
 		z-index: 2;
 		font-size: 80px;
 	}
-	.line-title {
+}
+
+.line-title {
+	.line1{
+		top: 44%; 
+		left: 18%;
+		position: absolute;
+		z-index: 1;
+		width: 200px; 
+		height: 30px; 
+		background-color: #6500FE;
+	}
+	.line2{
+		top: 52%; 
+		left: 20%;
 		position: absolute;
 		z-index: 1;
 		width: 200px; 
 		height: 30px; 
 		background-color: #6500FE
+	}
+	.line3{
+		top: 60%; 
+		left: 18%;
+		position: absolute;
+		z-index: 1;
+		width: 200px; 
+		height: 30px; 
+		background-color: #6500FE
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.line-title {
+		.line1{
+			top: 50%; 
+			left: 12%;
+			position: absolute;
+			z-index: 1;
+			width: 200px; 
+			height: 30px; 
+			background-color: #6500FE
+		}
+		.line2{
+			top: 60%; 
+			left: 25%;
+			position: absolute;
+			z-index: 1;
+			width: 200px; 
+			height: 30px; 
+			background-color: #6500FE
+		}
+		.line3{
+			top: 70%; 
+			left: 12%;
+			position: absolute;
+			z-index: 1;
+			width: 200px; 
+			height: 30px; 
+			background-color: #6500FE
+		}
 	}
 }

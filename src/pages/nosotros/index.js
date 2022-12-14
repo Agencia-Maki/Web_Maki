@@ -21,7 +21,7 @@ const Index = () => {
             >
               <div className="text-wrapper">
                 <h1 style={{ zIndex: "2" }}>
-                  <p className='titleSecondary' style={{ color: '#F8F8F8' }}>
+                  <p className='titleSecondary' style={{ color: '#F8F8F8'}}>
                     <strong>Comprometidos<br /> con hacer crecer<br /> a tu empresa</strong>
                   </p>
                 </h1>
@@ -73,23 +73,17 @@ const Index = () => {
 
           <Col md={6} sm={12}>
             <div className='adn-container'>
-              <div className='content' style={{
-                height: "100vh",
-                width: "95%",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "flex-start"
-              }}>
+              <div className='content'>
                 <text>
                   <p>
-                    Maki nace por la necesidad de brindar una<br />
-                    mano a aquellas empresas que buscan<br />
-                    adaptarse a los cambios constantes en el<br />
+                    Maki nace por la necesidad de brindar una
+                    mano a aquellas empresas que buscan
+                    adaptarse a los cambios constantes en el
                     mundo digital.<br />
                   </p>
                   <p>
-                    Al igual que ellos buscamos reinventarnos<br />
-                    constantemente para ofrecer la mejor<br />
+                    Al igual que ellos buscamos reinventarnos
+                    constantemente para ofrecer la mejor
                     calidad en nuestros servicios.
                   </p>
                 </text>

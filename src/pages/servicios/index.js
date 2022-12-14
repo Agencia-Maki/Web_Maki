@@ -24,36 +24,22 @@ const Index = () => {
       >
         <div className='maki-box-servicios'>
 
-        <text className='title'>
-          <p style={{lineHeight: "1" }}>
-            <strong>Lo que<br/>sabemos<br/> hacer <text style={{color: "#6500FE",lineHeight: "1"}}>bien</text></strong>
-          </p>
-          <p className='titleSecondary'>
-            Calidad Optimizada<br/>
-          </p>
-        </text>
-        <text>
-          <p>
-            Somos una agencia que trabaja con procesos optimizados,<br/>
-            garantizando un trabajo con calidad y en los tiempos previstos.
-          </p>
-        </text>
-
-        {/* <div 
-          style={{
-            display: "flex",
-            marginLeft: "300px",
-            marginTop: "100px"
-          }}
-          >
-          <div className='linkTo'>
-            <a href="#maki-boxes" style={{color: "#6500FE"}}>
-              <img src={arrowP} alt="My Happy SVG"/>
-              Desliza
-            </a>
+          <text className='title'>
+            <p style={{lineHeight: "1" }}>
+              <strong>Lo que<br/>sabemos<br/> hacer <text style={{color: "#6500FE",lineHeight: "1"}}>bien</text></strong>
+            </p>
+            <p className='titleSecondary'>
+              Calidad Optimizada<br/>
+            </p>
+          </text>
+          <div style={{width: "90%"}}>
+            <p>
+              Somos una agencia que trabaja con procesos optimizados,
+              garantizando un trabajo con calidad y en los tiempos previstos.
+            </p>
           </div>
 
-        </div> */}
+
 
         </div>
       </div>
@@ -213,3 +199,20 @@ const Index = () => {
   )
 }
 export default Index
+
+
+          {/* <div 
+            style={{
+              display: "flex",
+              marginLeft: "300px",
+              marginTop: "100px"
+            }}
+            >
+            <div className='linkTo'>
+              <a href="#maki-boxes" style={{color: "#6500FE"}}>
+                <img src={arrowP} alt="My Happy SVG"/>
+                Desliza
+              </a>
+            </div>
+
+          </div> */}

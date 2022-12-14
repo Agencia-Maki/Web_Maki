@@ -6,6 +6,16 @@
   margin: 0px 10px 10px 0px;
 }
 
+@media screen and (max-width: 450px) {
+  .flip-box {
+    background-color: transparent;
+    width: 330px;
+    height: 330px;
+    perspective: 1000px;
+    margin: 0px 10px 10px 0px;
+  }
+}
+
 .flip-box-inner {
   position: relative;
   width: 100%;
