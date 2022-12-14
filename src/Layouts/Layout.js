@@ -17,17 +17,17 @@ const Layout = (props) => {
       <Container fluid>
         <Header />
         <Row>
-          {/* <Col md={1} style={{margin: "0", padding: "0"}}> 
-            <Left/>
-          </Col> */}
-          <Col md={12} style={{margin: "0", padding: "0"}}>
+          <Col md={1} style={{margin: "0", padding: "0"}}>
+            {/* <Left/> */}
+          </Col>
+          <Col md={10} style={{margin: "0", padding: "0"}}>
             <div>
               {props.children}
             </div>
           </Col>
-          {/* <Col md={1} style={{margin: "0", padding: "0"}}>
-            <Right/>
-          </Col> */}
+          <Col md={1} style={{margin: "0", padding: "0"}}>
+            {/* <Right/> */}
+          </Col>
         </Row>
         <Footer />
       </Container>

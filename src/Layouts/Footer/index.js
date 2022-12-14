@@ -10,7 +10,7 @@ const Footer = () => {
     <>
       <Row className="footer-container">
         <Col xs={12} sm={3}>
-          <div className="maki-box-container">
+          <div className="maki-box-footer">
             <div className="footer-brand-container">
               <img className='logo-footer' src={logo} alt="No Cargo Imagen" />
               <p>
