@@ -8,7 +8,7 @@ const Menu = (props) => {
 
   console.log("MENU")
   console.log(props)
-  const { ShowMenu, setShowMenu } = props;
+  const { showMenu, setShowMenu } = props;
 
   // console.log(ShowMenu)
   // console.log(setShowMenu)
@@ -20,9 +20,9 @@ const Menu = (props) => {
   return (
   <>
   
-    { showModal && <div className='menu-container'>
+    <div className={showMenu ? "menu-container" : ""}>
       <ul className=''>
-        <li className=''>
+        <li>
           <Link to="/" onClick={() => setShowMenu(false)}>
             <span>
               <span>Inicio</span>
@@ -30,39 +30,8 @@ const Menu = (props) => {
           </Link>
         </li>
       </ul>
+      </div>
 
-
-      {/* <div className="contact">
-        <address className="addresse">
-          <a href="https://goo.gl/maps/fzzmqZ25Gmz" rel="noreferrer" target="_blank">
-            Urb Real Felipe Mz. A Lte. 1 Cerro Colorado
-          </a>
-        </address> <br />
-        <a href="tel:+51932678688" rel="noreferrer" className="phone">+51932678688</a><br />
-        <a href="mailto:ventas@agenciamaki.com" rel="noreferrer" className="mail">ventas@agenciamaki.com</a>
-      </div> */}
-
-    </div>}
-
-    {/* <button className="newsletterLink" onClick={() => handleShow()}>
-      <span className="block-title">Quieres trabajar con nostros?</span>
-      <span className="next-page-title">Déjanos un mensaje.</span>
-    </button> */}
-
-
-    {/* <div className="borders">
-    <div className="top"></div>
-    <div className="bottom"></div>
-    <div className="left"></div>
-    <div className="right"></div>
-    </div> */}
-
-    {/* <div className="menuColor" onClick={() => setShowMenu(false)}></div> */}
-      {/* <ContactModal 
-      showModal={showModal}
-      handleClose={handleClose}
-      handleShow={handleShow}
-      /> */}
     </>
 
   )
