@@ -18,3 +18,24 @@ $borderSizeMedium: 45px;
     }
   }
 }
+
+.maki-box-inicio {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+}
+
+@media screen and (max-width: 450px) {
+	.maki-box-inicio{
+		height: 50vh;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-left: 0px ;
+	}
+}

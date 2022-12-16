@@ -80,7 +80,7 @@ const Index = () => {
         >
           <Row>
             <Col md={6} sm={12}>
-              <div className="maki-box-container logos-height">
+              <div className="maki-box-inicio">
               <div>
 
                 <h2 className="titleSecondary" style={{ lineHeight: "1" }}>

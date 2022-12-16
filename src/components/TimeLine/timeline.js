@@ -28,27 +28,27 @@ const timeline = () => {
           <ul className="timeline">
             <li>
               <div className="status">
-                <h4> Profesionalismo </h4>
+                <h5> Profesionalismo </h5>
               </div>
             </li>
             <li>
               <div className="status">
-                <h4> Innovación </h4>
+                <h5> Innovación </h5>
               </div>
             </li>
             <li>
               <div className="status">
-                <h4> Responsabilidad </h4>
+                <h5> Responsabilidad </h5>
               </div>
             </li>
             <li>
               <div className="status">
-                <h4> Puntualidad </h4>
+                <h5> Puntualidad </h5>
               </div>
             </li>
             <li>
               <div className="status">
-                <h4> Trabajo en equipo </h4>
+                <h5> Trabajo en equipo </h5>
               </div>
             </li>
           </ul>    
