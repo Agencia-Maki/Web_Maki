@@ -1,7 +1,7 @@
-import { faShield } from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import Menu from '../Menu/Menu';
+import { faShield } from '@fortawesome/free-solid-svg-icons';
 
 import './left.scss'
 

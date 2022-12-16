@@ -59,6 +59,24 @@ $purppleMaki: #6500FE;
   }
 }
 
+.maki-navbar{
+  // background-color: red;
+  // position: relative;
+  // left: 40%;
+
+  .maki-navbar- {
+    width: 20vw;
+  }
+  a {
+    color:#6500FE;
+    // background-color: ;
+    &:hover{
+      background-color: #e4e4e4;
+      color: #6500FE;
+    }
+  }
+}
+
 
 // header.header {
 //   .navbar-brand {

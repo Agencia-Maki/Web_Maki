@@ -32,14 +32,12 @@ const Index = () => {
               Calidad Optimizada<br/>
             </p>
           </text>
-          <div style={{width: "90%"}}>
+          <div style={{width: "50%"}}>
             <p>
               Somos una agencia que trabaja con procesos optimizados,
               garantizando un trabajo con calidad y en los tiempos previstos.
             </p>
           </div>
-
-
 
         </div>
       </div>

@@ -18,10 +18,14 @@ const Layout = (props) => {
         <Header />
         <Row>
           <Col md={1} style={{margin: "0", padding: "0"}}>
-            <Left/>
+            <Left 
+            // style={{ zIndex: "2", position: "absolute"}} 
+            />
           </Col>
           <Col md={10} style={{margin: "0", padding: "0"}}>
-            <div>
+            <div 
+            // style={{ zIndex:"2", position: "relative"}}
+            >
               {props.children}
             </div>
           </Col>
