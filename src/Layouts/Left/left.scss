@@ -31,18 +31,22 @@ $heightL: 4px;
       width: $widthL;
       height: $heightL;
       margin: 0 0 0 5px ;
+      transition: all ease 0.5s;
     }
     .line2 {
       background-color: black;
       width: $widthL;
       height: $heightL;
       margin: 4px 0 4px 0;
+
+      transition: all ease 0.5s;
     }
     .line3 {
       background-color: black;
       width: $widthL;
       height: $heightL;
       margin: 0 0 0 5px;
+      transition: all ease 0.5s;
     }
     .txt{
       // background-color: red;
