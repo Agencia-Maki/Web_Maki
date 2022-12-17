@@ -17,20 +17,21 @@ const Layout = (props) => {
       <Container fluid>
         <Header />
         <Row>
-          <Col md={1} style={{margin: "0", padding: "0"}}>
-            <Left 
+          <Col md={1} style={{ margin: "0", padding: "0", zIndex: "100" }} className="tilin">
+
+            <Left
             // style={{ zIndex: "2", position: "absolute"}} 
             />
           </Col>
-          <Col md={10} style={{margin: "0", padding: "0"}}>
-            <div 
+          <Col md={10} style={{ margin: "0", padding: "0" }}>
+            <div
             // style={{ zIndex:"2", position: "relative"}}
             >
               {props.children}
             </div>
           </Col>
-          <Col md={1} style={{margin: "0", padding: "0"}}>
-            <Right/>
+          <Col md={1} style={{ margin: "0", padding: "0" }}>
+            <Right />
           </Col>
         </Row>
         <Footer />
