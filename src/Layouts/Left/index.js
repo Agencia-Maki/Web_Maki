@@ -19,24 +19,21 @@ export const Index = () => {
     <>
     
       <div className='maki-menu-container'> 
-      
+        <div className='maki-center'>
         <Link className="maki-menu" onClick={() => toggleMenu()} >
-          {/* <i className="icon">
-            <span className="line"></span>
-            <span className="line"></span>
-            <span className="line"></span>
-          </i> */}
-          <span className="txt">
-            {/* <span>M</span>
-            <span>A</span>
-            <span>K</span>
-            <span>I</span> */}
-            <span>MAKI</span>
-          </span>
+          <div className="icon">
+            <div>
+              <div className="line1"></div>
+              <div className="line2"></div>
+              <div className="line3"></div>
+            </div>
+            <p className='txt'>MAKI</p>
+          </div>
         </Link>
 
         <Menu showMenu={showMenu} setShowMenu={setShowMenu} />
 
+      </div>
       </div>
 
     </>
