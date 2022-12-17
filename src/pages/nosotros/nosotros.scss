@@ -1,4 +1,4 @@
-.maki-box-nosotros {
+.maki-box-nosotrosL {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -8,8 +8,30 @@
 }
 
 @media screen and (max-width: 450px) {
-	.maki-box-nosotros {
+	.maki-box-nosotrosL {
 		height: 50vh;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-left: 25px;
+	}
+}
+
+.maki-box-nosotrosR {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+	.maki-box-nosotrosR {
+		// background-color: red;
+		height: 30vh;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -43,7 +65,7 @@
 }
 
 
-.adn-container {
+.adn-containerR {
 	// background-color: coral;
 	height: 100vh;
 	display: flex;
@@ -52,8 +74,25 @@
 }
 
 @media screen and (max-width: 450px) {
-	.adn-container {
-		height: 50vh;
+	.adn-containerR {
+		height: 40vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.adn-containerL {
+	// background-color: coral;
+	height: 100vh;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+	.adn-containerL {
+		height: 35vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -71,8 +110,8 @@
 
 @media screen and (max-width: 450px) {
 	.dream-container {
-		//background-color: red;
-		height: 90vh;
+		// background-color: red;
+		height: 55vh;
 		width: 100%;
 		display: flex;
 		flex-direction: column;

@@ -45,7 +45,7 @@ const Index = () => {
       <div className='caja gris' 
         style={{
           height: "auto",
-          padding: "150px", 
+          padding: "50px", 
           display: "flex", 
           alignItems: "center", 
           justifyContent: "center",

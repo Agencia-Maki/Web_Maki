@@ -16,7 +16,7 @@ const Index = () => {
         <Row>
           <Col md={6} sm={12}>
             <div
-              className="maki-box-nosotros"
+              className="maki-box-nosotrosL"
               style={{ backgroundColor: "#6500FE" }}
             >
               <div className="text-wrapper">
@@ -39,9 +39,7 @@ const Index = () => {
             </div>
           </Col>
           <Col md={6} sm={12}>
-            <div className='maki-box-nosotros' 
-
-            >
+            <div className='maki-box-nosotrosR' >
               <text className='content'>
                 <p>
                   <strong>
@@ -60,7 +58,7 @@ const Index = () => {
       <div className='caja' style={{ backgroundColor: "#F8F8F8" }}>
         <Row id="maki-ADN">
           <Col md={6} sm={12}>
-            <div className='adn-container'>
+            <div className='adn-containerR'>
               <text className='titleSecondary'>
                 <strong>
                   Llevamos la<br />
@@ -72,7 +70,7 @@ const Index = () => {
           </Col>
 
           <Col md={6} sm={12}>
-            <div className='adn-container'>
+            <div className='adn-containerL'>
               <div className='content'>
                 <text>
                   <p>
@@ -95,7 +93,7 @@ const Index = () => {
 
       <div className='caja' style={{ backgroundColor: "#F8F8F8" }}>
         <Row>
-          <TimeLine />
+            <TimeLine />
         </Row>
       </div>
 
