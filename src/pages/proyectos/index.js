@@ -20,26 +20,29 @@ const Index = () => {
       <div className='caja'>
         <Row>
           <Col md={6} sm={12}>
-            <div
-              className="maki-box-proyectos"
-              style={{ height: "100vh", backgroundColor: "black"}}
-            >
-              <div className='projects-container-text'>
+            <div>
 
-              <h1 className="big-title-maki">
-                <strong>
-                  <p style={{ lineHeight: "0.75" }}>PRO</p>
-                  <p style={{ lineHeight: "0.75" }}>YEC</p>
-                  <p style={{ lineHeight: "0.75" }}>TOS<span style={{ color: "#6500FE" }} >.</span></p>
-                </strong>
-              </h1>
+              <div
+                className="maki-box-proyectos"
+                style={{ height: "100vh", backgroundColor: "black"}}
+              >
+                <div className='projects-container-text'>
 
-              <div className='line-title'>
-                <div className='line1'></div>
-                <div className='line2'></div>
-                <div className='line3'></div>
-              </div>
+                <h1 className="big-title-maki">
+                  <strong>
+                    <p style={{ lineHeight: "0.75" }}>PRO</p>
+                    <p style={{ lineHeight: "0.75" }}>YEC</p>
+                    <p style={{ lineHeight: "0.75" }}>TOS<span style={{ color: "#6500FE" }} >.</span></p>
+                  </strong>
+                </h1>
 
+                <div className='line-title'>
+                  <div className='line1'></div>
+                  <div className='line2'></div>
+                  <div className='line3'></div>
+                </div>
+
+                </div>
               </div>
             </div>
           </Col>

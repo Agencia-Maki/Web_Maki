@@ -28,23 +28,30 @@ import logoAltoImpacto from '../../assets/images/logos/Grupo 507.png'
 import logoHanan from '../../assets/images/logos/Grupo 483.png'
 import logoVapreh from '../../assets/images/logos/Grupo 502.png'
 import logoParisinos from '../../assets/images/logos/Grupo 95.png'
+import logoHefziba from '../../assets/images/logos/hefziba.png'
+import logoIyali from '../../assets/images/logos/logoIyali.png'
+import logoCapital from '../../assets/images/logos/logoCapital.png'
+import logoVentura from '../../assets/images/logos/logoVentura.png'
+import logoNuevoHori from '../../assets/images/logos/logoNuevoHori.png'
+import logoCarpediem from '../../assets/images/logos/logoCarpediem.png'
+
 
 import './gridPicture.scss'
 
 const PHOTOS = [
-	{ img: hefziba, logo: logoAural },
+	{ img: hefziba, logo: logoHefziba },
 	{ img: aural, logo: logoAural },
-	{ img: iyali, logo: logoAural },
+	{ img: iyali, logo: logoIyali },
 	{ img: grp, logo: logogpr },
 	{ img: cato, logo: logoCato },
-	{ img: capital, logo: logoAural },
-	{ img: venturaTravel, logo: logoAural },
+	{ img: capital, logo: logoCapital },
+	{ img: venturaTravel, logo: logoVentura },
 	{ img: anan, logo: logoHanan },
-	{ img: nuevoHorizonte, logo: logoAural },
+	{ img: nuevoHorizonte, logo: logoNuevoHori },
 	{ img: vapreh, logo: logoVapreh },
 	{ img: puertoInka, logo: logoPuertoInka },
 	{ img: parisinos, logo: logoParisinos },
-	{ img: carpediem, logo: logoAural },
+	{ img: carpediem, logo: logoCarpediem },
 	{ img: altoImpacto, logo: logoAltoImpacto },
 	{ img: magna, logo: logoMagna }
 ]
