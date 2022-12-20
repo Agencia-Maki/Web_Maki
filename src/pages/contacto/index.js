@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ useEffect } from 'react'
 import Form from '../../components/Form/Form'
 
 import { Row, Col } from 'react-bootstrap'
@@ -6,6 +6,11 @@ import { Row, Col } from 'react-bootstrap'
 import './contacto.scss'
 
 const Index = () => {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  })
+
   return (
     <>
       <div className='caja' 

@@ -15,25 +15,25 @@ const Form = () => {
           </p>
         </label>
         <div className='box'> 
-          <label>Nombre</label>
+          {/* <label>Nombre</label> */}
           <input type={"text"} 
             id={"Nombre"} 
             placeholder="Nombre"/>
         </div>
         <div className='box'>
-          <label>Teléfono</label>
+          {/* <label>Teléfono</label> */}
           <input  type={"text"} 
             id={"Teléfono"}
             placeholder="Teléfono"/>
         </div>
         <div className='box'>
-          <label>Correo</label>
+          {/* <label>Correo</label> */}
           <input type={"text"} 
             id={"Correo"}
             placeholder="Correo"/>
         </div>
         <div className='box'>
-          <label>Servicio</label>
+          {/* <label>Servicio</label>w */}
           <input type={"text"} 
             id={"Servicio que te interesa"}
             placeholder="Servicio"/>

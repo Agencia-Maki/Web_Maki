@@ -10,9 +10,9 @@ export const Index = () => {
   const [showMenu, setShowMenu] = useState(false)
 
 	const toggleMenu = () => {
-    console.log("Mostrar menu !")
+    // console.log("Mostrar menu !")
 		setShowMenu(!showMenu)
-    console.log(showMenu)
+    // console.log(showMenu)
 	}
 
   return (
@@ -27,7 +27,7 @@ export const Index = () => {
               <div className="line2"></div>
               <div className="line3"></div>
             </div>
-            <p className='txt'>MAKI</p>
+            <p className='txt'>MENÚ</p>
           </div>
         </Link>
 

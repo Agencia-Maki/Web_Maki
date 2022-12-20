@@ -44,7 +44,7 @@ const Index = () => {
         {PHOTOS.map((image, index) => (
           <div key={index}>
             <img
-                style={{margin: "20px", width: "150px" ,display: "block" }}
+                style={{margin: "20px", width: "120px" ,display: "block" }}
                 src={image.img}
                 alt=""
             />

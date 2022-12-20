@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import TimeLine from '../../components/TimeLine/timeline.js'
 
 import { Link } from 'react-router-dom';
@@ -9,6 +9,10 @@ import arrowW from '../../assets/arrow/arrowW.svg'
 import './nosotros.scss'
 
 const Index = () => {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  })
 
   return (
     <>
@@ -71,7 +75,7 @@ const Index = () => {
 
           <Col md={6} sm={12}>
             <div className='adn-containerL'>
-              <div className='content'>
+              <div className='content' style={{width: "60%"}}>
                 <text>
                   <p>
                     Maki nace por la necesidad de brindar una
@@ -97,7 +101,7 @@ const Index = () => {
         </Row>
       </div>
 
-      <div className='caja' style={{ backgroundColor: "#F8F8F8" }}>
+      {/* <div className='caja' style={{ backgroundColor: "#F8F8F8" }}>
         <Row>
           <Col>
             <div className='dream-container'>
@@ -126,7 +130,7 @@ const Index = () => {
           </Col>
         </Row>
 
-        {/* <Row>
+        <Row>
         
         <div className='caja'>
           <text className='imagenCard' style={{backgroundColor: "lightblue"}}>imagen</text>
@@ -141,8 +145,8 @@ const Index = () => {
           <text className='imagenCard' style={{backgroundColor: "lightblue"}}>imagen</text>
         </div>
 
-      </Row> */}
-      </div>
+      </Row>
+      </div> */}
 
       <div className='caja' style={{ backgroundColor: "#F8F8F8" }}>
         <Row>

@@ -6,11 +6,11 @@ import './menu.scss'
 
 const Menu = (props) => {
 
-  console.log("MENU")
-  console.log(props)
+  // console.log("MENU")
+  // console.log(props)
   const { showMenu, setShowMenu } = props;
 
-  console.log(showMenu)
+  // console.log(showMenu)
   // console.log(setShowMenu)
 
   // const [showModal, setShowModal] = useState(false);

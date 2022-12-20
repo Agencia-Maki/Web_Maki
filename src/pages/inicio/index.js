@@ -15,8 +15,8 @@ const Index = () => {
     <>
       <div style={{ backgroundColor: "white" }}>
 
-        <div className='caja'>
-          <img className='imagen' src={font} alt="No Cargo Imagen" />
+        <div className='caja' style={{ height: "auto"}}>
+          <img className='imagen' src={font} alt="No Cargo Imagen" style={{height: "100vh", margin: 0}} />
         </div>
 
         <div className='caja gris'
