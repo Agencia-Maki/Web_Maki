@@ -18,7 +18,6 @@ const Layout = (props) => {
         <Header />
         <Row>
           <Col md={1} style={{ margin: "0", padding: "0", zIndex: "100" }} className="tilin">
-
             <Left
             // style={{ zIndex: "2", position: "absolute"}} 
             />
