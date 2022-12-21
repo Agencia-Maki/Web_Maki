@@ -78,9 +78,9 @@ const SimpleSlider = () => {
                 <div>
                   <img src={card.img} alt="No Carga" height="175px" />
                 </div>
-                <h1 style={{ paddingTop: "30px", fontWeight: "600" }}>
+                <h3 style={{ paddingTop: "30px", fontWeight: "600" }}>
                   {card.title}
-                </h1>
+                </h3>
               </div>
 
               <div className='flip-card-back'>

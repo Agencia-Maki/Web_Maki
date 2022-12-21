@@ -21,13 +21,13 @@ export const Index = () => {
       <div className='maki-menu-container'> 
         <div className='maki-center'>
         <Link className="maki-menu" onClick={() => toggleMenu()} >
-          <div className="icon">
+          <div className={` ${showMenu ? "cerrar" : "icon"}`}>
             <div>
               <div className="line1"></div>
               <div className="line2"></div>
               <div className="line3"></div>
             </div>
-            <p className='txt'>MENÚ</p>
+            { !showMenu && <p className='txt'>MENÚ</p>}
           </div>
         </Link>
 

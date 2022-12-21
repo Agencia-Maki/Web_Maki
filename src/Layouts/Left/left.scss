@@ -12,13 +12,13 @@
   justify-content: center;
 }
 
-
 $widthL: 20px;
 $heightL: 4px;
 
 .maki-menu {
-  height: 20px ;
-  width: 20px;
+  height: 30px ;
+  width: 50px;
+  z-index: 510;
   // background-color: blue;
   text-decoration: none;
   .icon {
@@ -72,9 +72,49 @@ $heightL: 4px;
       }
     }
   }
-  
-}
+  .cerrar {
 
+  // background-color: blue;
+    display: flex;
+    flex-direction: row;
+
+    .line1 {
+      background-color: black;
+      width: $widthL;
+      height: $heightL;
+      transform: rotate(45deg);
+      margin: 0px 0 0 0px ;
+      transition: all ease 0.5s;
+    }
+    .line2 {
+      background-color: black;
+      width: $widthL;
+      height: $heightL;
+      transform: rotate(135deg);
+      margin: -4px 0 4px 0;
+
+      transition: all ease 0.5s;
+    }
+    .line3 {
+      display: none;
+    }
+    .txt{
+      // background-color: red;
+      font-weight:bold;
+      transform: rotate(270deg);
+      color: black;
+      
+    }
+    &:hover {
+      .line1 {
+        background-color: #6500FE;
+      }
+      .line2 {
+        background-color: #6500FE;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 540px) {
 	.maki-menu-container {

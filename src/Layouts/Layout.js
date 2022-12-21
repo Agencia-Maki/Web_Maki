@@ -17,8 +17,8 @@ const Layout = (props) => {
       <Container fluid>
         <Header />
         <Row>
-          <Col md={1} style={{ margin: "0", padding: "0", zIndex: "100" }} className="tilin">
-            <Left
+          <Col md={1} style={{ margin: "0", padding: "0", zIndex: "100"}} className="tilin">
+            <Left style={{transition: "all ease 10s" }}
             // style={{ zIndex: "2", position: "absolute"}} 
             />
           </Col>
